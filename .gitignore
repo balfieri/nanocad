@@ -1,0 +1,6 @@
+.DS_Store
+*/*.exe
+*/*.o
+*/*.out
+*/.*.swp
+*/*.gz

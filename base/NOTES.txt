@@ -1,0 +1,22 @@
+// Stuff Not Yet Incorporated Into Source Code
+//
+
+// Pixel Shader
+//
+http://www.opengl.org/wiki/Array_Texture
+
+#version 410 core
+        
+        uniform  sampler2D myTextureSampler[3];  
+        in  vec2 UV;
+        in  int  texid;
+        out vec3 out_Color;
+        
+ 
+        void main(void)
+        {
+                // we also want to look at texid[31] and treat texid[23:0] as RGB if texid[31] is 1
+                // (allows us to use same shader for color and texture)
+                //
+                out_Color = texture( myTextureSampler, vec3(UV, (float)texid) ).rgb; 
+        }

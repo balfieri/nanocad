@@ -1,0 +1,10 @@
+# test.viz - test file for generic viz program
+#
+[
+{ 
+  kind:  geom,
+  id:    cube1,
+  time:  0,
+  shape: { kind: box, x: 0.0, y: 0.0, z: 2.0, w: 1.0, h: 1.0, d: -1.0, color: blue },
+},
+]
