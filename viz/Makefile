@@ -1,7 +1,7 @@
 DEPS = \
        Makefile \
        ../make/common.mk \
-       ../base/*.h \
+       ../base/*.o \
        *.h
 
 OBJS = \
@@ -9,7 +9,7 @@ OBJS = \
        Viz.o \
 
 LIBS = \
-       ../base/*.o \
+       ../base/[A-Z]*.o \
 
 PROGS = \
        vizmain.exe \

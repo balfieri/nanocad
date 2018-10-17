@@ -5,4 +5,4 @@ make
 cd ../viz
 make clean
 make
-#viz.exe -viz_path test.viz -win_eye_z 100.0
+vizmain.exe -viz_path test.viz -win_eye_z 100.0
