@@ -96,14 +96,14 @@ public:
 
         struct timeval tv;
         gettimeofday( &tv, 0 );
-        double wall_clock_ms = (double)tv.tv_sec*1000.0 + (double)tv.tv_usec/1000.0;
+        double wall_clock_ms = double(tv.tv_sec)*1000.0 + double(tv.tv_usec)/1000.0;
         static double wall_clock_ms_first = 0.0;
         if ( wall_clock_ms_first <= 0.01 ) {
             wall_clock_ms_first = wall_clock_ms;
         }
 
         double diff = wall_clock_ms - wall_clock_ms_first;
-        sys->impl->world->frame_render( (float)diff );
+        sys->impl->world->frame_render( float(diff) );
     }
 
     static void resize_event( int w, int h )
@@ -113,7 +113,7 @@ public:
 
         if ( sys->impl->world == 0 ) return;
 
-        sys->impl->world->resize_event( (double)w, (double)h );
+        sys->impl->world->resize_event( double(w), double(h) );
     }
 
     static int modifiers( void )
@@ -129,7 +129,7 @@ public:
     {
         if ( sys->impl->world == 0 || !sys->impl->config->win_mouse_motion_enabled ) return;
 
-        sys->impl->world->motion_event( (double)x, (double)y );
+        sys->impl->world->motion_event( double(x), double(y) );
     }
 
     static void key_event( unsigned char key, int x, int y )
@@ -375,7 +375,7 @@ void Sys::draw_begin( bool use_ortho,
     if ( use_ortho ) {
         glOrtho( 0.0f, impl->win_w, 0.0f, impl->win_h, near_z, far_z );
     } else {
-        gluPerspective( fov_y, impl->config->win_perspective_fudge_factor*(GLfloat)impl->win_w/(GLfloat)impl->win_h, near_z, far_z );
+        gluPerspective( fov_y, impl->config->win_perspective_fudge_factor*GLfloat(impl->win_w)/GLfloat(impl->win_h), near_z, far_z );
     }
 
     glMatrixMode( GL_MODELVIEW );
@@ -424,10 +424,10 @@ void Sys::draw_batch( int batch_index, Geom * geom, int geom_cnt, bool geom_chan
     // communicate the vertex attributes
     //----------------------------------------------------------
     BindBuffer( GL_ARRAY_BUFFER, batch->vbo_hdl );
-    VertexAttribPointer( ATTRIB_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof( Vertex ), (GLvoid *)offsetof( Vertex, position ) );
-    VertexAttribPointer( ATTRIB_NORMAL,   3, GL_FLOAT, GL_FALSE, sizeof( Vertex ), (GLvoid *)offsetof( Vertex, normal ) );
-    VertexAttribPointer( ATTRIB_TEXID,    1, GL_INT,   GL_FALSE, sizeof( Vertex ), (GLvoid *)offsetof( Vertex, texid ) );
-    VertexAttribPointer( ATTRIB_TEXCOORD, 2, GL_FLOAT, GL_FALSE, sizeof( Vertex ), (GLvoid *)offsetof( Vertex, texcoord ) );
+    VertexAttribPointer( ATTRIB_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof( Vertex ), reinterpret_cast<GLvoid *>( offsetof( Vertex, position ) ) );
+    VertexAttribPointer( ATTRIB_NORMAL,   3, GL_FLOAT, GL_FALSE, sizeof( Vertex ), reinterpret_cast<GLvoid *>( offsetof( Vertex, normal ) ) );
+    VertexAttribPointer( ATTRIB_TEXID,    1, GL_INT,   GL_FALSE, sizeof( Vertex ), reinterpret_cast<GLvoid *>( offsetof( Vertex, texid ) ) );
+    VertexAttribPointer( ATTRIB_TEXCOORD, 2, GL_FLOAT, GL_FALSE, sizeof( Vertex ), reinterpret_cast<GLvoid *>( offsetof( Vertex, texcoord ) ) );
 
     BindBuffer( GL_ELEMENT_ARRAY_BUFFER, batch->ibo_hdl );
 
@@ -519,9 +519,9 @@ void Sys::draw_text2d( Text2D * text, int text_cnt )
         float b = float( (rgb >>  0) & 0xff ) / 255.0f;
         glColor3f( r, g, b );
         
-        float x = (float)text[i].x / x_scale_factor;
-        float y = (float)text[i].y / y_scale_factor;
-        float w = (float)impl->config->win_overlay_text_width / x_scale_factor;
+        float x = float(text[i].x) / x_scale_factor;
+        float y = float(text[i].y) / y_scale_factor;
+        float w = float(impl->config->win_overlay_text_width) / x_scale_factor;
         int len = strlen( text[i].str );
         if ( font != 0 ) {
             glRasterPos2i( int( x ), int( y ) );
@@ -646,11 +646,11 @@ void DrawElements( GLenum mode, GLsizei count, GLenum type, const GLvoid * indic
     dassert( vbo_index < BUFF_MAX );
     dassert( ibo_index < BUFF_MAX );
     dprintf( "DrawElements: count=%d buff_used[%d]=%d\n", count, ibo_index, buff_used[ibo_index] );
-    if ( (GLuint)count > buff_used[ibo_index] ) exit( 1 );
-    dassert( buff_ptr[ibo_index] == indices && (GLuint)count <= buff_used[ibo_index] );
+    if ( GLuint(count) > buff_used[ibo_index] ) exit( 1 );
+    dassert( buff_ptr[ibo_index] == indices && GLuint(count) <= buff_used[ibo_index] );
 
-    Vertex   * vbo = (Vertex *)buff_ptr[vbo_index];
-    GLushort * ibo = (GLushort *)buff_ptr[ibo_index]; 
+    const Vertex   * vbo = reinterpret_cast<const Vertex *>( buff_ptr[vbo_index] );
+    const GLushort * ibo = reinterpret_cast<const GLushort *>( buff_ptr[ibo_index] ); 
 
     // draw each triangle, substituting bogus colors for textures for now
     //
@@ -660,7 +660,7 @@ void DrawElements( GLenum mode, GLsizei count, GLenum type, const GLvoid * indic
             for( int j = 0; j < 3; j++, ibo++ ) 
             {
                 GLushort vi = *ibo;  
-                Vertex * v = &vbo[vi];
+                const Vertex * v = &vbo[vi];
                 int texid = v->texid;
                 float r = float( (texid >> 16) & 0xff ) / 255.0f;
                 float g = float( (texid >>  8) & 0xff ) / 255.0f;

@@ -145,7 +145,7 @@ public:
             for( int i = 0; i <= old_mask; i++, oe++ )
             {
                 if ( oe->id != -1 ) {
-                    Entry * e = this->set( oe->id, recursion+1 );
+                    e = this->set( oe->id, recursion+1 );
                     e->kind = oe->kind;
                     e->u = oe->u;
                 }

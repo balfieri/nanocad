@@ -235,7 +235,7 @@ Box::Box( Entity * parent, World * world, bool for_outer,
 
     for( int i = 0; i < 24; i++ ) 
     {
-        Vertex * v = &impl->vertex[i];
+        v = &impl->vertex[i];
         if ( i == 0 ) dprintf( "Box: x=%f y=%f z=%f w=%f h=%f d=%f\n", x, y, z, w, h, d );
         dprintf( "    vertex[%d] = [%f, %f, %f]\n", i, v->position[X], v->position[Y], v->position[Z] );
     }

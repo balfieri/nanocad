@@ -93,7 +93,7 @@ Rectangle::Rectangle( Entity * parent, World * world,
 
     for( int i = 0; i < 4; i++ ) 
     {
-        Vertex * v = &impl->vertex[i];
+        v = &impl->vertex[i];
         if ( i == 0 ) dprintf( "Rectangle: x=%f y=%f w=%f h=%f\n", x, y, w, h );
         dprintf( "    vertex[%d] = [%f, %f]\n", i, v->position[X], v->position[Y] );
     }
