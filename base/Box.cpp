@@ -81,7 +81,7 @@ Box::Box( Entity * parent, World * world, bool for_outer,
     //     Second triangle is: 3 1 0
     //-----------------------------------------------------
     impl->for_outer = for_outer;
-    impl->other = 0;
+    impl->other = nullptr;
 
     const int X = 0;
     const int Y = 1;
@@ -245,7 +245,7 @@ Box::~Box()
 {
     this->geom_remove(); 
     delete impl;
-    impl = 0;
+    impl = nullptr;
 }
 
 void Box::texid_set( int texid_top, int texid_sides, int texid_bottom )

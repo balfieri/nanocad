@@ -122,8 +122,8 @@ List::~List( void )
     // No reference counts, just delete the apparatus.
     //---------------------------------------
     delete impl->entries;
-    impl->entries = NULL;
-    impl = NULL;
+    impl->entries = nullptr;
+    impl = nullptr;
 }
 
 //---------------------------------------
@@ -149,7 +149,7 @@ bool List::exists( int i )
 bool List::defined( int i )
 {
     Entry * e = impl->get( i );
-    return e != NULL && e->kind != UNDEF;
+    return e != nullptr && e->kind != UNDEF;
 }
 
 //---------------------------------------
@@ -158,7 +158,7 @@ bool List::defined( int i )
 nKind List::kind( int i )
 {
     Entry * e = impl->get( i );
-    return (e == NULL) ? UNDEF : e->kind; 
+    return (e == nullptr) ? UNDEF : e->kind; 
 }
 
 //---------------------------------------

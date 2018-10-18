@@ -110,7 +110,7 @@ World::World( Config * config, Sys * sys, float w, float h, float d )
     //------------------------------------------------------------
     // No batches yet.
     //------------------------------------------------------------
-    impl->batch = 0;
+    impl->batch = nullptr;
     impl->batch_alloc = 0;
     impl->batch_used = 0;
 
@@ -127,7 +127,7 @@ World::~World()
     //------------------------------------------------------------
     // Delete all batches
     //------------------------------------------------------------
-    impl = 0;
+    impl = nullptr;
 }
 
 Config * World::config_get( void )
@@ -313,7 +313,7 @@ void World::geom_remove( int hdl )
     int batch_index = hdl >> 16;
     dassert( batch_index < impl->batch_used );
     Batch * batch = impl->batch[batch_index];
-    dassert( batch != 0 );
+    dassert( batch != nullptr );
 
     int geom_index  = hdl & 0xffff;
     dprintf( "remove: bi=%d gi=%d\n", batch_index, geom_index );

@@ -44,18 +44,18 @@ Entity::Entity( Entity * parent, World * world, float x, float y, float z, float
 
     impl->world = world;
     impl->geom_hdl = -1;
-    impl->vertex = 0;
+    impl->vertex = nullptr;
     impl->vertex_cnt = 0;
-    impl->triangle = 0;
+    impl->triangle = nullptr;
     impl->triangle_cnt = 0;
     impl->parent = parent;
-    if ( parent != 0 ) {
+    if ( parent != nullptr ) {
         impl->sibling = parent->impl->child_first;
         impl->parent->impl->child_first = this;
     } else {
-        impl->sibling = 0;
+        impl->sibling = nullptr;
     }
-    impl->child_first = 0;
+    impl->child_first = nullptr;
     impl->x = x;
     impl->y = y;
     impl->z = z;
@@ -68,18 +68,18 @@ Entity::~Entity()
 {
     // children first
     //
-    Entity * sibling = 0;
-    for( Entity * c = impl->child_first; c != 0; c = sibling )
+    Entity * sibling = nullptr;
+    for( Entity * c = impl->child_first; c != nullptr; c = sibling )
     {
         sibling = c->impl->sibling;
         printf( "~Entity() child\n" );
         delete c;
     }
-    dassert( impl->child_first == 0 );
+    dassert( impl->child_first == nullptr );
 
     // remove this node from parent
     //
-    if ( impl->parent != 0 ) {
+    if ( impl->parent != nullptr ) {
         Entity ** child_ptr_ptr;
         Entity *  child_ptr;
         for( child_ptr_ptr = &impl->parent->impl->child_first, child_ptr = *child_ptr_ptr; 
@@ -89,8 +89,8 @@ Entity::~Entity()
         }
         *child_ptr_ptr = impl->sibling;
         printf( "~Entity() remove from parent\n" );
-        impl->sibling = 0;
-        impl->parent = 0;
+        impl->sibling = nullptr;
+        impl->parent = nullptr;
     }
 
     // now we can delete this node
@@ -98,7 +98,7 @@ Entity::~Entity()
     printf( "~Entity() remove geom\n" );
     this->geom_remove();
     delete impl;
-    impl = 0;
+    impl = nullptr;
 }
 
 void Entity::xyz_get( float * x, float * y, float * z )
@@ -172,9 +172,9 @@ void Entity::geom_remove( void )
 {
     if ( impl->geom_hdl != -1 ) {
         impl->world->geom_remove( impl->geom_hdl );
-        impl->vertex = 0;
+        impl->vertex = nullptr;
         impl->vertex_cnt = 0;
-        impl->triangle = 0;
+        impl->triangle = nullptr;
         impl->triangle_cnt = 0;
         impl->geom_hdl = 0;
     }
@@ -190,7 +190,7 @@ void Entity::visible_set( bool visible )
     if ( impl->geom_hdl != -1 ) {
         impl->world->geom_visible_set( impl->geom_hdl, visible );
     }
-    for( Entity * child = this->child_first(); child != 0; child = child->sibling() )
+    for( Entity * child = this->child_first(); child != nullptr; child = child->sibling() )
     {
         child->visible_set( visible );
     }
@@ -206,7 +206,7 @@ void Entity::changes_set( int changes )
     if ( impl->geom_hdl != -1 ) {
         impl->world->geom_changes_set( impl->geom_hdl, changes );
     }
-    for( Entity * child = this->child_first(); child != 0; child = child->sibling() )
+    for( Entity * child = this->child_first(); child != nullptr; child = child->sibling() )
     {
         child->changes_set( changes );
     }
@@ -263,7 +263,7 @@ Entity * Entity::sibling( void )
 void Entity::children_print( void )
 {
     printf ( "Children:\n" );
-    for( Entity * child = this->child_first(); child != 0; child = child->sibling() )
+    for( Entity * child = this->child_first(); child != nullptr; child = child->sibling() )
     {
         printf( "    child x=%f y=%f z=%f\n", child->impl->x, child->impl->y, child->impl->z );
     }
@@ -280,7 +280,7 @@ void Entity::input( World*world,
                     bool  key_press,
                     int   key )
 {
-    for( Entity * c = impl->child_first; c != 0; c = c->impl->sibling ) 
+    for( Entity * c = impl->child_first; c != nullptr; c = c->impl->sibling ) 
     {
         if ( c->visible_get() ) {
             c->input( world, 

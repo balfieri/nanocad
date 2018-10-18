@@ -57,7 +57,7 @@ void DrawElements( GLenum mode, GLsizei count, GLenum type, const GLvoid * indic
 
 #endif
 
-Sys * sys = 0;
+Sys * sys = nullptr;
 
 class Batch 
 {
@@ -216,13 +216,13 @@ Sys::Sys( Config * config )
     sys = this;
     sys->impl = impl;
     impl->config = config;
-    impl->world = 0;
+    impl->world = nullptr;
 
     //--------------------------------------------------------
     // Initialize GLUT and create the window.
     //--------------------------------------------------------
     int argc = 0;
-    char ** argv = 0;
+    char ** argv = nullptr;
     glutInit( &argc, argv ); 
 
     glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH | GLUT_RGBA | GLUT_MULTISAMPLE );
@@ -248,7 +248,7 @@ Sys::Sys( Config * config )
     //------------------------------------------------------------
     // No batches yet.
     //------------------------------------------------------------
-    impl->batch = 0;
+    impl->batch = nullptr;
     impl->batch_alloc = 0;
     impl->batch_used = 0;
 
@@ -282,7 +282,7 @@ Sys::Sys( Config * config )
         sprintf( cmd, "ffmpeg -r 60 -f rawvideo -pix_fmt rgba -s %dx%d -i - "
                       "-threads 0 -preset fast -y -crf 21 -vf vflip capture.mp4", impl->win_w, impl->win_h );
         impl->capture_stream = popen( cmd, "wb" );  // pipe in binary write mode
-        dassert( impl->capture_stream != NULL && "could not open pipe to ffmpeg" );
+        dassert( impl->capture_stream != nullptr && "could not open pipe to ffmpeg" );
         impl->capture_buff = new unsigned int[ impl->win_w * impl->win_h ];
     }
 }
@@ -505,7 +505,7 @@ void Sys::draw_text2d( Text2D * text, int text_cnt )
     float y_scale_factor = x_scale_factor * 1.2f;
     float z_scale_factor = x_scale_factor;
     glScalef( x_scale_factor, y_scale_factor, z_scale_factor );
-    if ( font == 0 ) {
+    if ( font == nullptr ) {
         glLineWidth( impl->config->win_overlay_text_line_width );
     } else {
         glDisable( GL_LIGHTING );
@@ -523,12 +523,12 @@ void Sys::draw_text2d( Text2D * text, int text_cnt )
         float y = float(text[i].y) / y_scale_factor;
         float w = float(impl->config->win_overlay_text_width) / x_scale_factor;
         int len = strlen( text[i].str );
-        if ( font != 0 ) {
+        if ( font != nullptr ) {
             glRasterPos2i( int( x ), int( y ) );
         }
         for( int j = 0; j < len; j++ )
         {
-            if ( font != 0 ) {
+            if ( font != nullptr ) {
                 glutBitmapCharacter( font, text[i].str[j] ); 
             } else {
                 glPushMatrix();
@@ -585,7 +585,7 @@ void Sys::toggle_fullscreen( void )
 //
 #define BUFF_MAX 1024
 static GLuint           buff_cnt = 0;
-static const GLvoid *   buff_ptr[BUFF_MAX] = {0};
+static const GLvoid *   buff_ptr[BUFF_MAX] = {nullptr};
 static GLuint           buff_used[BUFF_MAX] = {0};
 static GLuint           buff_bound[2] = {BUFF_MAX};
 

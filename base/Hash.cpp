@@ -121,7 +121,7 @@ public:
             printf( "ERROR: wanted (%s) id=%d kind=%d, did not find entry\n", Hash::id_to_str( id ), id, kind );
             my_exit( 1 );
         }
-        return NULL;
+        return nullptr;
     }
 
     Entry * set( int id, int recursion = 0 )
@@ -209,8 +209,8 @@ Hash::~Hash( void )
     // No reference counts, just delete the apparatus.
     //---------------------------------------
     delete impl->entries;
-    impl->entries = NULL;
-    impl = NULL;
+    impl->entries = nullptr;
+    impl = nullptr;
 }
 
 //---------------------------------------
@@ -218,7 +218,7 @@ Hash::~Hash( void )
 //---------------------------------------
 bool Hash::exists( int id )
 {
-    return impl->get( id ) != NULL;
+    return impl->get( id ) != nullptr;
 }
 
 //---------------------------------------
@@ -227,7 +227,7 @@ bool Hash::exists( int id )
 bool Hash::defined( int id )
 {
     Entry * e = impl->get( id );
-    return e != NULL && e->kind != UNDEF;
+    return e != nullptr && e->kind != UNDEF;
 }
 
 //---------------------------------------
@@ -236,7 +236,7 @@ bool Hash::defined( int id )
 nKind Hash::kind( int id )
 {
     Entry * e = impl->get( id );
-    return (e == NULL) ? UNDEF : e->kind; 
+    return (e == nullptr) ? UNDEF : e->kind; 
 }
 
 //---------------------------------------
@@ -245,7 +245,7 @@ nKind Hash::kind( int id )
 Hash& Hash::remove( int id )
 {
     Entry * e = impl->get( id );
-    dassert( e != 0 );
+    dassert( e != nullptr );
     e->id = -1;
     impl->count--;
     return *this;
@@ -313,7 +313,7 @@ nInt Hash::i( int id )
 nFlt Hash::f( int id )
 {
     Entry * e = impl->get( id );
-    dassert( e != NULL );
+    dassert( e != nullptr );
     if ( e->kind == FLT ) {
         return e->u.f;
     } else {

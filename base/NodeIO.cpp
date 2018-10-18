@@ -103,7 +103,7 @@ NodeIO::~NodeIO()
 {
     gzclose( impl->file_hdl );
     delete impl;
-    this->impl = 0;
+    this->impl = nullptr;
 }
 
 //----------------------------------------------------------------
@@ -406,7 +406,7 @@ bool NodeIO::Impl::getline( void )
     this->line[0] = '\0';
     this->line_pos = 0;
     char * ptr = gzgets( this->file_hdl, this->line, LINE_LEN );
-    if ( ptr == 0 ) return false;
+    if ( ptr == nullptr ) return false;
 
     int i = strlen( this->line ) - 1;
     if ( i >= 0 && this->line[i] == '\n' ) {

@@ -61,7 +61,7 @@ Config::Config( int argc, const char * argv[] )
     this->win_overlay_text_height = 42;
     this->win_overlay_text_width = 27;
     this->win_overlay_text_line_width = 3.0f;
-    this->win_overlay_text_font = 0;
+    this->win_overlay_text_font = nullptr;
     this->win_view_print = false;
 
     // hard code texids for now

@@ -103,7 +103,7 @@ Rectangle::~Rectangle()
 {
     this->geom_remove(); 
     delete impl;
-    impl = 0;
+    impl = nullptr;
 }
 
 void Rectangle::texid_set( int texid ) 

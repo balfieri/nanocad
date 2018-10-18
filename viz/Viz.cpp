@@ -117,7 +117,7 @@ Viz::Viz( ConfigViz * config, Sys * sys )
     impl->viz_entities = new Entity*[len];
     for( int i = 0; i < len; i++ )
     {
-        impl->viz_entities[i] = 0;
+        impl->viz_entities[i] = nullptr;
     }
     //printf( "Setting up shapes for %d viz_list entries...\n", len );
     for( int i = 0; i < len; i++ ) 
@@ -170,9 +170,9 @@ Viz::Viz( ConfigViz * config, Sys * sys )
 Viz::~Viz()
 {
     delete impl->viz_nodeio;
-    impl->viz_nodeio = 0;
+    impl->viz_nodeio = nullptr;
     delete impl;
-    impl = 0;
+    impl = nullptr;
 }
 
 //----------------------------------------------------------------
