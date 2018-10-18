@@ -1,7 +1,7 @@
 DEPS = \
        Makefile \
        ../make/common.mk \
-       ../base/*.o \
+       ../base/*.h \
        *.h
 
 OBJS = \

@@ -42,7 +42,7 @@ else
 ifeq ($(OS), Darwin)
 
 CC = clang
-LD = clang
+LD = clang -w
 CFLAGS += -Wno-unknown-warning-option -Wno-unused-command-line-argument -Wno-unused-parameter -Wno-shift-count-negative -DEMULATE_BUFFERS -DGLUT_ONLY  -I../base -I/usr/include/malloc/ -DNO_MALLOC_H -DUSE_POSIX_MEMALIGN -Wno-deprecated-declarations
 LFLAGS = -g -lm -lz -lstdc++ -framework OpenGl -framework GLUT -framework CoreFoundation -framework IOKit -framework Carbon -framework CoreGraphics -framework Cocoa
 DRUN   = lldb -s .gdbinit
