@@ -53,11 +53,11 @@ DRUN   = lldb -s .gdbinit
 else
 ifneq (,$(findstring CYGWIN, $(OS)))
 
-GLUT_DIR = /usr/src/freeglut-2.6.0
-LD     = /bin/sh --tag=CC --mode=link gcc -all-static ${GLUT_DIR}/src/libglut.la
+#GLUT_DIR = /usr/src/freeglut-2.6.0
+#LD     = /bin/sh --mode=link gcc -all-static ${GLUT_DIR}/src/libglut.la
 CFLAGS = -Wall -Werror -pedantic -O2 -g -DEMULATE_BUFFERS -I../base -I${GLUT_DIR}/include
 LFLAGS = -g -lm -lz -lstdc++ -lglu32
-DRUN   = /bin/sh /usr/src/freeglut-2.6.0/libtool --mode=execute gdb --init-command=.gdbinit $(PROG) 
+#DRUN   = /bin/sh /usr/src/freeglut-2.6.0/libtool --mode=execute gdb --init-command=.gdbinit $(PROG) 
 
 else
 $(error Unknown O/S: $(OS))
