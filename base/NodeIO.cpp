@@ -35,6 +35,7 @@
 // Internal Implementation Structure
 //--------------------------------------------
 const int LINE_LEN = 1024;
+const int MSG_LEN  = 2*LINE_LEN;
 
 enum 
 {
@@ -86,7 +87,7 @@ NodeIO::NodeIO( const char * file_path )
 
     impl->file_hdl = gzopen( file_path, "r" );
     if ( !impl->file_hdl ) {
-         char msg[256];
+         char msg[MSG_LEN];
          sprintf( msg, "could not open file %s for reading, errno=%d", file_path, errno );
          error( msg );
     }
@@ -186,7 +187,7 @@ Hash * NodeIO::Impl::hash_parse( void )
                 hash->f( name_id, this->token_flt );
                 this->token_expect( TOK_FLT );
             } else {
-                char msg[256];
+                char msg[MSG_LEN];
                 sprintf( msg, "hash field expression is unexpected: %s", this->line );
                 error( msg );
             }
@@ -278,7 +279,7 @@ int NodeIO::Impl::token_peek( void )
                 {
                     char ch = this->line[this->line_pos++];
                     if ( ch == '\0' ) {
-                        char msg[256];
+                        char msg[MSG_LEN];
                         sprintf( msg, "string literal may not span a line: %s", this->line ); 
                         error( msg );
                     } 
@@ -365,7 +366,7 @@ int NodeIO::Impl::token_peek( void )
                     }
                     return this->token;
                 } else {
-                    char msg[256];
+                    char msg[MSG_LEN];
                     sprintf( msg, "unexpected char '%c' at index %d: %s", ch0, this->line_pos, this->line ); 
                     error( msg );
                     return TOK_NONE;
@@ -393,7 +394,7 @@ void NodeIO::Impl::token_expect( int tok )
     if ( this->token_peek_eq( tok ) ) {
         this->token = TOK_NONE;
     } else {
-        char msg[256];
+        char msg[MSG_LEN];
         sprintf( msg, "expected token %d, got %d: %s", tok, this->token, this->line );
         error( msg );
     }
