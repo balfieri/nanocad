@@ -1,1 +1,1 @@
-/home/tools/doxy*/build/bin/doxygen doxy.config
+doxygen doxy.config
