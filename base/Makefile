@@ -18,6 +18,6 @@ OBJS = \
 LIBS = \
 
 PROGS = \
-	test_node.exe \
+	_test_node.exe \
 
 include ../make/common.mk
