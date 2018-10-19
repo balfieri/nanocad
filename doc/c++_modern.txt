@@ -1,0 +1,263 @@
+                                                Migration to Modern C++
+                                                -----------------------
+
+nanocad has not been migrated to modern C++.  In cases where performance matters (most), many of these
+features, particularly smart pointers, are undesirable.  In most others, it ends up generating
+the same machine code.
+
+
+stricter warnings
+-----------------
+
+I have enabled even stricter compiler warnings.  Here are the things that need to get redone going forward
+(I fixed all the existing ones).
+
+Rather than doing this kind of old-style static type casting::
+
+(uint64_t)foo 
+
+Say:
+
+uint64_t( foo ).
+
+If the thing in parens is more complicated such as:
+
+(long double)foo
+
+Say:
+
+static_cast<long double>( foo )
+
+If you are doing a more aggressive cast from one pointer type to another, use reinterpret_cast:
+
+reinterpret_cast<double *>( other_ptr )
+
+
+enum class (scoped enums)
+-------------------------
+
+Rather than letting enums pollute the namespace:
+
+typedef enum 
+{
+    FRED, 
+    WILMA,
+} flinstone_t;
+
+
+Say:
+
+enum class FLINSTONE
+{
+    FRED, 
+    WILMA,
+};
+
+Then you must say FLINSTONE::FRED to refer to that enum.  This prevents namespace pollution.
+
+
+using
+-----
+
+Rather than:
+
+typedef double real_t;
+
+The new way is to say:
+
+using real_t = double;
+
+It amounts to the same thing.  real_t is a synonym for double or whatever is to the right of the equals.
+
+
+namespace
+---------
+
+We should enclose all of our classes in a namespace in the .h files, which ensures there are no
+namespace conflicts with our declarations (similar to the way std works) and anything else the
+user may have:
+
+
+namespace NanoCad 
+{
+    class Box
+    {
+        ...
+    };
+}
+
+
+Then .cpp files can avoid having to say NanoCad::Box everywhere by
+adding this to the top of every .cpp file:
+
+using namespace NanoCad;            // this unwraps the declarations inside NanoCad
+
+BTW, std is a similar namespace.  I prefer not to say 'using namespace std', but some people do.
+
+
+Initializer Lists
+-----------------
+
+There's a preferred syntax for curly-braces initializers.  It involves not including the '='.  So, for example:
+
+class Goo
+{
+public:
+    int   a;
+    int   b;
+    float c;
+};
+
+Goo goo{ 3, 4, 5.6 };
+
+That's not terribly interesting, but the syntax can be used in other cases so is consistent.  A more interesting
+example is passing dims[] to an Array class constructor, for example.  If the second and third arguments of Array are changed
+from a raw int array to an initializer_list<int>, then the constructor can be invoked as follows, similar to
+the way we did it in Javascript:
+
+        Array( nullptr, { 2, 4, 6 } )
+
+The constructor can query dims.size() to get the dim_cnt and then copy the dim_cnt
+int values, dims[0] etc., into the impl->dims[] array.  
+
+The syntax can also be used for array init:
+
+int a[]{ 5, 6, 7, 8 };
+
+So there's one consistent initializer list syntax for various cases.
+
+
+auto
+----
+
+Modern C++ prefers the use of auto to auto-determine the type of a local variable.  This is similar to 
+'let' in Javascript.  You can make it read-only using "const auto".   I don't have a preference either
+way to whether we explicitly name the type or use auto.  I'll probably start using auto more.
+
+
+Smart Pointers
+--------------
+
+This topic is a little confusing.
+
+The goal with smart pointers is to stop using new and delete on raw pointers, and to
+let C++ automatically delete objects that have no references.  I.e., to mimick
+the garbage collection in Java and Javascript.
+
+There are two types of smart pointers that we care about, std::unique_ptr and std::shared_ptr.
+
+std::unique_ptr is preferred.  It ensures that there is at most one pointer
+to an object.  One place to use std::unique_ptr is for the Pimpl technique where there really should
+be only one outstanding pointer to the Impl object.  For example:
+
+class Foo
+{
+public:
+    ...
+
+private:
+    class Impl;
+    std::unique_ptr<Impl> impl;
+};
+
+Rather than using new, the preferred way to allocate is using std::make_unique as in the following
+constructor for the Pimpl technique:
+
+Foo::Foo( void )
+{
+    impl = std::make_unique<Impl>(); 
+}
+
+What's anal - in a good way - about std::unique_ptr is that, if you assign the pointer to another std::unique_ptr variable, 
+it transfers ownership.   In other words, the std::unique_ptr from which it came is assigned to nullptr
+after the pointer is copied.  Thus you can't have more than one non-null uniqe_ptr to the object.  
+That often makes perfect sense for a Pimpl, but let's take this a little further.
+
+Rather than saying "new Foo()" to allocate a Foo, let's just allocate it
+on the stack in a local variable as follows.  This is another modern C++ thing, to allocate
+things more on the stack.  The advantages will be obvious in a second:
+
+Foo foo();      // or pass arguments inside the parens for the constructor
+
+This will allocate the Foo on the stack - which is just a std::unique_ptr - and call the constructor for Foo.  
+That will assign the impl std::unique_ptr to the dynamically allocated Impl.
+When the owning function returns, foo will be deallocated automatically like any other local variable.
+If Foo has no destructor function, then the impl std::unique_ptr will *still* get deallocated automatically,
+i.e., freeing the Impl structure.
+
+And that deallocation happens even if the function ends as a result of an exception.
+So this is a great way to ensure that objects get deleted.  Using "new Foo" would not allow this
+to happen.
+
+What if you really want to allow multiple pointers to point to the same object?  
+That is normal if you have multiple data structures that point to the same object.
+In this case, you'd use std::shared_ptr rather than std::unique_ptr, and std::make_shared rather than std::make_unique.
+The std::shared_ptr will keep a reference count on the allocated object and will deallocate the object when
+the reference count goes to zero.  So std::shared_ptr has a little more overhead than std::unique_ptr.
+When in doubt, start with std::unique_ptr and see if ownership transfers become unworkable.
+
+Naturally, these smart pointers can be used to allocate arrays, too:
+
+auto array_ptr = make_unique<int[25]>();                // type will be std::unique_ptr<int[25]>
+
+One other nice feature of smart pointers is that their initial value is always nullptr.
+So just declaring a std::unique_ptr initializes it to nullptr, which could catch some bugs.
+
+If we're no longer supposed to use raw pointers, then what if you want to pass object foo to 
+a method?  That's where references come in and are discussed next.
+
+
+References
+----------
+
+References in C++ are much different than what they are in Java or Javascript.  In those other languages, a reference
+is a 64-bit pointer to some class object structure.  A reference in those languages is a value that consumes space of its own.
+Passing a reference to a method copies the reference by value.
+
+In C++, a reference occupies no space.  A reference merely *renames* an existing value.
+
+It's best to use a reference as a method parameter or local variable, particularly for class objects.  For example:
+
+void Foo:some_method( double& d )
+{
+}
+
+In this case, the ampersand denotes that the double value is passed to the method by name, not by value.  
+d refers to the double value that is passed in.  So changing d changes that value in the caller.
+
+You can also use a reference to rename a more complicated value as a local name, even as a const reference, for example:
+
+const double& d = x->y->z->val;         // d renames x->y->z-val and is read-only
+
+Now when I read the value of d, I'm really using x->y->z->val.  
+
+A reference can come in handy with std::unique_ptr because, if you want to pass a std::unique_ptr to a
+function, passing it by reference does not cause any assignment to occur, so ownership does not transfer 
+to the function.  It would suck to come back from the function and find that our std::unique_ptr is now nullptr.
+As a reference, the function parameter merely *renames* the single std::unique_ptr in the caller.
+
+If the std::unique_ptr is declared in the caller's stack frame, then this is pretty darn safe because
+we know that the std::unique_ptr can't go away during a call to a subordinate function.
+And not using pointers means that there's no chance of getting a dangling pointer left around.
+
+References are also useful when a method needs to return multiple values.  You can simply pass
+the output variables by reference and assign them in the method.  The method does not allocate
+any additional space for them or perform copies to them.  
+
+References are implemented by C++ by passing 64-bit addresses.  So they are essentially
+implemented like pointers except are safer.
+
+You can make an auto reference like this:
+
+const auto& d = x->y->z->val;           // will figure out that d is type double
+
+
+Finally, if you pass a reference to a method, you can pass that reference parameter by 
+reference to another method.  So if method A() calls B() and B() calls C(), if A() passes a value v
+by reference to B() and B() passes it by reference to C(), once inside C(), C() will be referring to the
+original v in A().  No copies are made.  Of course, as in other cases you can't pass a const rereference
+to a non-const reference.
+
+One thing to avoid with references is allocating a value on a stack, then storing a reference to that
+value in some global data structure, then returning from the function.  At that point, the reference
+is pointing to non-existent variables.  Always pass references down to functions, never back up the chain.
