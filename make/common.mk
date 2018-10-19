@@ -32,7 +32,7 @@ DRUN    = gdb -tui
 ifeq ($(OS), Linux)
 
 GLUT_DIR = /home/utils/freeglut-2.8.1
-CFLAGS = -Wall -Werror -pedantic -Wno-long-long -Wno-deprecated -O2 -g -DEMULATE_BUFFERS -I../base -I${GLUT_DIR}/include
+CFLAGS = -Wall -Werror -pedantic -Wno-long-long -Wno-deprecated -O3 -g -DEMULATE_BUFFERS -I../base -I${GLUT_DIR}/include
 LFLAGS = -g -lm -lz -lstdc++ -lGL -lglut -lGLU -L${GLUT_DIR}/lib
 
 ############################
@@ -53,11 +53,8 @@ DRUN   = lldb -s .gdbinit
 else
 ifneq (,$(findstring CYGWIN, $(OS)))
 
-#GLUT_DIR = /usr/src/freeglut-2.6.0
-#LD     = /bin/sh --mode=link gcc -all-static ${GLUT_DIR}/src/libglut.la
-CFLAGS = -Wall -Werror -pedantic -O2 -g -DEMULATE_BUFFERS -I../base -I${GLUT_DIR}/include
-LFLAGS = -g -lm -lz -lstdc++ -lglu32
-#DRUN   = /bin/sh /usr/src/freeglut-2.6.0/libtool --mode=execute gdb --init-command=.gdbinit $(PROG) 
+CFLAGS = -Wall -Werror -pedantic -O3 -g -DEMULATE_BUFFERS -I../base
+LFLAGS = -g -lm -lz -lstdc++ -lGL -lglu32 -lglut
 
 else
 $(error Unknown O/S: $(OS))
