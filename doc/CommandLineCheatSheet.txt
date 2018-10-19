@@ -112,7 +112,7 @@ GDB Debugger Commands
 ---------------------
 I recommend prints for most debugging, but gdb can be very useful for debugging exceptions 
 such as segmentation violations (bad pointer de-referencing).  macOS uses lldb which has
-a lot of the same commands, but has some differences
+a lot of the same commands, but has some differences.
 
 gdb -tui        - run gui version with source viewing (highly recommended)
 R               — (re)start program
