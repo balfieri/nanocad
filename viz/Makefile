@@ -12,6 +12,6 @@ LIBS = \
        ../base/[A-Z]*.o \
 
 PROGS = \
-       vizmain.exe \
+       _viz.exe \
 
 include ../make/common.mk
