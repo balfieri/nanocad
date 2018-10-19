@@ -1,0 +1,282 @@
+\hypertarget{classWorld}{}\section{World Class Reference}
+\label{classWorld}\index{World@{World}}
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+Inheritance diagram for World\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWorld}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWorld_ab50208fdc8cf13d49174777ed262f507}{World}} (\mbox{\hyperlink{classConfig}{Config}} $\ast$config, \mbox{\hyperlink{classSys}{Sys}} $\ast$sys, float w, float h, float d)
+\item 
+virtual \mbox{\hyperlink{classWorld_a9ce9875f5e35e293661857e4a2c1d2e4}{$\sim$\+World}} ()
+\item 
+\mbox{\hyperlink{classConfig}{Config}} $\ast$ \mbox{\hyperlink{classWorld_a4a9bea32a941252d8148a3c383c42562}{config\+\_\+get}} (void)
+\item 
+void \mbox{\hyperlink{classWorld_a407ac00a586fc5ee94229c254c114f93}{view\+\_\+get}} (float $\ast$fov\+\_\+y, float $\ast$near\+\_\+z, float $\ast$far\+\_\+z, float eye\mbox{[}$\,$\mbox{]}, float view\mbox{[}$\,$\mbox{]}, float up\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{classWorld_a5fc20fdaf09120411c98d7a862be604a}{view\+\_\+set}} (float fov\+\_\+y, float near\+\_\+z, float far\+\_\+z, float eye\mbox{[}$\,$\mbox{]}, float view\mbox{[}$\,$\mbox{]}, float up\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{classWorld_acc924235d8d421ecd32d8c7b813b486e}{geom\+\_\+add}} (\mbox{\hyperlink{classVertex}{Vertex}} $\ast$vertex, int vertex\+\_\+cnt, \mbox{\hyperlink{classTriangle}{Triangle}} $\ast$triangle, int triangle\+\_\+cnt, int changes=\mbox{\hyperlink{World_8h_adf764cbdea00d65edcd07bb9953ad2b7afd62cb9ff74dd66a2597e9c31e205cba}{G\+E\+O\+M\+\_\+\+C\+H\+A\+N\+G\+E\+S\+\_\+\+R\+A\+R\+E\+LY}})
+\item 
+void \mbox{\hyperlink{classWorld_ac3b4194ef3dcc248f00070c8c9d9f27d}{geom\+\_\+changed}} (int hdl)
+\item 
+void \mbox{\hyperlink{classWorld_a2db9c56bf981177a1cb035178caa13e4}{geom\+\_\+remove}} (int hdl)
+\item 
+bool \mbox{\hyperlink{classWorld_ae7d794357e0c615948ea1b323f1cc0b7}{geom\+\_\+visible\+\_\+get}} (int hdl)
+\item 
+void \mbox{\hyperlink{classWorld_ac59b8559fb117042c25a2f5da0547e33}{geom\+\_\+visible\+\_\+set}} (int hdl, bool visible)
+\item 
+int \mbox{\hyperlink{classWorld_ad5feb02e4ca180496f87df564a2e16ab}{geom\+\_\+changes\+\_\+get}} (int hdl)
+\item 
+void \mbox{\hyperlink{classWorld_a1c541fb161f7320e9e2c7dedf38617fc}{geom\+\_\+changes\+\_\+set}} (int hdl, int changes)
+\item 
+void \mbox{\hyperlink{classWorld_a1da19e0ccde7acfa708cf1f0054dcb3c}{text2d\+\_\+set}} (int x, int y, int h, int rgb, int str\+\_\+cnt, const char $\ast$str\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classWorld_ab14c775fe092d0e2fc89bcaa5fe0a165}{vec\+\_\+length}} (const float A\mbox{[}$\,$\mbox{]}, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_a932702308039cbf8d98f69ffbb3748f9}{vec\+\_\+assign}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_af1d0bfb9010d194010fb6abc505d40cf}{vec\+\_\+normalize}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_adcfaf0158333d4f398eabd94e033de37}{vec\+\_\+add}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, const float B\mbox{[}$\,$\mbox{]}, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_aae347e6c500ccb406b5344c0e02c4c83}{vec\+\_\+sub}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, const float B\mbox{[}$\,$\mbox{]}, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_a70a8d815c805c5e20d5374384ae3d5c2}{vec\+\_\+scale}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, const float B\mbox{[}$\,$\mbox{]}, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_ab78807c00ae11c6ddf732a2d1b5ab89d}{vec\+\_\+scale}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, const float c, int dims=3)
+\item 
+static void \mbox{\hyperlink{classWorld_a9b029d34daf647dee298b726de427f94}{vec\+\_\+cross}} (float R\mbox{[}$\,$\mbox{]}, const float A\mbox{[}$\,$\mbox{]}, const float B\mbox{[}$\,$\mbox{]}, int dims=3)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classWorld_a31a7f317338492f86ad62111c8869a98}{frame\+\_\+begin}} (float wall\+\_\+clock\+\_\+ms)
+\item 
+virtual void \mbox{\hyperlink{classWorld_aefc26f5ed9efe0753c3120009f608b89}{resize\+\_\+event}} (double w, double h)
+\item 
+virtual void \mbox{\hyperlink{classWorld_ae9da24cdb1ba2803d48cf8d46c851c4b}{motion\+\_\+event}} (double x, double y)
+\item 
+virtual void \mbox{\hyperlink{classWorld_a46ecee55e2359c32f14c0d8d084dad73}{key\+\_\+event}} (int key, int action, int modifiers)
+\item 
+virtual void \mbox{\hyperlink{classWorld_af3d69f01929d97f989d1887f269f9c56}{scroll\+\_\+event}} (int scroll, int action, int modifiers)
+\item 
+virtual void \mbox{\hyperlink{classWorld_adea3d936b96e1bef8eb07b6462cab236}{button\+\_\+event}} (int button, int action, int modifiers)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classWorld_a3cda1ee24b48e8d3c85b7e253f49cfb7}{Sys}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWorld_ab50208fdc8cf13d49174777ed262f507}\label{classWorld_ab50208fdc8cf13d49174777ed262f507}} 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\subsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classConfig}{Config}} $\ast$}]{config,  }\item[{\mbox{\hyperlink{classSys}{Sys}} $\ast$}]{sys,  }\item[{float}]{w,  }\item[{float}]{h,  }\item[{float}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_a9ce9875f5e35e293661857e4a2c1d2e4}\label{classWorld_a9ce9875f5e35e293661857e4a2c1d2e4}} 
+\index{World@{World}!````~World@{$\sim$\+World}}
+\index{````~World@{$\sim$\+World}!World@{World}}
+\subsubsection{\texorpdfstring{$\sim$\+World()}{~World()}}
+{\footnotesize\ttfamily virtual World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorld_adea3d936b96e1bef8eb07b6462cab236}\label{classWorld_adea3d936b96e1bef8eb07b6462cab236}} 
+\index{World@{World}!button\+\_\+event@{button\+\_\+event}}
+\index{button\+\_\+event@{button\+\_\+event}!World@{World}}
+\subsubsection{\texorpdfstring{button\+\_\+event()}{button\_event()}}
+{\footnotesize\ttfamily virtual void World\+::button\+\_\+event (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{modifiers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classViz_aaf5e987b9e03579f26bf86256ff7dcfd}{Viz}}.
+
+\mbox{\Hypertarget{classWorld_a4a9bea32a941252d8148a3c383c42562}\label{classWorld_a4a9bea32a941252d8148a3c383c42562}} 
+\index{World@{World}!config\+\_\+get@{config\+\_\+get}}
+\index{config\+\_\+get@{config\+\_\+get}!World@{World}}
+\subsubsection{\texorpdfstring{config\+\_\+get()}{config\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classConfig}{Config}}$\ast$ World\+::config\+\_\+get (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_a31a7f317338492f86ad62111c8869a98}\label{classWorld_a31a7f317338492f86ad62111c8869a98}} 
+\index{World@{World}!frame\+\_\+begin@{frame\+\_\+begin}}
+\index{frame\+\_\+begin@{frame\+\_\+begin}!World@{World}}
+\subsubsection{\texorpdfstring{frame\+\_\+begin()}{frame\_begin()}}
+{\footnotesize\ttfamily virtual void World\+::frame\+\_\+begin (\begin{DoxyParamCaption}\item[{float}]{wall\+\_\+clock\+\_\+ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classViz_a29d2f5a0af409c50243da79ada86adad}{Viz}}.
+
+\mbox{\Hypertarget{classWorld_acc924235d8d421ecd32d8c7b813b486e}\label{classWorld_acc924235d8d421ecd32d8c7b813b486e}} 
+\index{World@{World}!geom\+\_\+add@{geom\+\_\+add}}
+\index{geom\+\_\+add@{geom\+\_\+add}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+add()}{geom\_add()}}
+{\footnotesize\ttfamily int World\+::geom\+\_\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}} $\ast$}]{vertex,  }\item[{int}]{vertex\+\_\+cnt,  }\item[{\mbox{\hyperlink{classTriangle}{Triangle}} $\ast$}]{triangle,  }\item[{int}]{triangle\+\_\+cnt,  }\item[{int}]{changes = {\ttfamily \mbox{\hyperlink{World_8h_adf764cbdea00d65edcd07bb9953ad2b7afd62cb9ff74dd66a2597e9c31e205cba}{G\+E\+O\+M\+\_\+\+C\+H\+A\+N\+G\+E\+S\+\_\+\+R\+A\+R\+E\+LY}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_ac3b4194ef3dcc248f00070c8c9d9f27d}\label{classWorld_ac3b4194ef3dcc248f00070c8c9d9f27d}} 
+\index{World@{World}!geom\+\_\+changed@{geom\+\_\+changed}}
+\index{geom\+\_\+changed@{geom\+\_\+changed}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+changed()}{geom\_changed()}}
+{\footnotesize\ttfamily void World\+::geom\+\_\+changed (\begin{DoxyParamCaption}\item[{int}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_ad5feb02e4ca180496f87df564a2e16ab}\label{classWorld_ad5feb02e4ca180496f87df564a2e16ab}} 
+\index{World@{World}!geom\+\_\+changes\+\_\+get@{geom\+\_\+changes\+\_\+get}}
+\index{geom\+\_\+changes\+\_\+get@{geom\+\_\+changes\+\_\+get}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+changes\+\_\+get()}{geom\_changes\_get()}}
+{\footnotesize\ttfamily int World\+::geom\+\_\+changes\+\_\+get (\begin{DoxyParamCaption}\item[{int}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_a1c541fb161f7320e9e2c7dedf38617fc}\label{classWorld_a1c541fb161f7320e9e2c7dedf38617fc}} 
+\index{World@{World}!geom\+\_\+changes\+\_\+set@{geom\+\_\+changes\+\_\+set}}
+\index{geom\+\_\+changes\+\_\+set@{geom\+\_\+changes\+\_\+set}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+changes\+\_\+set()}{geom\_changes\_set()}}
+{\footnotesize\ttfamily void World\+::geom\+\_\+changes\+\_\+set (\begin{DoxyParamCaption}\item[{int}]{hdl,  }\item[{int}]{changes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_a2db9c56bf981177a1cb035178caa13e4}\label{classWorld_a2db9c56bf981177a1cb035178caa13e4}} 
+\index{World@{World}!geom\+\_\+remove@{geom\+\_\+remove}}
+\index{geom\+\_\+remove@{geom\+\_\+remove}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+remove()}{geom\_remove()}}
+{\footnotesize\ttfamily void World\+::geom\+\_\+remove (\begin{DoxyParamCaption}\item[{int}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_ae7d794357e0c615948ea1b323f1cc0b7}\label{classWorld_ae7d794357e0c615948ea1b323f1cc0b7}} 
+\index{World@{World}!geom\+\_\+visible\+\_\+get@{geom\+\_\+visible\+\_\+get}}
+\index{geom\+\_\+visible\+\_\+get@{geom\+\_\+visible\+\_\+get}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+visible\+\_\+get()}{geom\_visible\_get()}}
+{\footnotesize\ttfamily bool World\+::geom\+\_\+visible\+\_\+get (\begin{DoxyParamCaption}\item[{int}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_ac59b8559fb117042c25a2f5da0547e33}\label{classWorld_ac59b8559fb117042c25a2f5da0547e33}} 
+\index{World@{World}!geom\+\_\+visible\+\_\+set@{geom\+\_\+visible\+\_\+set}}
+\index{geom\+\_\+visible\+\_\+set@{geom\+\_\+visible\+\_\+set}!World@{World}}
+\subsubsection{\texorpdfstring{geom\+\_\+visible\+\_\+set()}{geom\_visible\_set()}}
+{\footnotesize\ttfamily void World\+::geom\+\_\+visible\+\_\+set (\begin{DoxyParamCaption}\item[{int}]{hdl,  }\item[{bool}]{visible }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_a46ecee55e2359c32f14c0d8d084dad73}\label{classWorld_a46ecee55e2359c32f14c0d8d084dad73}} 
+\index{World@{World}!key\+\_\+event@{key\+\_\+event}}
+\index{key\+\_\+event@{key\+\_\+event}!World@{World}}
+\subsubsection{\texorpdfstring{key\+\_\+event()}{key\_event()}}
+{\footnotesize\ttfamily virtual void World\+::key\+\_\+event (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{action,  }\item[{int}]{modifiers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classViz_ae77de461c1252a35cff01651295eddf5}{Viz}}.
+
+\mbox{\Hypertarget{classWorld_ae9da24cdb1ba2803d48cf8d46c851c4b}\label{classWorld_ae9da24cdb1ba2803d48cf8d46c851c4b}} 
+\index{World@{World}!motion\+\_\+event@{motion\+\_\+event}}
+\index{motion\+\_\+event@{motion\+\_\+event}!World@{World}}
+\subsubsection{\texorpdfstring{motion\+\_\+event()}{motion\_event()}}
+{\footnotesize\ttfamily virtual void World\+::motion\+\_\+event (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classViz_a4ddb97f01a80d99a103b51685aaf67c8}{Viz}}.
+
+\mbox{\Hypertarget{classWorld_aefc26f5ed9efe0753c3120009f608b89}\label{classWorld_aefc26f5ed9efe0753c3120009f608b89}} 
+\index{World@{World}!resize\+\_\+event@{resize\+\_\+event}}
+\index{resize\+\_\+event@{resize\+\_\+event}!World@{World}}
+\subsubsection{\texorpdfstring{resize\+\_\+event()}{resize\_event()}}
+{\footnotesize\ttfamily virtual void World\+::resize\+\_\+event (\begin{DoxyParamCaption}\item[{double}]{w,  }\item[{double}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classViz_a222dae75063cafe9ea0f5d50c03e3d1b}{Viz}}.
+
+\mbox{\Hypertarget{classWorld_af3d69f01929d97f989d1887f269f9c56}\label{classWorld_af3d69f01929d97f989d1887f269f9c56}} 
+\index{World@{World}!scroll\+\_\+event@{scroll\+\_\+event}}
+\index{scroll\+\_\+event@{scroll\+\_\+event}!World@{World}}
+\subsubsection{\texorpdfstring{scroll\+\_\+event()}{scroll\_event()}}
+{\footnotesize\ttfamily virtual void World\+::scroll\+\_\+event (\begin{DoxyParamCaption}\item[{int}]{scroll,  }\item[{int}]{action,  }\item[{int}]{modifiers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classWorld_a1da19e0ccde7acfa708cf1f0054dcb3c}\label{classWorld_a1da19e0ccde7acfa708cf1f0054dcb3c}} 
+\index{World@{World}!text2d\+\_\+set@{text2d\+\_\+set}}
+\index{text2d\+\_\+set@{text2d\+\_\+set}!World@{World}}
+\subsubsection{\texorpdfstring{text2d\+\_\+set()}{text2d\_set()}}
+{\footnotesize\ttfamily void World\+::text2d\+\_\+set (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{h,  }\item[{int}]{rgb,  }\item[{int}]{str\+\_\+cnt,  }\item[{const char $\ast$}]{str\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_adcfaf0158333d4f398eabd94e033de37}\label{classWorld_adcfaf0158333d4f398eabd94e033de37}} 
+\index{World@{World}!vec\+\_\+add@{vec\+\_\+add}}
+\index{vec\+\_\+add@{vec\+\_\+add}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+add()}{vec\_add()}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+add (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{const float}]{B\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_a932702308039cbf8d98f69ffbb3748f9}\label{classWorld_a932702308039cbf8d98f69ffbb3748f9}} 
+\index{World@{World}!vec\+\_\+assign@{vec\+\_\+assign}}
+\index{vec\+\_\+assign@{vec\+\_\+assign}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+assign()}{vec\_assign()}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+assign (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_a9b029d34daf647dee298b726de427f94}\label{classWorld_a9b029d34daf647dee298b726de427f94}} 
+\index{World@{World}!vec\+\_\+cross@{vec\+\_\+cross}}
+\index{vec\+\_\+cross@{vec\+\_\+cross}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+cross()}{vec\_cross()}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+cross (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{const float}]{B\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_ab14c775fe092d0e2fc89bcaa5fe0a165}\label{classWorld_ab14c775fe092d0e2fc89bcaa5fe0a165}} 
+\index{World@{World}!vec\+\_\+length@{vec\+\_\+length}}
+\index{vec\+\_\+length@{vec\+\_\+length}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+length()}{vec\_length()}}
+{\footnotesize\ttfamily static float World\+::vec\+\_\+length (\begin{DoxyParamCaption}\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_af1d0bfb9010d194010fb6abc505d40cf}\label{classWorld_af1d0bfb9010d194010fb6abc505d40cf}} 
+\index{World@{World}!vec\+\_\+normalize@{vec\+\_\+normalize}}
+\index{vec\+\_\+normalize@{vec\+\_\+normalize}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+normalize()}{vec\_normalize()}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+normalize (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_a70a8d815c805c5e20d5374384ae3d5c2}\label{classWorld_a70a8d815c805c5e20d5374384ae3d5c2}} 
+\index{World@{World}!vec\+\_\+scale@{vec\+\_\+scale}}
+\index{vec\+\_\+scale@{vec\+\_\+scale}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+scale()}{vec\_scale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{const float}]{B\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_ab78807c00ae11c6ddf732a2d1b5ab89d}\label{classWorld_ab78807c00ae11c6ddf732a2d1b5ab89d}} 
+\index{World@{World}!vec\+\_\+scale@{vec\+\_\+scale}}
+\index{vec\+\_\+scale@{vec\+\_\+scale}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+scale()}{vec\_scale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+scale (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{const float}]{c,  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_aae347e6c500ccb406b5344c0e02c4c83}\label{classWorld_aae347e6c500ccb406b5344c0e02c4c83}} 
+\index{World@{World}!vec\+\_\+sub@{vec\+\_\+sub}}
+\index{vec\+\_\+sub@{vec\+\_\+sub}!World@{World}}
+\subsubsection{\texorpdfstring{vec\+\_\+sub()}{vec\_sub()}}
+{\footnotesize\ttfamily static void World\+::vec\+\_\+sub (\begin{DoxyParamCaption}\item[{float}]{R\mbox{[}$\,$\mbox{]},  }\item[{const float}]{A\mbox{[}$\,$\mbox{]},  }\item[{const float}]{B\mbox{[}$\,$\mbox{]},  }\item[{int}]{dims = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWorld_a407ac00a586fc5ee94229c254c114f93}\label{classWorld_a407ac00a586fc5ee94229c254c114f93}} 
+\index{World@{World}!view\+\_\+get@{view\+\_\+get}}
+\index{view\+\_\+get@{view\+\_\+get}!World@{World}}
+\subsubsection{\texorpdfstring{view\+\_\+get()}{view\_get()}}
+{\footnotesize\ttfamily void World\+::view\+\_\+get (\begin{DoxyParamCaption}\item[{float $\ast$}]{fov\+\_\+y,  }\item[{float $\ast$}]{near\+\_\+z,  }\item[{float $\ast$}]{far\+\_\+z,  }\item[{float}]{eye\mbox{[}$\,$\mbox{]},  }\item[{float}]{view\mbox{[}$\,$\mbox{]},  }\item[{float}]{up\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWorld_a5fc20fdaf09120411c98d7a862be604a}\label{classWorld_a5fc20fdaf09120411c98d7a862be604a}} 
+\index{World@{World}!view\+\_\+set@{view\+\_\+set}}
+\index{view\+\_\+set@{view\+\_\+set}!World@{World}}
+\subsubsection{\texorpdfstring{view\+\_\+set()}{view\_set()}}
+{\footnotesize\ttfamily void World\+::view\+\_\+set (\begin{DoxyParamCaption}\item[{float}]{fov\+\_\+y,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z,  }\item[{float}]{eye\mbox{[}$\,$\mbox{]},  }\item[{float}]{view\mbox{[}$\,$\mbox{]},  }\item[{float}]{up\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classWorld_a3cda1ee24b48e8d3c85b7e253f49cfb7}\label{classWorld_a3cda1ee24b48e8d3c85b7e253f49cfb7}} 
+\index{World@{World}!Sys@{Sys}}
+\index{Sys@{Sys}!World@{World}}
+\subsubsection{\texorpdfstring{Sys}{Sys}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classSys}{Sys}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/\mbox{\hyperlink{World_8h}{World.\+h}}\end{DoxyCompactItemize}

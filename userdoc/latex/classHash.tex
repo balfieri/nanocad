@@ -1,0 +1,215 @@
+\hypertarget{classHash}{}\section{Hash Class Reference}
+\label{classHash}\index{Hash@{Hash}}
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHash_a73664aa35c78765aff5ef005db70d245}{Hash}} (void)
+\item 
+\mbox{\hyperlink{classHash_a4e4b4797dda8678aaed058bae155813e}{$\sim$\+Hash}} ()
+\item 
+bool \mbox{\hyperlink{classHash_af7a8ac0f6edd46bf065f70e077ca4b48}{exists}} (int id)
+\item 
+bool \mbox{\hyperlink{classHash_a90db160a10f8005570e89b3eba1fe26b}{defined}} (int id)
+\item 
+\mbox{\hyperlink{Node_8h_a0ec4934d366e0d191f86c6ca9c1a922f}{n\+Kind}} \mbox{\hyperlink{classHash_a2bda97917ff3acb69ff3cc18616e13f0}{kind}} (int id)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a71dbf5e1dc44f10935179edd0f43a8f6}{remove}} (int id)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_ab012231e2ae6d2cac49dfd817a247a96}{undef}} (int id)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a57bf0acaae601c62c08bbe86442045ef}{i}} (int id, \mbox{\hyperlink{Node_8h_a17693eab3c96e5b590641f884a5a6ff1}{n\+Int}} v)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a47cc69e325e104ffbdf8b371484b77f5}{f}} (int id, \mbox{\hyperlink{Node_8h_aa7fdace1cf021510d341a4ce92e2223a}{n\+Flt}} v)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a3a556ff261a5f28ba38fd404cb8335b9}{s}} (int id, \mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} v)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_ae846c2193a26ac79cad5113357521132}{hp}} (int id, \mbox{\hyperlink{classHash}{Hash}} $\ast$v)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a623be7d965b4d39b0094cead21870371}{lp}} (int id, \mbox{\hyperlink{classList}{List}} $\ast$v)
+\item 
+\mbox{\hyperlink{Node_8h_a17693eab3c96e5b590641f884a5a6ff1}{n\+Int}} \mbox{\hyperlink{classHash_af608cf780ab2cc8208eb0c1c5aa24a4a}{i}} (int id)
+\item 
+\mbox{\hyperlink{Node_8h_aa7fdace1cf021510d341a4ce92e2223a}{n\+Flt}} \mbox{\hyperlink{classHash_a9f2fb14f83d560b357e72b422c234a92}{f}} (int id)
+\item 
+\mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} \mbox{\hyperlink{classHash_a992f2b8da6333dc7155837e27fbeba43}{s}} (int id)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a74a0418b4b414b46743117a241c61979}{h}} (int id)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} $\ast$ \mbox{\hyperlink{classHash_abb7606f3a1a958bd23a4485ac66130b0}{hp}} (int id)
+\item 
+\mbox{\hyperlink{classList}{List}} \& \mbox{\hyperlink{classHash_a130b1cdaf17b474fbb43f6534a9b93f9}{l}} (int id)
+\item 
+\mbox{\hyperlink{classList}{List}} $\ast$ \mbox{\hyperlink{classHash_abb8fdac7c0c4e3e7853f8f6b453ecc2f}{lp}} (int id)
+\item 
+int \mbox{\hyperlink{classHash_aa44116e6a086026ef24ddd2c15c9f83a}{id\+\_\+first}} (int \&hdl)
+\item 
+int \mbox{\hyperlink{classHash_a24f1be32cbdf92d9a4367bd006a04121}{id\+\_\+next}} (int \&hdl)
+\item 
+\mbox{\hyperlink{classHash}{Hash}} \& \mbox{\hyperlink{classHash_a52122eb03d98b9ca5a83ad3b4e6cb84b}{print}} (\mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} \mbox{\hyperlink{classHash_a3a556ff261a5f28ba38fd404cb8335b9}{s}}=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classHash_abf1b1f76adfd20925d2d0b4c4b8d5a8f}{str\+\_\+to\+\_\+id}} (\mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} \mbox{\hyperlink{classHash_a3a556ff261a5f28ba38fd404cb8335b9}{s}})
+\item 
+static \mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} \mbox{\hyperlink{classHash_a7714f30421720c111bfee3c6773cf414}{id\+\_\+to\+\_\+str}} (int id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHash_a73664aa35c78765aff5ef005db70d245}\label{classHash_a73664aa35c78765aff5ef005db70d245}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a4e4b4797dda8678aaed058bae155813e}\label{classHash_a4e4b4797dda8678aaed058bae155813e}} 
+\index{Hash@{Hash}!````~Hash@{$\sim$\+Hash}}
+\index{````~Hash@{$\sim$\+Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{$\sim$\+Hash()}{~Hash()}}
+{\footnotesize\ttfamily Hash\+::$\sim$\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHash_a90db160a10f8005570e89b3eba1fe26b}\label{classHash_a90db160a10f8005570e89b3eba1fe26b}} 
+\index{Hash@{Hash}!defined@{defined}}
+\index{defined@{defined}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{defined()}{defined()}}
+{\footnotesize\ttfamily bool Hash\+::defined (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_af7a8ac0f6edd46bf065f70e077ca4b48}\label{classHash_af7a8ac0f6edd46bf065f70e077ca4b48}} 
+\index{Hash@{Hash}!exists@{exists}}
+\index{exists@{exists}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Hash\+::exists (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a47cc69e325e104ffbdf8b371484b77f5}\label{classHash_a47cc69e325e104ffbdf8b371484b77f5}} 
+\index{Hash@{Hash}!f@{f}}
+\index{f@{f}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{f()}{f()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::f (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{Node_8h_aa7fdace1cf021510d341a4ce92e2223a}{n\+Flt}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a9f2fb14f83d560b357e72b422c234a92}\label{classHash_a9f2fb14f83d560b357e72b422c234a92}} 
+\index{Hash@{Hash}!f@{f}}
+\index{f@{f}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{f()}{f()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Node_8h_aa7fdace1cf021510d341a4ce92e2223a}{n\+Flt}} Hash\+::f (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a74a0418b4b414b46743117a241c61979}\label{classHash_a74a0418b4b414b46743117a241c61979}} 
+\index{Hash@{Hash}!h@{h}}
+\index{h@{h}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::h (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_ae846c2193a26ac79cad5113357521132}\label{classHash_ae846c2193a26ac79cad5113357521132}} 
+\index{Hash@{Hash}!hp@{hp}}
+\index{hp@{hp}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hp()}{hp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::hp (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_abb7606f3a1a958bd23a4485ac66130b0}\label{classHash_abb7606f3a1a958bd23a4485ac66130b0}} 
+\index{Hash@{Hash}!hp@{hp}}
+\index{hp@{hp}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{hp()}{hp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}$\ast$ Hash\+::hp (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a57bf0acaae601c62c08bbe86442045ef}\label{classHash_a57bf0acaae601c62c08bbe86442045ef}} 
+\index{Hash@{Hash}!i@{i}}
+\index{i@{i}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{i()}{i()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::i (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{Node_8h_a17693eab3c96e5b590641f884a5a6ff1}{n\+Int}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_af608cf780ab2cc8208eb0c1c5aa24a4a}\label{classHash_af608cf780ab2cc8208eb0c1c5aa24a4a}} 
+\index{Hash@{Hash}!i@{i}}
+\index{i@{i}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{i()}{i()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Node_8h_a17693eab3c96e5b590641f884a5a6ff1}{n\+Int}} Hash\+::i (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_aa44116e6a086026ef24ddd2c15c9f83a}\label{classHash_aa44116e6a086026ef24ddd2c15c9f83a}} 
+\index{Hash@{Hash}!id\+\_\+first@{id\+\_\+first}}
+\index{id\+\_\+first@{id\+\_\+first}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{id\+\_\+first()}{id\_first()}}
+{\footnotesize\ttfamily int Hash\+::id\+\_\+first (\begin{DoxyParamCaption}\item[{int \&}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a24f1be32cbdf92d9a4367bd006a04121}\label{classHash_a24f1be32cbdf92d9a4367bd006a04121}} 
+\index{Hash@{Hash}!id\+\_\+next@{id\+\_\+next}}
+\index{id\+\_\+next@{id\+\_\+next}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{id\+\_\+next()}{id\_next()}}
+{\footnotesize\ttfamily int Hash\+::id\+\_\+next (\begin{DoxyParamCaption}\item[{int \&}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a7714f30421720c111bfee3c6773cf414}\label{classHash_a7714f30421720c111bfee3c6773cf414}} 
+\index{Hash@{Hash}!id\+\_\+to\+\_\+str@{id\+\_\+to\+\_\+str}}
+\index{id\+\_\+to\+\_\+str@{id\+\_\+to\+\_\+str}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{id\+\_\+to\+\_\+str()}{id\_to\_str()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} Hash\+::id\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classHash_a2bda97917ff3acb69ff3cc18616e13f0}\label{classHash_a2bda97917ff3acb69ff3cc18616e13f0}} 
+\index{Hash@{Hash}!kind@{kind}}
+\index{kind@{kind}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Node_8h_a0ec4934d366e0d191f86c6ca9c1a922f}{n\+Kind}} Hash\+::kind (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a130b1cdaf17b474fbb43f6534a9b93f9}\label{classHash_a130b1cdaf17b474fbb43f6534a9b93f9}} 
+\index{Hash@{Hash}!l@{l}}
+\index{l@{l}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{l()}{l()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classList}{List}}\& Hash\+::l (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a623be7d965b4d39b0094cead21870371}\label{classHash_a623be7d965b4d39b0094cead21870371}} 
+\index{Hash@{Hash}!lp@{lp}}
+\index{lp@{lp}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{lp()}{lp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::lp (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classList}{List}} $\ast$}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_abb8fdac7c0c4e3e7853f8f6b453ecc2f}\label{classHash_abb8fdac7c0c4e3e7853f8f6b453ecc2f}} 
+\index{Hash@{Hash}!lp@{lp}}
+\index{lp@{lp}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{lp()}{lp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classList}{List}}$\ast$ Hash\+::lp (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a52122eb03d98b9ca5a83ad3b4e6cb84b}\label{classHash_a52122eb03d98b9ca5a83ad3b4e6cb84b}} 
+\index{Hash@{Hash}!print@{print}}
+\index{print@{print}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}}}]{s = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a71dbf5e1dc44f10935179edd0f43a8f6}\label{classHash_a71dbf5e1dc44f10935179edd0f43a8f6}} 
+\index{Hash@{Hash}!remove@{remove}}
+\index{remove@{remove}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::remove (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a3a556ff261a5f28ba38fd404cb8335b9}\label{classHash_a3a556ff261a5f28ba38fd404cb8335b9}} 
+\index{Hash@{Hash}!s@{s}}
+\index{s@{s}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{s()}{s()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::s (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}}}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_a992f2b8da6333dc7155837e27fbeba43}\label{classHash_a992f2b8da6333dc7155837e27fbeba43}} 
+\index{Hash@{Hash}!s@{s}}
+\index{s@{s}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{s()}{s()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}} Hash\+::s (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHash_abf1b1f76adfd20925d2d0b4c4b8d5a8f}\label{classHash_abf1b1f76adfd20925d2d0b4c4b8d5a8f}} 
+\index{Hash@{Hash}!str\+\_\+to\+\_\+id@{str\+\_\+to\+\_\+id}}
+\index{str\+\_\+to\+\_\+id@{str\+\_\+to\+\_\+id}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{str\+\_\+to\+\_\+id()}{str\_to\_id()}}
+{\footnotesize\ttfamily static int Hash\+::str\+\_\+to\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Node_8h_a0d7591b97fcccd83c3c2ce469c8bc25c}{n\+Str}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classHash_ab012231e2ae6d2cac49dfd817a247a96}\label{classHash_ab012231e2ae6d2cac49dfd817a247a96}} 
+\index{Hash@{Hash}!undef@{undef}}
+\index{undef@{undef}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{undef()}{undef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}}\& Hash\+::undef (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/\mbox{\hyperlink{Node_8h}{Node.\+h}}\end{DoxyCompactItemize}

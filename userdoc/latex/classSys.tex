@@ -1,0 +1,124 @@
+\hypertarget{classSys}{}\section{Sys Class Reference}
+\label{classSys}\index{Sys@{Sys}}
+
+
+{\ttfamily \#include $<$Sys.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSys_a74c59dd28249cf0968407b3d4f90ccab}{Sys}} (\mbox{\hyperlink{classConfig}{Config}} $\ast$config)
+\item 
+void \mbox{\hyperlink{classSys_ad3ee3df03087abf9cc5d15a57e0ab0a2}{world\+\_\+set}} (\mbox{\hyperlink{classWorld}{World}} $\ast$w)
+\item 
+\mbox{\hyperlink{classWorld}{World}} $\ast$ \mbox{\hyperlink{classSys_aee0559155f152be16fd2b42fe13635f0}{world\+\_\+get}} (void)
+\item 
+int \mbox{\hyperlink{classSys_adc7a52fbbbb571b6588907ddc34ccdee}{batch\+\_\+alloc}} (int vertex\+\_\+cnt, int triangle\+\_\+cnt)
+\item 
+void \mbox{\hyperlink{classSys_a975e9e5bdbe0a8d0d091cc5e8045aa5f}{batch\+\_\+free}} (int batch\+\_\+hdl)
+\item 
+void \mbox{\hyperlink{classSys_a6e1bbe5eb1151dca4b61ac6bc43a00fe}{main\+\_\+loop}} (void)
+\item 
+void \mbox{\hyperlink{classSys_a6afadb6bbb36da0d0fa9ca0f678f7dcb}{quit}} (int status)
+\item 
+void \mbox{\hyperlink{classSys_a2115dba550f339c2faa9585faefd8488}{force\+\_\+redraw}} (void)
+\item 
+void \mbox{\hyperlink{classSys_aa9df1a08f130a88706e3f06faae56bb6}{draw\+\_\+begin}} (bool use\+\_\+ortho, float fov\+\_\+y, float near\+\_\+z, float far\+\_\+z, float eye\mbox{[}$\,$\mbox{]}, float view\mbox{[}$\,$\mbox{]}, float up\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{classSys_aa6238558baf8cc9cd33b6e64e4692bc1}{draw\+\_\+batch}} (int batch\+\_\+hdl, \mbox{\hyperlink{classGeom}{Geom}} $\ast$geom\+\_\+array, int geom\+\_\+cnt, bool geom\+\_\+changed)
+\item 
+void \mbox{\hyperlink{classSys_a48a44b17ef0cc797f52e66ff86b0b4ac}{draw\+\_\+text2d}} (\mbox{\hyperlink{classText2D}{Text2D}} $\ast$text, int text\+\_\+cnt)
+\item 
+void \mbox{\hyperlink{classSys_a9f9738ef3a861766c5450569de9f1671}{draw\+\_\+end}} (void)
+\item 
+void \mbox{\hyperlink{classSys_a2b0db92b30d906bea2600fc10b41de6c}{toggle\+\_\+fullscreen}} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSys_a74c59dd28249cf0968407b3d4f90ccab}\label{classSys_a74c59dd28249cf0968407b3d4f90ccab}} 
+\index{Sys@{Sys}!Sys@{Sys}}
+\index{Sys@{Sys}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{Sys()}{Sys()}}
+{\footnotesize\ttfamily Sys\+::\+Sys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classConfig}{Config}} $\ast$}]{config }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSys_adc7a52fbbbb571b6588907ddc34ccdee}\label{classSys_adc7a52fbbbb571b6588907ddc34ccdee}} 
+\index{Sys@{Sys}!batch\+\_\+alloc@{batch\+\_\+alloc}}
+\index{batch\+\_\+alloc@{batch\+\_\+alloc}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{batch\+\_\+alloc()}{batch\_alloc()}}
+{\footnotesize\ttfamily int Sys\+::batch\+\_\+alloc (\begin{DoxyParamCaption}\item[{int}]{vertex\+\_\+cnt,  }\item[{int}]{triangle\+\_\+cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a975e9e5bdbe0a8d0d091cc5e8045aa5f}\label{classSys_a975e9e5bdbe0a8d0d091cc5e8045aa5f}} 
+\index{Sys@{Sys}!batch\+\_\+free@{batch\+\_\+free}}
+\index{batch\+\_\+free@{batch\+\_\+free}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{batch\+\_\+free()}{batch\_free()}}
+{\footnotesize\ttfamily void Sys\+::batch\+\_\+free (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_aa6238558baf8cc9cd33b6e64e4692bc1}\label{classSys_aa6238558baf8cc9cd33b6e64e4692bc1}} 
+\index{Sys@{Sys}!draw\+\_\+batch@{draw\+\_\+batch}}
+\index{draw\+\_\+batch@{draw\+\_\+batch}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{draw\+\_\+batch()}{draw\_batch()}}
+{\footnotesize\ttfamily void Sys\+::draw\+\_\+batch (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+hdl,  }\item[{\mbox{\hyperlink{classGeom}{Geom}} $\ast$}]{geom\+\_\+array,  }\item[{int}]{geom\+\_\+cnt,  }\item[{bool}]{geom\+\_\+changed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_aa9df1a08f130a88706e3f06faae56bb6}\label{classSys_aa9df1a08f130a88706e3f06faae56bb6}} 
+\index{Sys@{Sys}!draw\+\_\+begin@{draw\+\_\+begin}}
+\index{draw\+\_\+begin@{draw\+\_\+begin}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{draw\+\_\+begin()}{draw\_begin()}}
+{\footnotesize\ttfamily void Sys\+::draw\+\_\+begin (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+ortho,  }\item[{float}]{fov\+\_\+y,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z,  }\item[{float}]{eye\mbox{[}$\,$\mbox{]},  }\item[{float}]{view\mbox{[}$\,$\mbox{]},  }\item[{float}]{up\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a9f9738ef3a861766c5450569de9f1671}\label{classSys_a9f9738ef3a861766c5450569de9f1671}} 
+\index{Sys@{Sys}!draw\+\_\+end@{draw\+\_\+end}}
+\index{draw\+\_\+end@{draw\+\_\+end}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{draw\+\_\+end()}{draw\_end()}}
+{\footnotesize\ttfamily void Sys\+::draw\+\_\+end (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a48a44b17ef0cc797f52e66ff86b0b4ac}\label{classSys_a48a44b17ef0cc797f52e66ff86b0b4ac}} 
+\index{Sys@{Sys}!draw\+\_\+text2d@{draw\+\_\+text2d}}
+\index{draw\+\_\+text2d@{draw\+\_\+text2d}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{draw\+\_\+text2d()}{draw\_text2d()}}
+{\footnotesize\ttfamily void Sys\+::draw\+\_\+text2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classText2D}{Text2D}} $\ast$}]{text,  }\item[{int}]{text\+\_\+cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a2115dba550f339c2faa9585faefd8488}\label{classSys_a2115dba550f339c2faa9585faefd8488}} 
+\index{Sys@{Sys}!force\+\_\+redraw@{force\+\_\+redraw}}
+\index{force\+\_\+redraw@{force\+\_\+redraw}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{force\+\_\+redraw()}{force\_redraw()}}
+{\footnotesize\ttfamily void Sys\+::force\+\_\+redraw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a6e1bbe5eb1151dca4b61ac6bc43a00fe}\label{classSys_a6e1bbe5eb1151dca4b61ac6bc43a00fe}} 
+\index{Sys@{Sys}!main\+\_\+loop@{main\+\_\+loop}}
+\index{main\+\_\+loop@{main\+\_\+loop}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{main\+\_\+loop()}{main\_loop()}}
+{\footnotesize\ttfamily void Sys\+::main\+\_\+loop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a6afadb6bbb36da0d0fa9ca0f678f7dcb}\label{classSys_a6afadb6bbb36da0d0fa9ca0f678f7dcb}} 
+\index{Sys@{Sys}!quit@{quit}}
+\index{quit@{quit}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void Sys\+::quit (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_a2b0db92b30d906bea2600fc10b41de6c}\label{classSys_a2b0db92b30d906bea2600fc10b41de6c}} 
+\index{Sys@{Sys}!toggle\+\_\+fullscreen@{toggle\+\_\+fullscreen}}
+\index{toggle\+\_\+fullscreen@{toggle\+\_\+fullscreen}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{toggle\+\_\+fullscreen()}{toggle\_fullscreen()}}
+{\footnotesize\ttfamily void Sys\+::toggle\+\_\+fullscreen (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_aee0559155f152be16fd2b42fe13635f0}\label{classSys_aee0559155f152be16fd2b42fe13635f0}} 
+\index{Sys@{Sys}!world\+\_\+get@{world\+\_\+get}}
+\index{world\+\_\+get@{world\+\_\+get}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{world\+\_\+get()}{world\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWorld}{World}}$\ast$ Sys\+::world\+\_\+get (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSys_ad3ee3df03087abf9cc5d15a57e0ab0a2}\label{classSys_ad3ee3df03087abf9cc5d15a57e0ab0a2}} 
+\index{Sys@{Sys}!world\+\_\+set@{world\+\_\+set}}
+\index{world\+\_\+set@{world\+\_\+set}!Sys@{Sys}}
+\subsubsection{\texorpdfstring{world\+\_\+set()}{world\_set()}}
+{\footnotesize\ttfamily void Sys\+::world\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWorld}{World}} $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/\mbox{\hyperlink{Sys_8h}{Sys.\+h}}\end{DoxyCompactItemize}

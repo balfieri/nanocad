@@ -1,0 +1,205 @@
+\hypertarget{classEntity}{}\section{Entity Class Reference}
+\label{classEntity}\index{Entity@{Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEntity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEntity_a75afa73e0478e96c6ae96ab4428295a0}{Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$parent, \mbox{\hyperlink{classWorld}{World}} $\ast$world, float x, float y, float z, float w, float h, float d)
+\item 
+virtual \mbox{\hyperlink{classEntity_a588098978eea6a3486b7361605ff3f0f}{$\sim$\+Entity}} ()
+\item 
+void \mbox{\hyperlink{classEntity_a9e99a54fce35facb3410b683e41d80e1}{xyz\+\_\+get}} (float $\ast$x, float $\ast$y, float $\ast$z)
+\item 
+void \mbox{\hyperlink{classEntity_a7172fa9327ac448a2d80bce33a2be256}{whd\+\_\+get}} (float $\ast$w, float $\ast$h, float $\ast$d)
+\item 
+void \mbox{\hyperlink{classEntity_af8102d176a86501d1e76adac59c280f5}{center\+\_\+get}} (float $\ast$x, float $\ast$y, float $\ast$z)
+\item 
+float \mbox{\hyperlink{classEntity_a7c5459bec53c3a9a3c5207964f1eab99}{distance}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$other, bool include\+\_\+y=true)
+\item 
+float \mbox{\hyperlink{classEntity_a5cd6b84c61bca6e206895d1bc7c8ad63}{manhattan\+\_\+distance}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$other, bool include\+\_\+y=true)
+\item 
+void \mbox{\hyperlink{classEntity_a4ef03d07f6077a104589568aafb068ee}{visible\+\_\+set}} (bool visible)
+\item 
+bool \mbox{\hyperlink{classEntity_aab8f9cda6abb84ee7f9528d2e74554eb}{visible\+\_\+get}} (void)
+\item 
+void \mbox{\hyperlink{classEntity_aab220a9397ea676632ad622e5b2f214c}{changes\+\_\+set}} (int changes)
+\item 
+int \mbox{\hyperlink{classEntity_a8414f493594b6a5746e2a959c17a2989}{changes\+\_\+get}} (void)
+\item 
+void \mbox{\hyperlink{classEntity_ad5ac30e3a84dc75899558268dfe302ac}{move\+\_\+to}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{classEntity_ac5c2ecde136877863c4fc512d2081b7a}{move\+\_\+by}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{classEntity_ad14803ac2db89cbd788302f1fc385b0e}{move\+\_\+in\+\_\+dir}} (int dir, float by)
+\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classEntity_a20373262203fef220323dc3f89d3a472}{child\+\_\+first}} (void)
+\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classEntity_adc18417a592fccbac61f000eb9ec88fe}{sibling}} (void)
+\item 
+void \mbox{\hyperlink{classEntity_ae38443719b4d82441a987fcda0d293c3}{children\+\_\+print}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEntity_a9b71cfc90dee1d29b410649b43671fd5}{geom\+\_\+set}} (\mbox{\hyperlink{classVertex}{Vertex}} $\ast$vertex, int vertex\+\_\+cnt, \mbox{\hyperlink{classTriangle}{Triangle}} $\ast$triangle, int triangle\+\_\+cnt, int changes=\mbox{\hyperlink{World_8h_adf764cbdea00d65edcd07bb9953ad2b7afd62cb9ff74dd66a2597e9c31e205cba}{G\+E\+O\+M\+\_\+\+C\+H\+A\+N\+G\+E\+S\+\_\+\+R\+A\+R\+E\+LY}})
+\item 
+virtual void \mbox{\hyperlink{classEntity_a35b3384cb4aba28b3e2129d332499445}{geom\+\_\+get}} (\mbox{\hyperlink{classVertex}{Vertex}} $\ast$$\ast$vertex, int $\ast$vertex\+\_\+cnt, \mbox{\hyperlink{classTriangle}{Triangle}} $\ast$$\ast$triangle, int $\ast$triangle\+\_\+cnt)
+\item 
+virtual void \mbox{\hyperlink{classEntity_a078d35f6eac032312bf9aa1d5f8614c1}{geom\+\_\+remove}} (void)
+\item 
+virtual void \mbox{\hyperlink{classEntity_a6a98dc8aef878f984b942d6b8a57e968}{geom\+\_\+changed}} (void)
+\item 
+virtual void \mbox{\hyperlink{classEntity_a3a63eb809c17ebe620fa330cc59760df}{input}} (\mbox{\hyperlink{classWorld}{World}} $\ast$world, float mouse\+\_\+x, float mouse\+\_\+y, bool mouse\+\_\+left\+\_\+click, bool mouse\+\_\+right\+\_\+click, bool mouse\+\_\+drag, bool mouse\+\_\+scroll, int mouse\+\_\+scroll\+\_\+amount, bool key\+\_\+press, int key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_a75afa73e0478e96c6ae96ab4428295a0}\label{classEntity_a75afa73e0478e96c6ae96ab4428295a0}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classWorld}{World}} $\ast$}]{world,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w,  }\item[{float}]{h,  }\item[{float}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a588098978eea6a3486b7361605ff3f0f}\label{classEntity_a588098978eea6a3486b7361605ff3f0f}} 
+\index{Entity@{Entity}!````~Entity@{$\sim$\+Entity}}
+\index{````~Entity@{$\sim$\+Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{$\sim$\+Entity()}{~Entity()}}
+{\footnotesize\ttfamily virtual Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_af8102d176a86501d1e76adac59c280f5}\label{classEntity_af8102d176a86501d1e76adac59c280f5}} 
+\index{Entity@{Entity}!center\+\_\+get@{center\+\_\+get}}
+\index{center\+\_\+get@{center\+\_\+get}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{center\+\_\+get()}{center\_get()}}
+{\footnotesize\ttfamily void Entity\+::center\+\_\+get (\begin{DoxyParamCaption}\item[{float $\ast$}]{x,  }\item[{float $\ast$}]{y,  }\item[{float $\ast$}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a8414f493594b6a5746e2a959c17a2989}\label{classEntity_a8414f493594b6a5746e2a959c17a2989}} 
+\index{Entity@{Entity}!changes\+\_\+get@{changes\+\_\+get}}
+\index{changes\+\_\+get@{changes\+\_\+get}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{changes\+\_\+get()}{changes\_get()}}
+{\footnotesize\ttfamily int Entity\+::changes\+\_\+get (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_aab220a9397ea676632ad622e5b2f214c}\label{classEntity_aab220a9397ea676632ad622e5b2f214c}} 
+\index{Entity@{Entity}!changes\+\_\+set@{changes\+\_\+set}}
+\index{changes\+\_\+set@{changes\+\_\+set}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{changes\+\_\+set()}{changes\_set()}}
+{\footnotesize\ttfamily void Entity\+::changes\+\_\+set (\begin{DoxyParamCaption}\item[{int}]{changes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a20373262203fef220323dc3f89d3a472}\label{classEntity_a20373262203fef220323dc3f89d3a472}} 
+\index{Entity@{Entity}!child\+\_\+first@{child\+\_\+first}}
+\index{child\+\_\+first@{child\+\_\+first}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{child\+\_\+first()}{child\_first()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}}$\ast$ Entity\+::child\+\_\+first (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_ae38443719b4d82441a987fcda0d293c3}\label{classEntity_ae38443719b4d82441a987fcda0d293c3}} 
+\index{Entity@{Entity}!children\+\_\+print@{children\+\_\+print}}
+\index{children\+\_\+print@{children\+\_\+print}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{children\+\_\+print()}{children\_print()}}
+{\footnotesize\ttfamily void Entity\+::children\+\_\+print (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a7c5459bec53c3a9a3c5207964f1eab99}\label{classEntity_a7c5459bec53c3a9a3c5207964f1eab99}} 
+\index{Entity@{Entity}!distance@{distance}}
+\index{distance@{distance}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float Entity\+::distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{other,  }\item[{bool}]{include\+\_\+y = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a6a98dc8aef878f984b942d6b8a57e968}\label{classEntity_a6a98dc8aef878f984b942d6b8a57e968}} 
+\index{Entity@{Entity}!geom\+\_\+changed@{geom\+\_\+changed}}
+\index{geom\+\_\+changed@{geom\+\_\+changed}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{geom\+\_\+changed()}{geom\_changed()}}
+{\footnotesize\ttfamily virtual void Entity\+::geom\+\_\+changed (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classEntity_a35b3384cb4aba28b3e2129d332499445}\label{classEntity_a35b3384cb4aba28b3e2129d332499445}} 
+\index{Entity@{Entity}!geom\+\_\+get@{geom\+\_\+get}}
+\index{geom\+\_\+get@{geom\+\_\+get}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{geom\+\_\+get()}{geom\_get()}}
+{\footnotesize\ttfamily virtual void Entity\+::geom\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}} $\ast$$\ast$}]{vertex,  }\item[{int $\ast$}]{vertex\+\_\+cnt,  }\item[{\mbox{\hyperlink{classTriangle}{Triangle}} $\ast$$\ast$}]{triangle,  }\item[{int $\ast$}]{triangle\+\_\+cnt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classEntity_a078d35f6eac032312bf9aa1d5f8614c1}\label{classEntity_a078d35f6eac032312bf9aa1d5f8614c1}} 
+\index{Entity@{Entity}!geom\+\_\+remove@{geom\+\_\+remove}}
+\index{geom\+\_\+remove@{geom\+\_\+remove}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{geom\+\_\+remove()}{geom\_remove()}}
+{\footnotesize\ttfamily virtual void Entity\+::geom\+\_\+remove (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classEntity_a9b71cfc90dee1d29b410649b43671fd5}\label{classEntity_a9b71cfc90dee1d29b410649b43671fd5}} 
+\index{Entity@{Entity}!geom\+\_\+set@{geom\+\_\+set}}
+\index{geom\+\_\+set@{geom\+\_\+set}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{geom\+\_\+set()}{geom\_set()}}
+{\footnotesize\ttfamily virtual void Entity\+::geom\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}} $\ast$}]{vertex,  }\item[{int}]{vertex\+\_\+cnt,  }\item[{\mbox{\hyperlink{classTriangle}{Triangle}} $\ast$}]{triangle,  }\item[{int}]{triangle\+\_\+cnt,  }\item[{int}]{changes = {\ttfamily \mbox{\hyperlink{World_8h_adf764cbdea00d65edcd07bb9953ad2b7afd62cb9ff74dd66a2597e9c31e205cba}{G\+E\+O\+M\+\_\+\+C\+H\+A\+N\+G\+E\+S\+\_\+\+R\+A\+R\+E\+LY}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classEntity_a3a63eb809c17ebe620fa330cc59760df}\label{classEntity_a3a63eb809c17ebe620fa330cc59760df}} 
+\index{Entity@{Entity}!input@{input}}
+\index{input@{input}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily virtual void Entity\+::input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWorld}{World}} $\ast$}]{world,  }\item[{float}]{mouse\+\_\+x,  }\item[{float}]{mouse\+\_\+y,  }\item[{bool}]{mouse\+\_\+left\+\_\+click,  }\item[{bool}]{mouse\+\_\+right\+\_\+click,  }\item[{bool}]{mouse\+\_\+drag,  }\item[{bool}]{mouse\+\_\+scroll,  }\item[{int}]{mouse\+\_\+scroll\+\_\+amount,  }\item[{bool}]{key\+\_\+press,  }\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classEntity_a5cd6b84c61bca6e206895d1bc7c8ad63}\label{classEntity_a5cd6b84c61bca6e206895d1bc7c8ad63}} 
+\index{Entity@{Entity}!manhattan\+\_\+distance@{manhattan\+\_\+distance}}
+\index{manhattan\+\_\+distance@{manhattan\+\_\+distance}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{manhattan\+\_\+distance()}{manhattan\_distance()}}
+{\footnotesize\ttfamily float Entity\+::manhattan\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{other,  }\item[{bool}]{include\+\_\+y = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_ac5c2ecde136877863c4fc512d2081b7a}\label{classEntity_ac5c2ecde136877863c4fc512d2081b7a}} 
+\index{Entity@{Entity}!move\+\_\+by@{move\+\_\+by}}
+\index{move\+\_\+by@{move\+\_\+by}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{move\+\_\+by()}{move\_by()}}
+{\footnotesize\ttfamily void Entity\+::move\+\_\+by (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_ad14803ac2db89cbd788302f1fc385b0e}\label{classEntity_ad14803ac2db89cbd788302f1fc385b0e}} 
+\index{Entity@{Entity}!move\+\_\+in\+\_\+dir@{move\+\_\+in\+\_\+dir}}
+\index{move\+\_\+in\+\_\+dir@{move\+\_\+in\+\_\+dir}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{move\+\_\+in\+\_\+dir()}{move\_in\_dir()}}
+{\footnotesize\ttfamily void Entity\+::move\+\_\+in\+\_\+dir (\begin{DoxyParamCaption}\item[{int}]{dir,  }\item[{float}]{by }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_ad5ac30e3a84dc75899558268dfe302ac}\label{classEntity_ad5ac30e3a84dc75899558268dfe302ac}} 
+\index{Entity@{Entity}!move\+\_\+to@{move\+\_\+to}}
+\index{move\+\_\+to@{move\+\_\+to}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{move\+\_\+to()}{move\_to()}}
+{\footnotesize\ttfamily void Entity\+::move\+\_\+to (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_adc18417a592fccbac61f000eb9ec88fe}\label{classEntity_adc18417a592fccbac61f000eb9ec88fe}} 
+\index{Entity@{Entity}!sibling@{sibling}}
+\index{sibling@{sibling}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{sibling()}{sibling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}}$\ast$ Entity\+::sibling (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_aab8f9cda6abb84ee7f9528d2e74554eb}\label{classEntity_aab8f9cda6abb84ee7f9528d2e74554eb}} 
+\index{Entity@{Entity}!visible\+\_\+get@{visible\+\_\+get}}
+\index{visible\+\_\+get@{visible\+\_\+get}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{visible\+\_\+get()}{visible\_get()}}
+{\footnotesize\ttfamily bool Entity\+::visible\+\_\+get (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a4ef03d07f6077a104589568aafb068ee}\label{classEntity_a4ef03d07f6077a104589568aafb068ee}} 
+\index{Entity@{Entity}!visible\+\_\+set@{visible\+\_\+set}}
+\index{visible\+\_\+set@{visible\+\_\+set}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{visible\+\_\+set()}{visible\_set()}}
+{\footnotesize\ttfamily void Entity\+::visible\+\_\+set (\begin{DoxyParamCaption}\item[{bool}]{visible }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a7172fa9327ac448a2d80bce33a2be256}\label{classEntity_a7172fa9327ac448a2d80bce33a2be256}} 
+\index{Entity@{Entity}!whd\+\_\+get@{whd\+\_\+get}}
+\index{whd\+\_\+get@{whd\+\_\+get}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{whd\+\_\+get()}{whd\_get()}}
+{\footnotesize\ttfamily void Entity\+::whd\+\_\+get (\begin{DoxyParamCaption}\item[{float $\ast$}]{w,  }\item[{float $\ast$}]{h,  }\item[{float $\ast$}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEntity_a9e99a54fce35facb3410b683e41d80e1}\label{classEntity_a9e99a54fce35facb3410b683e41d80e1}} 
+\index{Entity@{Entity}!xyz\+\_\+get@{xyz\+\_\+get}}
+\index{xyz\+\_\+get@{xyz\+\_\+get}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{xyz\+\_\+get()}{xyz\_get()}}
+{\footnotesize\ttfamily void Entity\+::xyz\+\_\+get (\begin{DoxyParamCaption}\item[{float $\ast$}]{x,  }\item[{float $\ast$}]{y,  }\item[{float $\ast$}]{z }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/\mbox{\hyperlink{Entity_8h}{Entity.\+h}}\end{DoxyCompactItemize}

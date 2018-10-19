@@ -1,0 +1,90 @@
+\hypertarget{Misc_8h}{}\section{base/\+Misc.h File Reference}
+\label{Misc_8h}\index{base/\+Misc.\+h@{base/\+Misc.\+h}}
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Misc_8h_a12a9e861369ba25e4dc67cc7880e2ae5}{dprintf}}~if ( 0 ) printf
+\item 
+\#define \mbox{\hyperlink{Misc_8h_a74c751f3115da8d60c91bda5c0330415}{dassert}}(expr)~if ( !(expr) ) \{ printf( \char`\"{}E\+R\+R\+O\+R\+: assertion failure\+: \textquotesingle{}\%s\textquotesingle{} at \%s\+:\%d\textbackslash{}n\char`\"{}, \#expr, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ ); \mbox{\hyperlink{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}{my\+\_\+exit}}( 1 ); \}
+\item 
+\#define \mbox{\hyperlink{Misc_8h_a5924a4a2ac1a09a8c6679579dc22249e}{error}}(msg)~\{ printf( \char`\"{}E\+R\+R\+O\+R\+: \%s (\%s\+:\%d)\textbackslash{}n\char`\"{}, msg, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ ); \mbox{\hyperlink{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}{my\+\_\+exit}}( 1 ); \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}{my\+\_\+exit}} (int status)
+\item 
+int \mbox{\hyperlink{Misc_8h_a5a42383a5140fb4c16439555e8fd7445}{int\+\_\+log2}} (int n)
+\item 
+bool \mbox{\hyperlink{Misc_8h_aff351acd01bf4bef06158264668d7cb6}{int\+\_\+is\+\_\+pow2}} (int n)
+\item 
+int \mbox{\hyperlink{Misc_8h_ad27be9ae86566f793d346a1dfadb9d7a}{int\+\_\+sqrt}} (int n)
+\item 
+int \mbox{\hyperlink{Misc_8h_a4415e3c9d8b65952e433a3c14c9f985f}{rand\+\_\+n}} (int n)
+\item 
+int \mbox{\hyperlink{Misc_8h_a17a855ac829c6bd6b6f1214e7b2ebb3b}{heads}} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Misc_8h_a74c751f3115da8d60c91bda5c0330415}\label{Misc_8h_a74c751f3115da8d60c91bda5c0330415}} 
+\index{Misc.\+h@{Misc.\+h}!dassert@{dassert}}
+\index{dassert@{dassert}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{dassert}{dassert}}
+{\footnotesize\ttfamily \#define dassert(\begin{DoxyParamCaption}\item[{}]{expr }\end{DoxyParamCaption})~if ( !(expr) ) \{ printf( \char`\"{}E\+R\+R\+O\+R\+: assertion failure\+: \textquotesingle{}\%s\textquotesingle{} at \%s\+:\%d\textbackslash{}n\char`\"{}, \#expr, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ ); \mbox{\hyperlink{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}{my\+\_\+exit}}( 1 ); \}}
+
+\mbox{\Hypertarget{Misc_8h_a12a9e861369ba25e4dc67cc7880e2ae5}\label{Misc_8h_a12a9e861369ba25e4dc67cc7880e2ae5}} 
+\index{Misc.\+h@{Misc.\+h}!dprintf@{dprintf}}
+\index{dprintf@{dprintf}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{dprintf}{dprintf}}
+{\footnotesize\ttfamily \#define dprintf~if ( 0 ) printf}
+
+\mbox{\Hypertarget{Misc_8h_a5924a4a2ac1a09a8c6679579dc22249e}\label{Misc_8h_a5924a4a2ac1a09a8c6679579dc22249e}} 
+\index{Misc.\+h@{Misc.\+h}!error@{error}}
+\index{error@{error}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \#define error(\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})~\{ printf( \char`\"{}E\+R\+R\+O\+R\+: \%s (\%s\+:\%d)\textbackslash{}n\char`\"{}, msg, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ ); \mbox{\hyperlink{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}{my\+\_\+exit}}( 1 ); \}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Misc_8h_a17a855ac829c6bd6b6f1214e7b2ebb3b}\label{Misc_8h_a17a855ac829c6bd6b6f1214e7b2ebb3b}} 
+\index{Misc.\+h@{Misc.\+h}!heads@{heads}}
+\index{heads@{heads}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{heads()}{heads()}}
+{\footnotesize\ttfamily int heads (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Misc_8h_aff351acd01bf4bef06158264668d7cb6}\label{Misc_8h_aff351acd01bf4bef06158264668d7cb6}} 
+\index{Misc.\+h@{Misc.\+h}!int\+\_\+is\+\_\+pow2@{int\+\_\+is\+\_\+pow2}}
+\index{int\+\_\+is\+\_\+pow2@{int\+\_\+is\+\_\+pow2}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{int\+\_\+is\+\_\+pow2()}{int\_is\_pow2()}}
+{\footnotesize\ttfamily bool int\+\_\+is\+\_\+pow2 (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Misc_8h_a5a42383a5140fb4c16439555e8fd7445}\label{Misc_8h_a5a42383a5140fb4c16439555e8fd7445}} 
+\index{Misc.\+h@{Misc.\+h}!int\+\_\+log2@{int\+\_\+log2}}
+\index{int\+\_\+log2@{int\+\_\+log2}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{int\+\_\+log2()}{int\_log2()}}
+{\footnotesize\ttfamily int int\+\_\+log2 (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Misc_8h_ad27be9ae86566f793d346a1dfadb9d7a}\label{Misc_8h_ad27be9ae86566f793d346a1dfadb9d7a}} 
+\index{Misc.\+h@{Misc.\+h}!int\+\_\+sqrt@{int\+\_\+sqrt}}
+\index{int\+\_\+sqrt@{int\+\_\+sqrt}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{int\+\_\+sqrt()}{int\_sqrt()}}
+{\footnotesize\ttfamily int int\+\_\+sqrt (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}\label{Misc_8h_a5a8f81828a934fc0ea2240de012a46a0}} 
+\index{Misc.\+h@{Misc.\+h}!my\+\_\+exit@{my\+\_\+exit}}
+\index{my\+\_\+exit@{my\+\_\+exit}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{my\+\_\+exit()}{my\_exit()}}
+{\footnotesize\ttfamily void my\+\_\+exit (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Misc_8h_a4415e3c9d8b65952e433a3c14c9f985f}\label{Misc_8h_a4415e3c9d8b65952e433a3c14c9f985f}} 
+\index{Misc.\+h@{Misc.\+h}!rand\+\_\+n@{rand\+\_\+n}}
+\index{rand\+\_\+n@{rand\+\_\+n}!Misc.\+h@{Misc.\+h}}
+\subsubsection{\texorpdfstring{rand\+\_\+n()}{rand\_n()}}
+{\footnotesize\ttfamily int rand\+\_\+n (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
