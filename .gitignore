@@ -4,3 +4,4 @@
 */*.out
 */.*.swp
 */*.gz
+*secret*
