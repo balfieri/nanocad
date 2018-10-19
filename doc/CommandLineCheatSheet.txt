@@ -1,0 +1,133 @@
+These commands work in the Linux/Cygwin terminal command line and the macOS Terminal command line.
+They assume a BASH shell.
+
+Directories
+-----------
+pwd - show (print) current working directory
+cd foo - change directory to foo
+cd ..     - go up one level
+cd ../../ - go up two levels
+cd ../foo - go up one level and then down into the foo directory
+cd /      - go to root of file system
+cd ~      - go to home directory
+cd        - ditto
+cd ~/backups   - go to backups directory under home directory
+mkdir foo - create a directory called foo in the current working directory
+mkdir -p foo/bar/good  - create this directory and create foo and foo/bar if they are not created yet
+
+Listing Files
+-------------
+ls      - list names of files in current directory in alphabetical order
+ls foo  - list names in directory foo
+ls -l   - same as ls, but shows other info
+ls -lt  - same, but order by last time modified
+
+Copying, Deleting, and Renaming Files
+-------------------------------------
+cp foo goo      - copies file foo to file goo
+cp -r foo goo   - copies directory for and all of its contents to goo
+rm goo          - deletes file goo
+rm -f goo       - deletes file goo without complaining if it doesn't exist
+rm -fr foo      - deletes directory foo and all of its contents (careful!)
+mv foo goo      - renames foo to goo
+
+Editing Files
+-------------
+nano foo        - brings up the nano editor to edit file with name foo (CTRL-G to see all help)
+[Bob uses vi editor but that’s less intuitive]
+
+Command Shortcuts
+-----------------
+h               - show history of commands executed
+!45             - run command #45 from history
+!!              - run last command
+!foo            - run last command that started with foo
+alias lt=‘ls -lt’ - create an alias for ls -lt (this is typically put in special file ~/.bash_profile)
+alias           - list all aliases
+export t1=~/tree1 - create environment variable $t1 so you can say cd $t1 (also goes in ~/.bash_profile)
+env             - list all environment variables
+vc              - alias I have set up to edit .bash_profile usiing vi, the re-source the file
+nc              - same except uses Nano to edit .bash_profile
+
+Redirecting Output
+------------------
+progname > make.out     - redirect output to file make.out
+progname >& make.out    - redirect error messages too
+cat make.out            - type out file contents
+head -100 make.out      - show first 100 lines of file
+tail -100 make.out      - show last 100 lines of file
+tail -f make.out        - show end of file and update while it’s running
+
+less make.out           - view file contents a page at a time
+progname |& less        - feed output into "less" program for viewing
+progname | wc -l        - count lines in output
+
+progname |& gzip -n > my.out.gz - write compressed output
+zcat my.out.gz | less   - uncompress and view output
+
+
+Searching for Strings
+---------------------
+grep TODO make.out                      - show all lines that have “TODO"
+grep -i todo make.out                   - same but case insensitive
+grep "Bob Alfieri" make.out             - need to use quotes when there’s a special character
+node progname.js | grep -i bob          - pipe program output directly into grep (many commands are like this)
+node progname.js | grep -i bob | less   - and then into less
+
+
+Background Jobs
+---------------
+progname >& make.out &   - run command in the background (this is called a job)
+tail -f make.out         - show make.out as background job runs (can ctrl-c this tail)
+jobs                     - show all running jobs
+kill %1                  - kill job #1
+fg %1                    - move job #1 to foreground
+ctrl-z                   - suspend foreground job
+bg %1                    - restart suspended job in background (can also restart using fg %1)
+disown %1                - detach %1 from this shell so can logout without killing it
+
+
+Getting Help
+------------
+Most commands have a -—help switch (that’s two dashes) to print out command line options.
+Most commands also have a “man page” which you can list by typing “man foo” where 
+foo is the command name.  The man page is more detailed.
+
+
+Make Targets
+------------
+Makefile
+   DEPS         — all OBJS are rebuilt when one of these files changes; typically .h files
+   OBJS         — individual binary files to be built from .cpp files; one-to-one
+   LOBJS        — .o files from other directories that .exe files depend on;  won’t be rebuilt automatically
+   PROGS        — list of .exe files to be built when .o files change
+make            — rebuild all .exe files (uses Makefile for rules)
+make foo.o      — rebuild foo.o from foo.cpp
+make goo.exe    — rebuild goo.exe program
+make goo.run    — run goo.exe after rebuilding if necessary
+make goo.drun   — run goo.exe using gdb debugger with -tui option (full screen source list)
+
+
+GDB Debugger Commands
+---------------------
+I recommend prints for most debugging, but gdb can be very useful for debugging exceptions 
+such as segmentation violations (bad pointer de-referencing).  macOS uses lldb which has
+a lot of the same commands, but has some differences
+
+gdb -tui        - run gui version with source viewing (highly recommended)
+R               — (re)start program
+b foo           — set a break point at subroutine foo
+b exit          — set a break point at exit which gets called when program dies
+bt              — back trace stack to show stack frames: 1, 2, 3, etc.
+fr 2            — change to stack frame 2
+c               — continue execution after hitting breakpoint
+step            — step to next statement; steps INTO function calls
+next            — step to next statement; steps OVER function calls
+quit            — quit
+list 150        — list source of current file around line 150
+list foo.cpp:15 — list source of foo.cpp around line 15
+list -40        — go up 40 lines in current source
+list            — go down several lines in current source
+help list       — get help on list command options
+.gdbinit        — file containing commands that are executed when gdb starts up; 
+                  useful for repetitive initial commands when debugging the same problem
