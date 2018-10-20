@@ -1,8 +1,0 @@
-export LD_LIBRARY_PATH=/home/utils/freeglut-2.8.1/lib:$LD_LIBRARY_PATH
-
-cd ../base
-make
-cd ../viz
-make clean
-make
-./_viz.exe -viz_path test.viz -win_eye_z 100.0
