@@ -10,5 +10,5 @@ viz      - general-purpose 3D visualizer with animation of objects from a JSON f
 </pre>
 
 <p>
-Doxygen Output: https://github.com/balfieri/nanocad/tree/master/userdoc/html/index.html
+[Doxygen Output](userdoc/html/index.html)
 </p>
