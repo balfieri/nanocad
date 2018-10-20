@@ -131,3 +131,20 @@ list            — go down several lines in current source
 help list       — get help on list command options
 .gdbinit        — file containing commands that are executed when gdb starts up; 
                   useful for repetitive initial commands when debugging the same problem
+
+GIT Source Control
+------------------
+git clone https://github/balfieri/nanocad.git   -- clones tree and puts it under nanocad directory
+.gitignore                                      -- file that contains matching files that are excluded
+git status                                      -- show which files are modified
+git add --all                                   -- get all new and modified files ready for check-in
+git commit -m "<msg>"                           -- check in modified files to local .git repository with given message
+git push origin master                          -- push (check in)  changes in local .git repository to remote master branch
+git pull                                        -- pull (check out) changes from remote master branch to local .git repository
+git log <file>                                  -- show commit history of given file
+
+useful aliases:
+    alias gits='git status'
+    alias gita='git add --all; git status'
+    alias gitc='git commit -m'
+    alias gitpom='git push -u origin master'
