@@ -139,7 +139,7 @@ git clone https://github/balfieri/nanocad.git   -- clones tree and puts it under
 git status                                      -- show which files are modified
 git add --all                                   -- get all new and modified files ready for check-in
 git commit -m "<msg>"                           -- check in modified files to local .git repository with given message
-git push origin master                          -- push (check in)  changes in local .git repository to remote master branch
+git push -u origin master                       -- push (check in)  changes in local .git repository to remote master branch
 git pull                                        -- pull (check out) changes from remote master branch to local .git repository
 git log <file>                                  -- show commit history of given file
 
