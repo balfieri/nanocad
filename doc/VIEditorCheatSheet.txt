@@ -1,0 +1,131 @@
+                                                VI (or VIM) Editor
+
+Two modes: command mode (default) and insert mode.
+
+What’s weird about vi is that, when in command mode, you use normal keys to issue commands.
+
+Inserting Text (entering insert mode) 
+-------------------------------------
+i - insert before current char 
+a - insert after current character 
+O - insert new line before current line 
+o - insert new line after current line
+
+<ESC> key returns to command mode
+
+The following are all in command mode...
+
+Movement 
+--------
+
+l - right one character (space bar or right arrow also does it, but better to learn these 4 keys) 
+h - left one char 
+j - down one line 
+k - up one line
+
+0 - beginning of this line 
+$ - end of this line
+
+CTRL-f - next page 
+CTRL-b - previous page
+
+1G - beginning of file 
+G - end of file 
+205G - line 205
+
+w - next word 
+b - previous word
+
+10j - down 10 lines 
+5b - back 5 words etc.
+
+Deletion
+--------
+
+x - delete current character 
+dw - delete next word 
+dd - delete current line 
+D - delete current character to end of line
+J - delete newline at end of this line (i.e., join with next line)
+
+5dw - delete 5 words 
+33dd - delete 33 lines
+
+Copying Lines 
+-------------
+
+yy - copy (yank) current line 
+5yy - copy 5 lines
+
+Pasting Lines 
+-------------
+
+p - paste after current line 
+P - paste before current line
+
+Pasting With Mouse
+------------------
+problem: auto-indent will screw up lines that are indented
+t - set auto-indent off so pasted content doesn’t get messed up
+i or I or o or O - to insert
+<paste lines>
+<ESC>
+T - turn back on auto-indent for normal indent mode
+[I need to automate this - just haven’t done it yet]
+
+Searching  
+---------
+
+/string - search forward for string 
+n - search forward for next occurrence 
+?string - search backward for string 
+N - search backward for next occurrence
+
+Replacement 
+-----------
+
+:s/string1/string2/ - replace first occurrence string1 with string2 on current line 
+:s/string1/string2/g - replace all occurrences on current line 
+:1,$s/string1/string2/g - replace all occurrences on all lines
+:1,25s/string1/string2/g - replace all occurrences on lines 1 .. 25
+
+Note: colon commands require hitting ENTER key to complete
+
+Ranges of Lines 
+---------------
+
+ma - mark current line as 'a 
+y'a - copy (yank) all lines between current line and line marked as 'a 
+d'a - same but delete all such lines 
+'a,.s/string1/string2/ - replace string on all lines between 'a line and current line
+
+Note: you can also create marks 'b, 'c, etc.
+
+Indenting 
+---------
+
+<< - unindent current line by 4 spaces 
+>> - indent current line by 4 spaces 
+5>> - indent 5 lines 
+<'a - unindent all lines between marked line and current line 
+:set sw=2 - set shift width to 2 spaces (default is 4)
+
+File Commands 
+-------------
+
+:x - save changes and quit (ZZ also does it which is what I normally use)
+:w - save current file without quitting 
+:w filename - save to a new filename
+:w! filename - overwrite file without complaining 
+:q - quit if file not modified 
+:q! - discard changes and quit  
+:e filename - edit another filename 
+:e # - edit previous file 
+:e! filename - discard changes and edit another file 
+:e! - discard changes and re-edit current file
+
+.vimrc File
+-----------
+
+Contains initial settings on start up (e.g., autoindent (ai), sw=4, expandtab, etc.)
+vi ~/.vimrc
