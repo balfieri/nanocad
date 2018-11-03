@@ -8,3 +8,8 @@ base     - common 2D/3D OpenGL-based graphics library and system functions
 
 viz      - general-purpose 3D visualizer with animation of objects from a JSON file
 </pre>
+
+<p>
+Bob Alfieri<br>
+Chapel Hill, NC
+</p>
