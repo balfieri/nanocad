@@ -1,4 +1,4 @@
-This repository contains general-purpose 3D and 2D visualization software that can be used in
+This repository contains general-purpose 3D and 2D visualization C++ software that can be used in
 many different contexts.
 
 This is all open-source.  Refer to the LICENSE.md for licensing details.
