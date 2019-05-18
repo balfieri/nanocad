@@ -54,7 +54,14 @@ void EnableVertexAttribArray( GLuint index );
 void DisableVertexAttribArray( GLuint index );
 void VertexAttribPointer( GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid * pointer );
 void DrawElements( GLenum mode, GLsizei count, GLenum type, const GLvoid * indices );
-
+#else
+#define GenBuffers			glGenBuffers
+#define BindBuffer			glBindBuffer
+#define BufferData			glBufferData
+#define EnableVertexAttribArray		glEnableVertexAttribArray
+#define DisableVertexAttribArray	glDisableVertexAttribArray
+#define VertexAttribPointer		glVertexAttribPointer
+#define DrawElements			glDrawElements
 #endif
 
 Sys * sys = nullptr;
