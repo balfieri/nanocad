@@ -132,6 +132,16 @@ public:
         return mods;
     }
 
+    static void mousewheel_event( int wheel, int dir, int x, int y )
+    {
+        if ( sys->impl->world == 0 || !sys->impl->config->win_mouse_motion_enabled ) return;
+
+        int scroll = SYS_SCROLL_VERTICAL;
+        int action = (dir > 0) ? SYS_ACTION_SCROLL_UP : SYS_ACTION_SCROLL_DOWN;
+        int mods   = modifiers();
+        sys->impl->world->scroll_event( scroll, action, mods );
+    }
+
     static void motion_event( int x, int y )
     {
         if ( sys->impl->world == 0 || !sys->impl->config->win_mouse_motion_enabled ) return;
@@ -186,12 +196,12 @@ public:
         sys->impl->world->key_event( key, SYS_ACTION_RELEASE, mods );
     }
 
-    static void button_event( int glut_button, int state, int x, int y )
+    static void mouse_event( int glut_button, int state, int x, int y )
     {
         if ( sys->impl->world == 0 ) return;
 
         motion_event( x, y );
-        int mods   = modifiers();
+        int mods = modifiers();
         if ( glut_button < 3 ) {
             // MOUSE BUTTON
             //
@@ -247,10 +257,11 @@ Sys::Sys( Config * config )
     glutDisplayFunc( Sys::Impl::render_event );
 
     glutMotionFunc( Sys::Impl::motion_event );
+    //glutMouseWheelFunc( Sys::Impl::mousewheel_event );  // open glut only
     glutPassiveMotionFunc( Sys::Impl::motion_event );
     glutKeyboardFunc( Sys::Impl::key_event );
     glutSpecialFunc( Sys::Impl::special_key_event );
-    glutMouseFunc( Sys::Impl::button_event );
+    glutMouseFunc( Sys::Impl::mouse_event );
 
     //------------------------------------------------------------
     // No batches yet.

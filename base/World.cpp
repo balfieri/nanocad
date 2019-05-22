@@ -469,6 +469,22 @@ void World::resize_event( double w, double h )
 {
 }
 
+void World::button_event( int button, int action, int modifiers )
+{
+    bool is_pressed = action == SYS_ACTION_PRESS;
+    impl->button_pressed[button] = is_pressed;
+
+    // select object when pressed
+}
+
+void World::scroll_event( int scroll, int action, int modifiers )
+{
+    if ( scroll == SYS_SCROLL_VERTICAL ) {
+        float change_y = (action == SYS_ACTION_SCROLL_UP) ? 100.0 : -100.0;
+        impl->view_translate( 0.0, change_y, 0.0 );
+    }
+}
+
 void World::motion_event( double x, double y )
 {
     float change_x = x - impl->motion_x;
@@ -477,20 +493,35 @@ void World::motion_event( double x, double y )
     impl->motion_x = x;
     impl->motion_y = y;
 
-    if ( change_x < -0.001 || change_x > 0.001 ) {
-        //--------------------------------------------------------------
-        // Turn left or right.
-        //--------------------------------------------------------------
-        float a = -change_x / 1000.0;
-        impl->view_turn_left_right( a );
-    }
+    if ( impl->button_pressed[SYS_BUTTON_LEFT] ) {
+        if ( change_x < -0.001 || change_x > 0.001 ) {
+            //--------------------------------------------------------------
+            // Turn left or right.
+            //--------------------------------------------------------------
+            impl->view_turn_left_right( -change_x / 1000.0 );
+        }
 
-    if ( change_y < -0.001 || change_y > 0.001 ) {
-        //--------------------------------------------------------------
-        // Tilt up or down.
-        //--------------------------------------------------------------
-        float a = change_y / 1000.0;
-        impl->view_tilt_up_down( a );
+        if ( change_y < -0.001 || change_y > 0.001 ) {
+            //--------------------------------------------------------------
+            // Tilt up or down.
+            //--------------------------------------------------------------
+            impl->view_tilt_up_down( -change_y / 1000.0 );
+        }
+
+    } else if ( impl->button_pressed[SYS_BUTTON_RIGHT] ) {
+        if ( change_x < -0.001 || change_x > 0.001 ) {
+            //--------------------------------------------------------------
+            // Move left or right.
+            //--------------------------------------------------------------
+            impl->view_translate( -change_x/10.0, 0.0, 0.0 );
+        }
+
+        if ( change_y < -0.001 || change_y > 0.001 ) {
+            //--------------------------------------------------------------
+            // Move in or out.
+            //--------------------------------------------------------------
+            impl->view_translate( 0.0, 0.0, change_y / 10.0 );
+        }
     }
 }
 
@@ -542,18 +573,12 @@ void World::key_event( int key, int action, int modifiers )
             break;
 
         case ' ':
-            if ( (modifiers & (SYS_MOD_SHIFT|SYS_MOD_CTRL)) == 0 ) {
-                impl->view_translate( 0.0, 10.0*MOVEMENT, 0.0 );
-            } else {
-                impl->view_translate( 0.0, 100.0*MOVEMENT, 0.0 );
-            }
+        case 'q':
+            impl->view_translate( 0.0, 100.0*MOVEMENT, 0.0 );
             break;
 
         case '\t':
-            impl->view_translate( 0.0, -10.0*MOVEMENT, 0.0 );
-            break;
-
-        case '`':
+        case 'z':
             impl->view_translate( 0.0, -100.0*MOVEMENT, 0.0 );
             break;
 
@@ -610,18 +635,6 @@ void World::key_event( int key, int action, int modifiers )
             // ignore
             break;
     }
-}
-
-void World::button_event( int button, int action, int modifiers )
-{
-    bool is_pressed = action == SYS_ACTION_PRESS;
-    impl->button_pressed[button] = is_pressed;
-
-    // select object when pressed
-}
-
-void World::scroll_event( int scroll, int action, int modifiers )
-{
 }
 
 void World::Impl::view_print( const char * from )
