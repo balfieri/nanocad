@@ -481,7 +481,7 @@ void World::motion_event( double x, double y )
         //--------------------------------------------------------------
         // Turn left or right.
         //--------------------------------------------------------------
-        float a = -change_x / 100.0;
+        float a = -change_x / 1000.0;
         impl->view_turn_left_right( a );
     }
 
@@ -489,7 +489,7 @@ void World::motion_event( double x, double y )
         //--------------------------------------------------------------
         // Tilt up or down.
         //--------------------------------------------------------------
-        float a = change_y / 100.0;
+        float a = change_y / 1000.0;
         impl->view_tilt_up_down( a );
     }
 }

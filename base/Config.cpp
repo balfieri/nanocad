@@ -50,7 +50,7 @@ Config::Config( int argc, const char * argv[] )
     this->win_near_z = 0.01f;
     this->win_far_z = 10000.0f;
     this->win_perspective_fudge_factor = 1.0f;   
-    this->win_mouse_motion_enabled = false;
+    this->win_mouse_motion_enabled = true;
     this->win_batch_cnt = 16*1024;
     this->win_batch_geom_cnt = 1024;
     this->win_batch_vertex_cnt = this->win_batch_geom_cnt * 16;
