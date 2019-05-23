@@ -557,19 +557,19 @@ void World::key_event( int key, int action, int modifiers )
             break;
 
         case 'w':
-            impl->view_translate( 0.0, 0.0, -100.0*MOVEMENT );
-            break;
-
-        case 'W':
             impl->view_translate( 0.0, 0.0, -1000.0*MOVEMENT );
             break;
 
+        case 'W':
+            impl->view_translate( 0.0, 0.0, -10000.0*MOVEMENT );
+            break;
+
         case 's':
-            impl->view_translate( 0.0, 0.0, 100.0*MOVEMENT );
+            impl->view_translate( 0.0, 0.0, 1000.0*MOVEMENT );
             break;
 
         case 'S':
-            impl->view_translate( 0.0, 0.0, 1000.0*MOVEMENT );
+            impl->view_translate( 0.0, 0.0, 10000.0*MOVEMENT );
             break;
 
         case 'q':
