@@ -83,8 +83,8 @@ public:
     // called by World to draw frame
     //
     void     draw_begin( bool use_ortho,
-                         float fov_y,  float near_z, float far_z,
-                         float eye[],  float view[], float up[] );
+                         float vfov,  float near_z, float far_z,
+                         float lookfrom[],  float lookat[], float vup[] );
     void     draw_batch( int batch_hdl, Geom * geom_array, int geom_cnt, bool geom_changed );
     void     draw_text2d( Text2D * text, int text_cnt );
     void     draw_end( void );

@@ -43,7 +43,7 @@ ConfigViz::ConfigViz( int argc, const char * argv[] )
             this->viz_path = argv[++i];
         } else if ( strcmp( argv[i], "-viz_last" ) == 0 ) {
             this->viz_last = atoi( argv[++i] ); 
-        } else if ( strcmp( argv[i], "-viz_view" ) == 0 ) {
+        } else if ( strcmp( argv[i], "-viz_lookat" ) == 0 ) {
             view = argv[++i];
         }
     }
@@ -53,45 +53,45 @@ ConfigViz::ConfigViz( int argc, const char * argv[] )
     // Need to save this stuff in files.
     //----------------------------------------------------------------
     if ( strcmp( view, "front" ) == 0 ) {
-        this->win_eye[0]  = 39.37;
-        this->win_eye[1]  = 16.4;
-        this->win_eye[2]  = 364.0;
-        this->win_view[0] = 39.37;
-        this->win_view[1] = 16.4;
-        this->win_view[2] = 363.0;
-        this->win_fov_y   = 78.71;
+        this->win_lookfrom[0]  = 39.37;
+        this->win_lookfrom[1]  = 16.4;
+        this->win_lookfrom[2]  = 364.0;
+        this->win_lookat[0] = 39.37;
+        this->win_lookat[1] = 16.4;
+        this->win_lookat[2] = 363.0;
+        this->win_vfov   = 78.71;
     } else if ( strcmp( view, "left" ) == 0 ) {
-        this->win_eye[0]  = -202.94;
-        this->win_eye[1]  = 164.4;
-        this->win_eye[2]  = -9.026284;
-        this->win_view[0] = -201.936417;
-        this->win_view[1] = 164.4;
-        this->win_view[2] = -9.017079;
-        this->win_fov_y   = 78.71;
+        this->win_lookfrom[0]  = -202.94;
+        this->win_lookfrom[1]  = 164.4;
+        this->win_lookfrom[2]  = -9.026284;
+        this->win_lookat[0] = -201.936417;
+        this->win_lookat[1] = 164.4;
+        this->win_lookat[2] = -9.017079;
+        this->win_vfov   = 78.71;
     } else if ( strcmp( view, "backright" ) == 0 ) { 
-        this->win_eye[0]  = 4783.8;
-        this->win_eye[1]  = 364.4;
-        this->win_eye[2]  = 400.212;
-        this->win_view[0] = 4783.9;
-        this->win_view[1] = 363.8;
-        this->win_view[2] = 399.215;
-        this->win_fov_y   = 78.71;
+        this->win_lookfrom[0]  = 4783.8;
+        this->win_lookfrom[1]  = 364.4;
+        this->win_lookfrom[2]  = 400.212;
+        this->win_lookat[0] = 4783.9;
+        this->win_lookat[1] = 363.8;
+        this->win_lookat[2] = 399.215;
+        this->win_vfov   = 78.71;
     } else if ( strcmp( view, "right" ) == 0 ) {
-        this->win_eye[0]  = 120.0;
-        this->win_eye[1]  = 2.4;
-        this->win_eye[2]  = 295.0;
-        this->win_view[0] = 68.0;
-        this->win_view[1] = 2.4;
-        this->win_view[2] = 295.32;
-        this->win_fov_y   = 6.6;
+        this->win_lookfrom[0]  = 120.0;
+        this->win_lookfrom[1]  = 2.4;
+        this->win_lookfrom[2]  = 295.0;
+        this->win_lookat[0] = 68.0;
+        this->win_lookat[1] = 2.4;
+        this->win_lookat[2] = 295.32;
+        this->win_vfov   = 6.6;
     } else {
-        this->win_eye[0]  = 1.2;
-        this->win_eye[1]  = 45.2;
-        this->win_eye[2]  = 300.0;
-        this->win_view[0] = 1.2;
-        this->win_view[1] = 32.5;
-        this->win_view[2] = 299.0;
-        this->win_fov_y   = 11.71;
+        this->win_lookfrom[0]  = 1.2;
+        this->win_lookfrom[1]  = 45.2;
+        this->win_lookfrom[2]  = 300.0;
+        this->win_lookat[0] = 1.2;
+        this->win_lookat[1] = 32.5;
+        this->win_lookat[2] = 299.0;
+        this->win_vfov   = 11.71;
     }
     //this->win_mouse_motion_enabled = true;
     

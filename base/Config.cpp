@@ -35,18 +35,16 @@ Config::Config( int argc, const char * argv[] )
     this->win_off_y = 400;
     this->win_fullscreen = false;
     this->win_ortho = false;
-    this->win_eye[0] = 0.0; 
-    this->win_eye[1] = 0.0;
-    this->win_eye[2] = 100.f;
-    this->win_view[0] = win_eye[0];
-    this->win_view[1] = win_eye[1];
-    this->win_view[2] = this->win_eye[2] - 1.00f;
-    this->win_up[0]   = 0.0f;
-    this->win_up[1]   = 1.0f;
-    this->win_up[0]   = 0.0f;
-    this->win_fov_y = 8.0f; 
-//  this->win_near_z = -100.00f;
-//  this->win_far_z = 0.01f;
+    this->win_lookfrom[0] = 0.0; 
+    this->win_lookfrom[1] = 0.0;
+    this->win_lookfrom[2] = 100.f;
+    this->win_lookat[0] = win_lookfrom[0];
+    this->win_lookat[1] = win_lookfrom[1];
+    this->win_lookat[2] = this->win_lookfrom[2] - 1.00f;
+    this->win_vup[0]   = 0.0f;
+    this->win_vup[1]   = 1.0f;
+    this->win_vup[0]   = 0.0f;
+    this->win_vfov = 8.0f; 
     this->win_near_z = 0.01f;
     this->win_far_z = 10000.0f;
     this->win_perspective_fudge_factor = 1.0f;   
@@ -78,9 +76,9 @@ Config::Config( int argc, const char * argv[] )
             this->win_fullscreen = true;
         } else if ( strcmp( argv[i], "-win_capture" ) == 0 ) {
             this->win_capture_enabled = true;
-        } else if ( strcmp( argv[i], "-win_eye_z" ) == 0 ) {
-            this->win_eye[2] = atof( argv[++i] );
-            this->win_view[2] = this->win_eye[2] - 0.5f;
+        } else if ( strcmp( argv[i], "-win_lookfrom_z" ) == 0 ) {
+            this->win_lookfrom[2] = atof( argv[++i] );
+            this->win_lookat[2] = this->win_lookfrom[2] - 0.5f;
         } else if ( strcmp( argv[i], "-win_view_print" ) == 0 ) {
             this->win_view_print = true;
         } else if ( strcmp( argv[i], "-win_ortho" ) == 0 ) {

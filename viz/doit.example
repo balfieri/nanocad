@@ -5,4 +5,4 @@ sub cmd { my $c = shift; print "${c}\n"; system( $c ) == 0 or die "ERROR: comman
 
 cmd( "cd ../base; make" );
 cmd( "cd ../viz;  make" );
-cmd( "./_viz.exe -viz_path ./example.viz -viz_view front" );
+cmd( "./_viz.exe -viz_path ./example.viz -viz_lookat front" );

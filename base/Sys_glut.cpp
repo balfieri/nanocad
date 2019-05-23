@@ -379,7 +379,7 @@ void Sys::force_redraw( void )
 
 void Sys::draw_begin( bool use_ortho,
                       float fov_y,  float near_z, float far_z,
-                      float eye[],  float view[], float up[] )
+                      float lookfrom[],  float lookat[], float vup[] )
 {
     //----------------------------------------------------------
     // set up viewport and perspective
@@ -399,9 +399,9 @@ void Sys::draw_begin( bool use_ortho,
     glMatrixMode( GL_MODELVIEW );
     glLoadIdentity();
     if ( !use_ortho ) {
-        gluLookAt( eye[0],  eye[1],  eye[2],
-                   view[0], view[1], view[2],
-                   up[0],   up[1],   up[2] );
+        gluLookAt( lookfrom[0], lookfrom[1], lookfrom[2],
+                   lookat[0],   lookat[1],   lookat[2],
+                   vup[0],      vup[1],      vup[2] );
     }
 
     EnableVertexAttribArray( ATTRIB_POSITION );

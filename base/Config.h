@@ -38,10 +38,10 @@ public:
     int          win_off_y;
     bool         win_fullscreen;
     bool         win_ortho;
-    float        win_eye[3];
-    float        win_view[3];
-    float        win_up[3];
-    float        win_fov_y;
+    float        win_lookfrom[3];
+    float        win_lookat[3];
+    float        win_vup[3];
+    float        win_vfov;
     float        win_near_z;
     float        win_far_z;
     float        win_perspective_fudge_factor;

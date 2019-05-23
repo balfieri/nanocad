@@ -80,10 +80,10 @@ public:
 
     // CAMERA VIEW
     //
-    void view_get( float * fov_y, float * near_z, float * far_z,
-                   float eye[], float view[], float up[] );
-    void view_set( float fov_y, float near_z, float far_z,
-                   float eye[], float view[], float up[] );
+    void view_get( float * vfov, float * near_z, float * far_z,
+                   float lookfrom[], float lookat[], float vup[] );
+    void view_set( float vfov, float near_z, float far_z,
+                   float lookfrom[], float lookat[], float vup[] );
 
     // GEOMETRY 
     //

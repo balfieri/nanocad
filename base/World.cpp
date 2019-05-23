@@ -48,12 +48,12 @@ public:
     Sys * sys;
 
     bool  use_ortho;
-    float fov_y;
+    float vfov;
     float near_z;
     float far_z;
-    float eye[3];
-    float view[3];
-    float up[3];
+    float lookfrom[3];
+    float lookat[3];
+    float vup[3];
     float D[3];
 
     float motion_x;
@@ -92,19 +92,19 @@ World::World( Config * config, Sys * sys, float w, float h, float d )
     // Initialize camera perspective
     //------------------------------------------------------------
     impl->use_ortho = config->win_ortho;
-    impl->fov_y = config->win_fov_y;
+    impl->vfov = config->win_vfov;
     impl->near_z = config->win_near_z;
     impl->far_z = config->win_far_z;
 
     for( int i = 0; i < 3; i++ ) 
     {
-        impl->eye[i]  = config->win_eye[i];  // where is the eye?
-        impl->view[i] = config->win_view[i]; // what point is the eye looking at?
-        impl->up[i]   = config->win_up[i];   // which way is up?
+        impl->lookfrom[i]  = config->win_lookfrom[i];  // where is the eye?
+        impl->lookat[i] = config->win_lookat[i]; // what point is the eye looking at?
+        impl->vup[i]   = config->win_vup[i];   // which way is up?
     }
-    vec_sub( impl->D, impl->view, impl->eye );
+    vec_sub( impl->D, impl->lookat, impl->lookfrom );
     vec_normalize( impl->D, impl->D );
-    vec_add( impl->view, impl->eye, impl->D );
+    vec_add( impl->lookat, impl->lookfrom, impl->D );
     impl->view_print( "World" );
 
     //------------------------------------------------------------
@@ -138,36 +138,36 @@ Config * World::config_get( void )
 //------------------------------
 // VIEW
 //------------------------------
-void World::view_get( float * fov_y, float * near_z, float * far_z,
-                      float eye[], float view[], float up[] )
+void World::view_get( float * vfov, float * near_z, float * far_z,
+                      float lookfrom[], float lookat[], float vup[] )
 {
-    *fov_y  = impl->fov_y;
+    *vfov  = impl->vfov;
     *near_z = impl->near_z;
     *far_z  = impl->far_z;
     for( int i = 0; i < 3; i++ ) 
     {
-        eye[i]  = impl->eye[i];
-        view[i] = impl->view[i];
-        up[i]   = impl->up[i];
+        lookfrom[i]  = impl->lookfrom[i];
+        lookat[i] = impl->lookat[i];
+        vup[i]   = impl->vup[i];
     }
     impl->view_print( "view_get" );
 }
 
-void World::view_set( float fov_y, float near_z, float far_z,
-                      float eye[], float view[], float up[] )
+void World::view_set( float vfov, float near_z, float far_z,
+                      float lookfrom[], float lookat[], float vup[] )
 {
-    impl->fov_y  = fov_y;
+    impl->vfov  = vfov;
     impl->near_z = near_z;
     impl->far_z  = far_z;
     for( int i = 0; i < 3; i++ ) 
     {
-        impl->eye[i]  = eye[i];
-        impl->view[i] = view[i];
-        impl->up[i]   = up[i];
+        impl->lookfrom[i] = lookfrom[i];
+        impl->lookat[i]   = lookat[i];
+        impl->vup[i]      = vup[i];
     }
-    vec_sub( impl->D, impl->view, impl->eye );
+    vec_sub( impl->D, impl->lookat, impl->lookfrom );
     vec_normalize( impl->D, impl->D );
-    vec_add( impl->view, impl->eye, impl->D );
+    vec_add( impl->lookat, impl->lookfrom, impl->D );
     impl->view_print( "view_set" );
 
     impl->sys->force_redraw();                                        
@@ -430,8 +430,8 @@ void World::frame_render( float wall_clock_ms )
     // begin frame draw
     //------------------------------------------------------
     impl->sys->draw_begin( impl->use_ortho,
-                           impl->fov_y, impl->near_z, impl->far_z,
-                           impl->eye,   impl->view,   impl->up );
+                           impl->vfov, impl->near_z, impl->far_z,
+                           impl->lookfrom, impl->lookat, impl->vup );
 
     //------------------------------------------------------
     // draw all batches
@@ -615,13 +615,13 @@ void World::key_event( int key, int action, int modifiers )
             break;
 
         case '+':
-            impl->fov_y /= 1.10;  // zoom in
+            impl->vfov /= 1.10;  // zoom in
             impl->view_print( "zoom in" );
             impl->sys->force_redraw();
             break;
 
         case '-':
-            impl->fov_y *= 1.10;  // zoom out
+            impl->vfov *= 1.10;  // zoom out
             impl->view_print( "zoom out" );
             impl->sys->force_redraw();
             break;
@@ -643,8 +643,8 @@ void World::Impl::view_print( const char * from )
 
     float len = vec_length( D );
     float diff[3]; 
-    vec_sub( diff, view, eye );
-    printf( "%s(): D=[%f, %f, %f] D_len=%f eye=[%f, %f, %f] view=[%f, %f, %f] diff=[%f, %f, %f] fov_y=%f\n", from, D[0], D[1], D[2], len, eye[0], eye[1], eye[2], view[0], view[1], view[2], diff[0], diff[1], diff[2], fov_y );
+    vec_sub( diff, lookat, lookfrom );
+    printf( "%s(): D=[%f, %f, %f] D_len=%f eye=[%f, %f, %f] view=[%f, %f, %f] diff=[%f, %f, %f] vfov=%f\n", from, D[0], D[1], D[2], len, lookfrom[0], lookfrom[1], lookfrom[2], lookat[0], lookat[1], lookat[2], diff[0], diff[1], diff[2], vfov );
 }
 
 void World::Impl::view_translate( float x, float y, float z )
@@ -656,22 +656,22 @@ void World::Impl::view_translate( float x, float y, float z )
     if ( y != 0.0 ) {
         // easy case
         //
-        eye[1]  += y;
-        view[1] += y;
+        lookfrom[1]  += y;
+        lookat[1] += y;
     } else if ( z != 0.0 ) {
         // move along D
         //
-        eye[0]  += -z * D[0];
-        eye[2]  += -z * D[2];
-        view[0] += -z * D[0];
-        view[2] += -z * D[2];
+        lookfrom[0]  += -z * D[0];
+        lookfrom[2]  += -z * D[2];
+        lookat[0] += -z * D[0];
+        lookat[2] += -z * D[2];
     } else if ( x != 0.0 ) {
         // move perpendicular
         //
-        eye[0]  += x  * D[2];
-        eye[2]  += -x * D[0];
-        view[0] += x  * D[2];
-        view[2] += -x * D[0];
+        lookfrom[0]  += x  * D[2];
+        lookfrom[2]  += -x * D[0];
+        lookat[0] += x  * D[2];
+        lookat[2] += -x * D[0];
     }
     view_print( "view_translate" );
 
@@ -693,8 +693,8 @@ void World::Impl::view_turn_left_right( float a )
     D_new[1] = 0.0f;
     D_new[2] = D[2] * cos_a - D[0] * sin_a;
     vec_normalize( D, D_new );
-    view[0] = eye[0] + D[0];
-    view[2] = eye[2] + D[2];
+    lookat[0] = lookfrom[0] + D[0];
+    lookat[2] = lookfrom[2] + D[2];
     view_print( "view_turn_left_right" );
 
     sys->force_redraw();
@@ -705,7 +705,7 @@ void World::Impl::view_tilt_up_down( float a )
     //------------------------------------------------------------
     // Tilt up/down by simply changing the view Y value.
     //------------------------------------------------------------
-    view[1] += a;
+    lookat[1] += a;
     view_print( "view_tilt_up_down" );
 
     sys->force_redraw();
