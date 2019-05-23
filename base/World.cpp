@@ -541,77 +541,77 @@ void World::key_event( int key, int action, int modifiers )
         // Minecraft style movement
         //
         case 'a':
-            impl->view_translate( 10.0*MOVEMENT/2.0f, 0.0, 0.0 );
-            break;
-
-        case 'A':
             impl->view_translate( 100.0*MOVEMENT/2.0f, 0.0, 0.0 );
             break;
 
-        case 'd':
-            impl->view_translate( -10.0*MOVEMENT/2.0f, 0.0, 0.0 );
+        case 'A':
+            impl->view_translate( 1000.0*MOVEMENT/2.0f, 0.0, 0.0 );
             break;
 
-        case 'D':
+        case 'd':
             impl->view_translate( -100.0*MOVEMENT/2.0f, 0.0, 0.0 );
             break;
 
-        case 'w':
-            impl->view_translate( 0.0, 0.0, -10.0*MOVEMENT );
+        case 'D':
+            impl->view_translate( -1000.0*MOVEMENT/2.0f, 0.0, 0.0 );
             break;
 
-        case 'W':
+        case 'w':
             impl->view_translate( 0.0, 0.0, -100.0*MOVEMENT );
             break;
 
+        case 'W':
+            impl->view_translate( 0.0, 0.0, -1000.0*MOVEMENT );
+            break;
+
         case 's':
-            impl->view_translate( 0.0, 0.0, 10.0*MOVEMENT );
+            impl->view_translate( 0.0, 0.0, 100.0*MOVEMENT );
             break;
 
         case 'S':
-            impl->view_translate( 0.0, 0.0, 100.0*MOVEMENT );
+            impl->view_translate( 0.0, 0.0, 1000.0*MOVEMENT );
             break;
 
         case ' ':
         case 'q':
-            impl->view_translate( 0.0, 100.0*MOVEMENT, 0.0 );
+            impl->view_translate( 0.0, 1000.0*MOVEMENT, 0.0 );
             break;
 
         case '\t':
         case 'z':
-            impl->view_translate( 0.0, -100.0*MOVEMENT, 0.0 );
+            impl->view_translate( 0.0, -1000.0*MOVEMENT, 0.0 );
             break;
 
         case 'h':
-            motion_event( impl->motion_x-1.0, impl->motion_y );
+            motion_event( impl->motion_x-100.0, impl->motion_y );
             break;
 
         case 'H':
-            motion_event( impl->motion_x-10.0, impl->motion_y );
+            motion_event( impl->motion_x-1000.0, impl->motion_y );
             break;
 
         case 'l':
-            motion_event( impl->motion_x+1.0, impl->motion_y );
+            motion_event( impl->motion_x+100.0, impl->motion_y );
             break;
 
         case 'L':
-            motion_event( impl->motion_x+10.0, impl->motion_y );
+            motion_event( impl->motion_x+1000.0, impl->motion_y );
             break;
 
         case 'k':
-            motion_event( impl->motion_x, impl->motion_y-1.0 );
+            motion_event( impl->motion_x, impl->motion_y-100.0 );
             break;
 
         case 'K':
-            motion_event( impl->motion_x, impl->motion_y-60.0 );
+            motion_event( impl->motion_x, impl->motion_y-1000.0 );
             break;
 
         case 'j':
-            motion_event( impl->motion_x, impl->motion_y+1.0 );
+            motion_event( impl->motion_x, impl->motion_y+100.0 );
             break;
 
         case 'J':
-            motion_event( impl->motion_x, impl->motion_y+60.0 );
+            motion_event( impl->motion_x, impl->motion_y+1000.0 );
             break;
 
         case '+':

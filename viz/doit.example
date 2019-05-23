@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+sub cmd { my $c = shift; print "${c}\n"; system( $c ) == 0 or die "ERROR: command failed: ${c}\n"; }
+
+cmd( "cd ../base; make" );
+cmd( "cd ../viz;  make" );
+cmd( "./_viz.exe -viz_path ./example.viz -viz_view front" );

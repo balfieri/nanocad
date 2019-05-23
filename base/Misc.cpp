@@ -23,7 +23,7 @@
 
 void my_exit( int status )  // can set a breakpoint here
 {
-    exit( 1 );
+    exit( status );
 }
 
 int int_log2( int n )

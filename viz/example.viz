@@ -1,0 +1,6848 @@
+[
+
+# 0
+{ 
+  line: "0: [0,0,0] to [0,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 42, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 1
+{ 
+  line: "1: [0,2,0] to [2,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 50, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 2
+{ 
+  line: "2: [1,2,0] to [1,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 3
+{ 
+  line: "3: [2,0,0] to [2,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 5, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 4
+{ 
+  line: "4: [2,0,0] to [2,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 5, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 5
+{ 
+  line: "5: [2,0,0] to [2,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 132, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 6
+{ 
+  line: "6: [2,0,0] to [2,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 7
+{ 
+  line: "7: [2,2,0] to [4,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 140, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 8
+{ 
+  line: "8: [3,2,0] to [3,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 169, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 9
+{ 
+  line: "9: [3,5,0] to [3,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 169, y: 48, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 10
+{ 
+  line: "10: [3,5,1] to [3,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 169, y: 80, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 11
+{ 
+  line: "11: [3,5,1] to [3,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 169, y: 112, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 12
+{ 
+  line: "12: [3,5,2] to [3,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 169, y: 144, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 13
+{ 
+  line: "13: [0,11,0] to [0,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 42, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 14
+{ 
+  line: "14: [0,9,0] to [2,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 50, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 15
+{ 
+  line: "15: [1,9,0] to [1,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 16
+{ 
+  line: "16: [2,11,0] to [2,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 5, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 17
+{ 
+  line: "17: [2,11,0] to [2,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 5, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 18
+{ 
+  line: "18: [2,11,0] to [2,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 132, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 19
+{ 
+  line: "19: [2,11,0] to [2,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 20
+{ 
+  line: "20: [2,9,0] to [4,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 140, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 21
+{ 
+  line: "21: [3,9,0] to [3,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 169, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 22
+{ 
+  line: "22: [4,0,0] to [4,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 222, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 23
+{ 
+  line: "23: [4,2,0] to [6,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 230, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 24
+{ 
+  line: "24: [5,2,0] to [5,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 25
+{ 
+  line: "25: [6,0,0] to [6,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 185, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 26
+{ 
+  line: "26: [6,0,0] to [6,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 185, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 27
+{ 
+  line: "27: [6,0,0] to [6,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 312, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 28
+{ 
+  line: "28: [6,0,0] to [6,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 29
+{ 
+  line: "29: [6,2,0] to [8,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 320, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 30
+{ 
+  line: "30: [7,2,0] to [7,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 349, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 31
+{ 
+  line: "31: [4,11,0] to [4,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 222, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 32
+{ 
+  line: "32: [4,9,0] to [6,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 230, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 33
+{ 
+  line: "33: [5,9,0] to [5,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 34
+{ 
+  line: "34: [6,11,0] to [6,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 185, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 35
+{ 
+  line: "35: [6,11,0] to [6,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 185, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 36
+{ 
+  line: "36: [6,11,0] to [6,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 312, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 37
+{ 
+  line: "37: [6,11,0] to [6,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 38
+{ 
+  line: "38: [6,9,0] to [8,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 320, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 39
+{ 
+  line: "39: [7,9,0] to [7,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 349, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 40
+{ 
+  line: "40: [8,0,0] to [8,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 402, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 41
+{ 
+  line: "41: [8,2,0] to [10,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 410, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 42
+{ 
+  line: "42: [9,2,0] to [9,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 439, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 43
+{ 
+  line: "43: [10,0,0] to [10,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 365, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 44
+{ 
+  line: "44: [10,0,0] to [10,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 365, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 45
+{ 
+  line: "45: [10,0,0] to [10,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 492, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 46
+{ 
+  line: "46: [10,0,0] to [10,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 484, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 47
+{ 
+  line: "47: [10,2,0] to [12,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 500, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 48
+{ 
+  line: "48: [11,2,0] to [11,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 49
+{ 
+  line: "49: [8,11,0] to [8,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 402, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 50
+{ 
+  line: "50: [8,9,0] to [10,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 410, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 51
+{ 
+  line: "51: [9,9,0] to [9,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 439, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 52
+{ 
+  line: "52: [10,11,0] to [10,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 365, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 53
+{ 
+  line: "53: [10,11,0] to [10,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 365, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 54
+{ 
+  line: "54: [10,11,0] to [10,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 492, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 55
+{ 
+  line: "55: [10,11,0] to [10,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 484, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 56
+{ 
+  line: "56: [10,9,0] to [12,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 500, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 57
+{ 
+  line: "57: [11,9,0] to [11,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 58
+{ 
+  line: "58: [12,0,0] to [12,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 455, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 59
+{ 
+  line: "59: [12,0,0] to [12,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 455, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 60
+{ 
+  line: "60: [12,0,0] to [12,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 582, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 61
+{ 
+  line: "61: [12,0,0] to [12,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 62
+{ 
+  line: "62: [12,2,0] to [14,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 590, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 63
+{ 
+  line: "63: [13,2,0] to [13,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 619, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 64
+{ 
+  line: "64: [13,5,0] to [13,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 619, y: 48, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 65
+{ 
+  line: "65: [13,5,1] to [13,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 619, y: 80, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 66
+{ 
+  line: "66: [13,5,1] to [13,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 619, y: 112, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 67
+{ 
+  line: "67: [13,5,2] to [13,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 619, y: 144, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 68
+{ 
+  line: "68: [12,11,0] to [12,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 455, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 69
+{ 
+  line: "69: [12,11,0] to [12,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 455, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 70
+{ 
+  line: "70: [12,11,0] to [12,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 582, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 71
+{ 
+  line: "71: [12,11,0] to [12,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 72
+{ 
+  line: "72: [12,9,0] to [14,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 590, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 73
+{ 
+  line: "73: [13,9,0] to [13,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 619, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 74
+{ 
+  line: "74: [14,0,0] to [14,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 545, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 75
+{ 
+  line: "75: [14,0,0] to [14,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 545, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 76
+{ 
+  line: "76: [14,0,0] to [14,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 672, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 77
+{ 
+  line: "77: [14,0,0] to [14,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 664, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 78
+{ 
+  line: "78: [14,2,0] to [16,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 680, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 79
+{ 
+  line: "79: [15,2,0] to [15,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 80
+{ 
+  line: "80: [14,11,0] to [14,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 545, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 81
+{ 
+  line: "81: [14,11,0] to [14,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 545, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 82
+{ 
+  line: "82: [14,11,0] to [14,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 672, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 83
+{ 
+  line: "83: [14,11,0] to [14,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 664, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 84
+{ 
+  line: "84: [14,9,0] to [16,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 680, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 85
+{ 
+  line: "85: [15,9,0] to [15,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 86
+{ 
+  line: "86: [16,0,0] to [16,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 635, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 87
+{ 
+  line: "87: [16,0,0] to [16,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 635, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 88
+{ 
+  line: "88: [16,0,0] to [16,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 762, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 89
+{ 
+  line: "89: [16,0,0] to [16,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 90
+{ 
+  line: "90: [16,2,0] to [18,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 770, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 91
+{ 
+  line: "91: [17,2,0] to [17,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 799, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 92
+{ 
+  line: "92: [16,11,0] to [16,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 635, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 93
+{ 
+  line: "93: [16,11,0] to [16,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 635, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 94
+{ 
+  line: "94: [16,11,0] to [16,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 762, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 95
+{ 
+  line: "95: [16,11,0] to [16,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 96
+{ 
+  line: "96: [16,9,0] to [18,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 770, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 97
+{ 
+  line: "97: [17,9,0] to [17,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 799, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 98
+{ 
+  line: "98: [18,0,0] to [18,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 852, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 99
+{ 
+  line: "99: [18,2,0] to [20,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 860, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 100
+{ 
+  line: "100: [19,2,0] to [19,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 889, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 101
+{ 
+  line: "101: [20,0,0] to [20,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 815, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 102
+{ 
+  line: "102: [20,0,0] to [20,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 815, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 103
+{ 
+  line: "103: [20,0,0] to [20,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 942, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 104
+{ 
+  line: "104: [20,0,0] to [20,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 934, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 105
+{ 
+  line: "105: [20,2,0] to [22,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 950, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 106
+{ 
+  line: "106: [21,2,0] to [21,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 979, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 107
+{ 
+  line: "107: [18,11,0] to [18,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 852, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 108
+{ 
+  line: "108: [18,9,0] to [20,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 860, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 109
+{ 
+  line: "109: [19,9,0] to [19,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 889, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 110
+{ 
+  line: "110: [20,11,0] to [20,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 815, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 111
+{ 
+  line: "111: [20,11,0] to [20,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 815, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 112
+{ 
+  line: "112: [20,11,0] to [20,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 942, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 113
+{ 
+  line: "113: [20,11,0] to [20,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 934, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 114
+{ 
+  line: "114: [20,9,0] to [22,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 950, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 115
+{ 
+  line: "115: [21,9,0] to [21,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 979, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 116
+{ 
+  line: "116: [22,0,0] to [22,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 905, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 117
+{ 
+  line: "117: [22,0,0] to [22,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 905, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 118
+{ 
+  line: "118: [22,0,0] to [22,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1032, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 119
+{ 
+  line: "119: [22,0,0] to [22,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 120
+{ 
+  line: "120: [22,2,0] to [24,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1040, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 121
+{ 
+  line: "121: [23,2,0] to [23,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1069, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 122
+{ 
+  line: "122: [23,5,0] to [23,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1069, y: 48, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 123
+{ 
+  line: "123: [23,5,1] to [23,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1069, y: 80, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 124
+{ 
+  line: "124: [23,5,1] to [23,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1069, y: 112, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 125
+{ 
+  line: "125: [23,5,2] to [23,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1069, y: 144, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 126
+{ 
+  line: "126: [22,11,0] to [22,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 905, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 127
+{ 
+  line: "127: [22,11,0] to [22,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 905, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 128
+{ 
+  line: "128: [22,11,0] to [22,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1032, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 129
+{ 
+  line: "129: [22,11,0] to [22,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 130
+{ 
+  line: "130: [22,9,0] to [24,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1040, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 131
+{ 
+  line: "131: [23,9,0] to [23,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1069, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 132
+{ 
+  line: "132: [24,0,0] to [24,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 995, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 133
+{ 
+  line: "133: [24,0,0] to [24,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 995, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 134
+{ 
+  line: "134: [24,0,0] to [24,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1122, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 135
+{ 
+  line: "135: [24,0,0] to [24,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 136
+{ 
+  line: "136: [24,2,0] to [26,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1130, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 137
+{ 
+  line: "137: [25,2,0] to [25,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 138
+{ 
+  line: "138: [24,11,0] to [24,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 995, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 139
+{ 
+  line: "139: [24,11,0] to [24,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 995, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 140
+{ 
+  line: "140: [24,11,0] to [24,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1122, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 141
+{ 
+  line: "141: [24,11,0] to [24,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 142
+{ 
+  line: "142: [24,9,0] to [26,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1130, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 143
+{ 
+  line: "143: [25,9,0] to [25,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 144
+{ 
+  line: "144: [26,0,0] to [26,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1085, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 145
+{ 
+  line: "145: [26,0,0] to [26,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1085, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 146
+{ 
+  line: "146: [26,0,0] to [26,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1212, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 147
+{ 
+  line: "147: [26,0,0] to [26,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1204, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 148
+{ 
+  line: "148: [26,2,0] to [28,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1220, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 149
+{ 
+  line: "149: [27,2,0] to [27,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1249, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 150
+{ 
+  line: "150: [26,11,0] to [26,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1085, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 151
+{ 
+  line: "151: [26,11,0] to [26,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1085, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 152
+{ 
+  line: "152: [26,11,0] to [26,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1212, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 153
+{ 
+  line: "153: [26,11,0] to [26,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1204, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 154
+{ 
+  line: "154: [26,9,0] to [28,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1220, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 155
+{ 
+  line: "155: [27,9,0] to [27,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1249, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 156
+{ 
+  line: "156: [28,0,0] to [28,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1302, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 157
+{ 
+  line: "157: [28,2,0] to [30,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1310, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 158
+{ 
+  line: "158: [29,2,0] to [29,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1339, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 159
+{ 
+  line: "159: [30,0,0] to [30,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1265, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 160
+{ 
+  line: "160: [30,0,0] to [30,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1265, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 161
+{ 
+  line: "161: [30,0,0] to [30,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1392, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 162
+{ 
+  line: "162: [30,0,0] to [30,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1384, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 163
+{ 
+  line: "163: [30,2,0] to [32,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1400, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 164
+{ 
+  line: "164: [31,2,0] to [31,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 165
+{ 
+  line: "165: [28,11,0] to [28,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1302, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 166
+{ 
+  line: "166: [28,9,0] to [30,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1310, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 167
+{ 
+  line: "167: [29,9,0] to [29,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1339, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 168
+{ 
+  line: "168: [30,11,0] to [30,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1265, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 169
+{ 
+  line: "169: [30,11,0] to [30,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1265, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 170
+{ 
+  line: "170: [30,11,0] to [30,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1392, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 171
+{ 
+  line: "171: [30,11,0] to [30,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1384, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 172
+{ 
+  line: "172: [30,9,0] to [32,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1400, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 173
+{ 
+  line: "173: [31,9,0] to [31,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 174
+{ 
+  line: "174: [32,0,0] to [32,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1355, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 175
+{ 
+  line: "175: [32,0,0] to [32,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1355, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 176
+{ 
+  line: "176: [32,0,0] to [32,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1482, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 177
+{ 
+  line: "177: [32,0,0] to [32,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 178
+{ 
+  line: "178: [32,2,0] to [34,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1490, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 179
+{ 
+  line: "179: [33,2,0] to [33,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1519, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 180
+{ 
+  line: "180: [33,5,0] to [33,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1519, y: 48, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 181
+{ 
+  line: "181: [33,5,1] to [33,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1519, y: 80, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 182
+{ 
+  line: "182: [33,5,1] to [33,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1519, y: 112, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 183
+{ 
+  line: "183: [33,5,2] to [33,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1519, y: 144, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 184
+{ 
+  line: "184: [32,11,0] to [32,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1355, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 185
+{ 
+  line: "185: [32,11,0] to [32,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1355, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 186
+{ 
+  line: "186: [32,11,0] to [32,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1482, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 187
+{ 
+  line: "187: [32,11,0] to [32,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 188
+{ 
+  line: "188: [32,9,0] to [34,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1490, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 189
+{ 
+  line: "189: [33,9,0] to [33,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1519, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 190
+{ 
+  line: "190: [34,0,0] to [34,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1445, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 191
+{ 
+  line: "191: [34,0,0] to [34,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1445, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 192
+{ 
+  line: "192: [34,0,0] to [34,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1572, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 193
+{ 
+  line: "193: [34,0,0] to [34,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1564, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 194
+{ 
+  line: "194: [34,2,0] to [36,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1580, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 195
+{ 
+  line: "195: [35,2,0] to [35,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1609, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 196
+{ 
+  line: "196: [36,0,0] to [36,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1662, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 197
+{ 
+  line: "197: [36,2,0] to [38,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1670, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 198
+{ 
+  line: "198: [37,2,0] to [37,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1699, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 199
+{ 
+  line: "199: [38,0,0] to [38,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1625, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 200
+{ 
+  line: "200: [38,0,0] to [38,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1625, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 201
+{ 
+  line: "201: [38,0,0] to [38,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1752, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 202
+{ 
+  line: "202: [38,0,0] to [38,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1744, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 203
+{ 
+  line: "203: [38,2,0] to [40,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1760, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 204
+{ 
+  line: "204: [39,2,0] to [39,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1789, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 205
+{ 
+  line: "205: [39,5,0] to [39,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1789, y: 48, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 206
+{ 
+  line: "206: [39,5,1] to [39,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1789, y: 80, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 207
+{ 
+  line: "207: [39,5,1] to [39,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1789, y: 112, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 208
+{ 
+  line: "208: [39,5,2] to [39,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1789, y: 144, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 209
+{ 
+  line: "209: [40,0,0] to [40,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1715, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 210
+{ 
+  line: "210: [40,0,0] to [40,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1715, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 211
+{ 
+  line: "211: [40,0,0] to [40,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1842, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 212
+{ 
+  line: "212: [40,0,0] to [40,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 213
+{ 
+  line: "213: [40,2,0] to [42,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1850, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 214
+{ 
+  line: "214: [41,2,0] to [41,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 215
+{ 
+  line: "215: [40,11,0] to [40,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1715, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 216
+{ 
+  line: "216: [40,11,0] to [40,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1715, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 217
+{ 
+  line: "217: [40,11,0] to [40,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1842, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 218
+{ 
+  line: "218: [40,11,0] to [40,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 219
+{ 
+  line: "219: [40,9,0] to [42,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1850, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 220
+{ 
+  line: "220: [41,9,0] to [41,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 221
+{ 
+  line: "221: [42,0,0] to [42,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1805, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 222
+{ 
+  line: "222: [42,0,0] to [42,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1805, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 223
+{ 
+  line: "223: [42,0,0] to [42,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1932, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 224
+{ 
+  line: "224: [42,0,0] to [42,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1924, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 225
+{ 
+  line: "225: [42,2,0] to [44,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1940, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 226
+{ 
+  line: "226: [43,2,0] to [43,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1969, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 227
+{ 
+  line: "227: [42,11,0] to [42,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1805, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 228
+{ 
+  line: "228: [42,11,0] to [42,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1805, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 229
+{ 
+  line: "229: [42,11,0] to [42,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1932, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 230
+{ 
+  line: "230: [42,11,0] to [42,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1924, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 231
+{ 
+  line: "231: [42,9,0] to [44,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1940, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 232
+{ 
+  line: "232: [43,9,0] to [43,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1969, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 233
+{ 
+  line: "233: [44,0,0] to [44,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2022, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 234
+{ 
+  line: "234: [44,2,0] to [46,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2030, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 235
+{ 
+  line: "235: [45,2,0] to [45,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2059, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 236
+{ 
+  line: "236: [46,0,0] to [46,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1985, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 237
+{ 
+  line: "237: [46,0,0] to [46,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1985, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 238
+{ 
+  line: "238: [46,0,0] to [46,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2112, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 239
+{ 
+  line: "239: [46,0,0] to [46,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2104, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 240
+{ 
+  line: "240: [46,2,0] to [48,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2120, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 241
+{ 
+  line: "241: [47,2,0] to [47,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 242
+{ 
+  line: "242: [44,11,0] to [44,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2022, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 243
+{ 
+  line: "243: [44,9,0] to [46,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2030, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 244
+{ 
+  line: "244: [45,9,0] to [45,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2059, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 245
+{ 
+  line: "245: [46,11,0] to [46,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1985, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 246
+{ 
+  line: "246: [46,11,0] to [46,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1985, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 247
+{ 
+  line: "247: [46,11,0] to [46,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2112, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 248
+{ 
+  line: "248: [46,11,0] to [46,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2104, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 249
+{ 
+  line: "249: [46,9,0] to [48,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2120, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 250
+{ 
+  line: "250: [47,9,0] to [47,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 251
+{ 
+  line: "251: [48,0,0] to [48,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2075, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 252
+{ 
+  line: "252: [48,0,0] to [48,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2075, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 253
+{ 
+  line: "253: [48,0,0] to [48,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2202, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 254
+{ 
+  line: "254: [48,0,0] to [48,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 255
+{ 
+  line: "255: [48,2,0] to [50,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2210, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 256
+{ 
+  line: "256: [49,2,0] to [49,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2239, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 257
+{ 
+  line: "257: [49,5,0] to [49,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2239, y: 48, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 258
+{ 
+  line: "258: [49,5,1] to [49,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2239, y: 80, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 259
+{ 
+  line: "259: [49,5,1] to [49,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2239, y: 112, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 260
+{ 
+  line: "260: [49,5,2] to [49,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2239, y: 144, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 261
+{ 
+  line: "261: [48,11,0] to [48,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2075, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 262
+{ 
+  line: "262: [48,11,0] to [48,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2075, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 263
+{ 
+  line: "263: [48,11,0] to [48,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2202, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 264
+{ 
+  line: "264: [48,11,0] to [48,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 265
+{ 
+  line: "265: [48,9,0] to [50,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2210, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 266
+{ 
+  line: "266: [49,9,0] to [49,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2239, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 267
+{ 
+  line: "267: [50,0,0] to [50,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2165, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 268
+{ 
+  line: "268: [50,0,0] to [50,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2165, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 269
+{ 
+  line: "269: [50,0,0] to [50,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2292, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 270
+{ 
+  line: "270: [50,0,0] to [50,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2284, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 271
+{ 
+  line: "271: [50,2,0] to [52,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2300, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 272
+{ 
+  line: "272: [51,2,0] to [51,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2329, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 273
+{ 
+  line: "273: [52,0,0] to [52,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2382, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 274
+{ 
+  line: "274: [52,2,0] to [54,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2390, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 275
+{ 
+  line: "275: [53,2,0] to [53,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2419, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 276
+{ 
+  line: "276: [54,0,0] to [54,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2345, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 277
+{ 
+  line: "277: [54,0,0] to [54,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2345, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 278
+{ 
+  line: "278: [54,0,0] to [54,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2472, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 279
+{ 
+  line: "279: [54,0,0] to [54,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2464, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 280
+{ 
+  line: "280: [54,2,0] to [56,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2480, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 281
+{ 
+  line: "281: [55,2,0] to [55,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2509, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 282
+{ 
+  line: "282: [55,5,0] to [55,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2509, y: 48, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 283
+{ 
+  line: "283: [55,5,1] to [55,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2509, y: 80, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 284
+{ 
+  line: "284: [55,5,1] to [55,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2509, y: 112, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 285
+{ 
+  line: "285: [55,5,2] to [55,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2509, y: 144, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 286
+{ 
+  line: "286: [56,0,0] to [56,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2435, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 287
+{ 
+  line: "287: [56,0,0] to [56,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2435, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 288
+{ 
+  line: "288: [56,0,0] to [56,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2562, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 289
+{ 
+  line: "289: [56,0,0] to [56,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 290
+{ 
+  line: "290: [56,2,0] to [58,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2570, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 291
+{ 
+  line: "291: [57,2,0] to [57,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 292
+{ 
+  line: "292: [56,11,0] to [56,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2435, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 293
+{ 
+  line: "293: [56,11,0] to [56,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2435, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 294
+{ 
+  line: "294: [56,11,0] to [56,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2562, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 295
+{ 
+  line: "295: [56,11,0] to [56,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 296
+{ 
+  line: "296: [56,9,0] to [58,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2570, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 297
+{ 
+  line: "297: [57,9,0] to [57,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 298
+{ 
+  line: "298: [58,0,0] to [58,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2525, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 299
+{ 
+  line: "299: [58,0,0] to [58,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2525, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 300
+{ 
+  line: "300: [58,0,0] to [58,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2652, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 301
+{ 
+  line: "301: [58,0,0] to [58,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 302
+{ 
+  line: "302: [58,2,0] to [60,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2660, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 303
+{ 
+  line: "303: [59,2,0] to [59,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2689, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 304
+{ 
+  line: "304: [58,11,0] to [58,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2525, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 305
+{ 
+  line: "305: [58,11,0] to [58,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2525, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 306
+{ 
+  line: "306: [58,11,0] to [58,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2652, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 307
+{ 
+  line: "307: [58,11,0] to [58,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 308
+{ 
+  line: "308: [58,9,0] to [60,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2660, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 309
+{ 
+  line: "309: [59,9,0] to [59,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2689, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 310
+{ 
+  line: "310: [60,0,0] to [60,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2742, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 311
+{ 
+  line: "311: [60,2,0] to [62,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2750, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 312
+{ 
+  line: "312: [61,2,0] to [61,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2779, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 313
+{ 
+  line: "313: [62,0,0] to [62,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2705, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 314
+{ 
+  line: "314: [62,0,0] to [62,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2705, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 315
+{ 
+  line: "315: [62,0,0] to [62,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2832, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 316
+{ 
+  line: "316: [62,0,0] to [62,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2824, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 317
+{ 
+  line: "317: [62,2,0] to [64,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2840, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 318
+{ 
+  line: "318: [63,2,0] to [63,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2869, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 319
+{ 
+  line: "319: [60,11,0] to [60,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2742, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 320
+{ 
+  line: "320: [60,9,0] to [62,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2750, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 321
+{ 
+  line: "321: [61,9,0] to [61,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2779, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 322
+{ 
+  line: "322: [62,11,0] to [62,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2705, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 323
+{ 
+  line: "323: [62,11,0] to [62,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2705, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 324
+{ 
+  line: "324: [62,11,0] to [62,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2832, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 325
+{ 
+  line: "325: [62,11,0] to [62,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2824, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 326
+{ 
+  line: "326: [62,9,0] to [64,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2840, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 327
+{ 
+  line: "327: [63,9,0] to [63,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2869, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 328
+{ 
+  line: "328: [64,0,0] to [64,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2795, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 329
+{ 
+  line: "329: [64,0,0] to [64,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2795, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 330
+{ 
+  line: "330: [64,0,0] to [64,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2922, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 331
+{ 
+  line: "331: [64,0,0] to [64,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 332
+{ 
+  line: "332: [64,2,0] to [66,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2930, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 333
+{ 
+  line: "333: [65,2,0] to [65,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2959, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 334
+{ 
+  line: "334: [65,5,0] to [65,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2959, y: 48, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 335
+{ 
+  line: "335: [65,5,1] to [65,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2959, y: 80, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 336
+{ 
+  line: "336: [65,5,1] to [65,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2959, y: 112, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 337
+{ 
+  line: "337: [65,5,2] to [65,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2959, y: 144, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 338
+{ 
+  line: "338: [64,11,0] to [64,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2795, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 339
+{ 
+  line: "339: [64,11,0] to [64,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2795, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 340
+{ 
+  line: "340: [64,11,0] to [64,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2922, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 341
+{ 
+  line: "341: [64,11,0] to [64,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 342
+{ 
+  line: "342: [64,9,0] to [66,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2930, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 343
+{ 
+  line: "343: [65,9,0] to [65,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2959, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 344
+{ 
+  line: "344: [66,0,0] to [66,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2885, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 345
+{ 
+  line: "345: [66,0,0] to [66,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2885, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 346
+{ 
+  line: "346: [66,0,0] to [66,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3012, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 347
+{ 
+  line: "347: [66,0,0] to [66,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3004, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 348
+{ 
+  line: "348: [66,2,0] to [68,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3020, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 349
+{ 
+  line: "349: [67,2,0] to [67,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3049, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 350
+{ 
+  line: "350: [68,0,0] to [68,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3102, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 351
+{ 
+  line: "351: [68,2,0] to [70,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3110, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 352
+{ 
+  line: "352: [69,2,0] to [69,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3139, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 353
+{ 
+  line: "353: [70,0,0] to [70,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3065, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 354
+{ 
+  line: "354: [70,0,0] to [70,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3065, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 355
+{ 
+  line: "355: [70,0,0] to [70,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3192, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 356
+{ 
+  line: "356: [70,0,0] to [70,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3184, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 357
+{ 
+  line: "357: [70,2,0] to [72,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3200, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 358
+{ 
+  line: "358: [71,2,0] to [71,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3229, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 359
+{ 
+  line: "359: [71,5,0] to [71,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3229, y: 48, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 360
+{ 
+  line: "360: [71,5,1] to [71,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3229, y: 80, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 361
+{ 
+  line: "361: [71,5,1] to [71,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3229, y: 112, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 362
+{ 
+  line: "362: [71,5,2] to [71,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3229, y: 144, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 363
+{ 
+  line: "363: [72,0,0] to [72,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3155, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 364
+{ 
+  line: "364: [72,0,0] to [72,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3155, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 365
+{ 
+  line: "365: [72,0,0] to [72,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3282, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 366
+{ 
+  line: "366: [72,0,0] to [72,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 367
+{ 
+  line: "367: [72,2,0] to [74,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3290, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 368
+{ 
+  line: "368: [73,2,0] to [73,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3319, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 369
+{ 
+  line: "369: [72,11,0] to [72,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3155, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 370
+{ 
+  line: "370: [72,11,0] to [72,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3155, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 371
+{ 
+  line: "371: [72,11,0] to [72,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3282, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 372
+{ 
+  line: "372: [72,11,0] to [72,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 373
+{ 
+  line: "373: [72,9,0] to [74,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3290, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 374
+{ 
+  line: "374: [73,9,0] to [73,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3319, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 375
+{ 
+  line: "375: [74,0,0] to [74,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3245, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 376
+{ 
+  line: "376: [74,0,0] to [74,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3245, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 377
+{ 
+  line: "377: [74,0,0] to [74,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3372, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 378
+{ 
+  line: "378: [74,0,0] to [74,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3364, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 379
+{ 
+  line: "379: [74,2,0] to [76,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3380, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 380
+{ 
+  line: "380: [75,2,0] to [75,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3409, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 381
+{ 
+  line: "381: [74,11,0] to [74,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3245, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 382
+{ 
+  line: "382: [74,11,0] to [74,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3245, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 383
+{ 
+  line: "383: [74,11,0] to [74,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3372, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 384
+{ 
+  line: "384: [74,11,0] to [74,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3364, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 385
+{ 
+  line: "385: [74,9,0] to [76,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3380, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 386
+{ 
+  line: "386: [75,9,0] to [75,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3409, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 387
+{ 
+  line: "387: [76,0,0] to [76,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3462, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 388
+{ 
+  line: "388: [76,2,0] to [78,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3470, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 389
+{ 
+  line: "389: [77,2,0] to [77,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3499, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 390
+{ 
+  line: "390: [78,0,0] to [78,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3425, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 391
+{ 
+  line: "391: [78,0,0] to [78,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3425, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 392
+{ 
+  line: "392: [78,0,0] to [78,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3552, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 393
+{ 
+  line: "393: [78,0,0] to [78,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3544, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 394
+{ 
+  line: "394: [78,2,0] to [80,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3560, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 395
+{ 
+  line: "395: [79,2,0] to [79,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 396
+{ 
+  line: "396: [76,11,0] to [76,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3462, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 397
+{ 
+  line: "397: [76,9,0] to [78,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3470, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 398
+{ 
+  line: "398: [77,9,0] to [77,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3499, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 399
+{ 
+  line: "399: [78,11,0] to [78,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3425, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 400
+{ 
+  line: "400: [78,11,0] to [78,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3425, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 401
+{ 
+  line: "401: [78,11,0] to [78,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3552, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 402
+{ 
+  line: "402: [78,11,0] to [78,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3544, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 403
+{ 
+  line: "403: [78,9,0] to [80,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3560, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 404
+{ 
+  line: "404: [79,9,0] to [79,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 405
+{ 
+  line: "405: [80,0,0] to [80,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3515, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 406
+{ 
+  line: "406: [80,0,0] to [80,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3515, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 407
+{ 
+  line: "407: [80,0,0] to [80,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3642, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 408
+{ 
+  line: "408: [80,0,0] to [80,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3634, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 409
+{ 
+  line: "409: [80,2,0] to [82,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3650, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 410
+{ 
+  line: "410: [81,2,0] to [81,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 411
+{ 
+  line: "411: [81,5,0] to [81,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 48, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 412
+{ 
+  line: "412: [81,5,1] to [81,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 80, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 413
+{ 
+  line: "413: [81,5,1] to [81,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 112, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 414
+{ 
+  line: "414: [81,5,2] to [81,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 144, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 415
+{ 
+  line: "415: [80,11,0] to [80,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3515, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 416
+{ 
+  line: "416: [80,11,0] to [80,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3515, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 417
+{ 
+  line: "417: [80,11,0] to [80,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3642, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 418
+{ 
+  line: "418: [80,11,0] to [80,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3634, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 419
+{ 
+  line: "419: [80,9,0] to [82,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3650, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 420
+{ 
+  line: "420: [81,9,0] to [81,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 421
+{ 
+  line: "421: [82,0,0] to [82,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3605, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 422
+{ 
+  line: "422: [82,0,0] to [82,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3605, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 423
+{ 
+  line: "423: [82,0,0] to [82,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3732, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 424
+{ 
+  line: "424: [82,0,0] to [82,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 425
+{ 
+  line: "425: [82,2,0] to [84,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3740, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 426
+{ 
+  line: "426: [83,2,0] to [83,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3769, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 427
+{ 
+  line: "427: [82,11,0] to [82,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3605, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 428
+{ 
+  line: "428: [82,11,0] to [82,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3605, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 429
+{ 
+  line: "429: [82,11,0] to [82,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3732, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 430
+{ 
+  line: "430: [82,11,0] to [82,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 431
+{ 
+  line: "431: [82,9,0] to [84,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3740, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 432
+{ 
+  line: "432: [83,9,0] to [83,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3769, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 433
+{ 
+  line: "433: [84,0,0] to [84,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3695, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 434
+{ 
+  line: "434: [84,0,0] to [84,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3695, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 435
+{ 
+  line: "435: [84,0,0] to [84,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3822, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 436
+{ 
+  line: "436: [84,0,0] to [84,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3814, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 437
+{ 
+  line: "437: [84,2,0] to [86,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3830, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 438
+{ 
+  line: "438: [85,2,0] to [85,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3859, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 439
+{ 
+  line: "439: [84,11,0] to [84,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3695, y: 0, z: 113, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 440
+{ 
+  line: "440: [84,11,0] to [84,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3695, y: 0, z: 89, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 441
+{ 
+  line: "441: [84,11,0] to [84,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3822, y: 0, z: 132, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 442
+{ 
+  line: "442: [84,11,0] to [84,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3814, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 443
+{ 
+  line: "443: [84,9,0] to [86,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3830, y: 0, z: 180, w: 90, h: 1, d: -120, color: "maroon" },
+},
+
+# 444
+{ 
+  line: "444: [85,9,0] to [85,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3859, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 445
+{ 
+  line: "445: [86,0,0] to [86,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3912, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 446
+{ 
+  line: "446: [86,2,0] to [88,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3920, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 447
+{ 
+  line: "447: [87,2,0] to [87,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3949, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 448
+{ 
+  line: "448: [88,0,0] to [88,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3875, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 449
+{ 
+  line: "449: [88,0,0] to [88,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3875, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 450
+{ 
+  line: "450: [88,0,0] to [88,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4002, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 451
+{ 
+  line: "451: [88,0,0] to [88,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 452
+{ 
+  line: "452: [88,2,0] to [90,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4010, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 453
+{ 
+  line: "453: [89,2,0] to [89,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 454
+{ 
+  line: "454: [86,11,0] to [86,6,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3912, y: 0, z: 156, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 455
+{ 
+  line: "455: [86,9,0] to [88,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3920, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 456
+{ 
+  line: "456: [87,9,0] to [87,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3949, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 457
+{ 
+  line: "457: [88,11,0] to [88,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3875, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 458
+{ 
+  line: "458: [88,11,0] to [88,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3875, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 459
+{ 
+  line: "459: [88,11,0] to [88,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4002, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 460
+{ 
+  line: "460: [88,11,0] to [88,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 461
+{ 
+  line: "461: [88,9,0] to [90,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4010, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 462
+{ 
+  line: "462: [89,9,0] to [89,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 463
+{ 
+  line: "463: [90,0,0] to [90,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3965, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 464
+{ 
+  line: "464: [90,0,0] to [90,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3965, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 465
+{ 
+  line: "465: [90,0,0] to [90,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4092, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 466
+{ 
+  line: "466: [90,0,0] to [90,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4084, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 467
+{ 
+  line: "467: [90,2,0] to [92,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4100, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 468
+{ 
+  line: "468: [91,2,0] to [91,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4129, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 469
+{ 
+  line: "469: [91,5,0] to [91,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4129, y: 48, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 470
+{ 
+  line: "470: [91,5,1] to [91,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4129, y: 80, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 471
+{ 
+  line: "471: [91,5,1] to [91,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4129, y: 112, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 472
+{ 
+  line: "472: [91,5,2] to [91,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4129, y: 144, z: 180, w: 32, h: 32, d: -32, color: "dim gray" },
+},
+
+# 473
+{ 
+  line: "473: [90,11,0] to [90,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3965, y: 0, z: 113, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 474
+{ 
+  line: "474: [90,11,0] to [90,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3965, y: 0, z: 89, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 475
+{ 
+  line: "475: [90,11,0] to [90,7,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4092, y: 0, z: 132, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 476
+{ 
+  line: "476: [90,11,0] to [90,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4084, y: 16, z: 36, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 477
+{ 
+  line: "477: [90,9,0] to [92,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4100, y: 0, z: 180, w: 90, h: 1, d: -120, color: "gray" },
+},
+
+# 478
+{ 
+  line: "478: [91,9,0] to [91,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4129, y: 10, z: 180, w: 32, h: 38, d: -120, color: "royal blue" },
+},
+
+# 479
+{ 
+  line: "479: [92,0,0] to [92,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4055, y: 0, z: 233, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 480
+{ 
+  line: "480: [92,0,0] to [92,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4055, y: 0, z: 209, w: 225, h: 10, d: -10, color: "white" },
+},
+
+# 481
+{ 
+  line: "481: [92,0,0] to [92,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4182, y: 0, z: 300, w: 16, h: 16, d: -120, color: "dim gray" },
+},
+
+# 482
+{ 
+  line: "482: [92,0,0] to [92,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4174, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 483
+{ 
+  line: "483: [92,2,0] to [94,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4190, y: 0, z: 252, w: 90, h: 1, d: -96, color: "gray" },
+},
+
+# 484
+{ 
+  line: "484: [93,2,0] to [93,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4219, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 485
+{ 
+  line: "485: [94,0,0] to [94,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4272, y: 0, z: 300, w: 16, h: 16, d: -144, color: "dark blue" },
+},
+
+# 486
+{ 
+  line: "486: [94,2,0] to [96,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4280, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 487
+{ 
+  line: "487: [95,2,0] to [95,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4309, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 488
+{ 
+  line: "488: [96,0,0] to [96,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4235, y: 0, z: 233, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 489
+{ 
+  line: "489: [96,0,0] to [96,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4235, y: 0, z: 209, w: 225, h: 10, d: -10, color: "pink" },
+},
+
+# 490
+{ 
+  line: "490: [96,0,0] to [96,4,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4362, y: 0, z: 300, w: 16, h: 16, d: -120, color: "red" },
+},
+
+# 491
+{ 
+  line: "491: [96,0,0] to [96,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4354, y: 16, z: 300, w: 32, h: 32, d: -32, color: "royal blue" },
+},
+
+# 492
+{ 
+  line: "492: [96,2,0] to [98,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4370, y: 0, z: 252, w: 90, h: 1, d: -96, color: "maroon" },
+},
+
+# 493
+{ 
+  line: "493: [97,2,0] to [97,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4399, y: 10, z: 252, w: 32, h: 38, d: -96, color: "royal blue" },
+},
+
+# 494
+{ 
+  line: "494: [97,5,0] to [97,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4399, y: 48, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 495
+{ 
+  line: "495: [97,5,1] to [97,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4399, y: 80, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 496
+{ 
+  line: "496: [97,5,1] to [97,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4399, y: 112, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 497
+{ 
+  line: "497: [97,5,2] to [97,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4399, y: 144, z: 180, w: 32, h: 32, d: -32, color: "red" },
+},
+
+# 498
+{ 
+  line: "498: [11,5,0] to [11,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 499
+{ 
+  line: "499: [11,5,1] to [11,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 500
+{ 
+  line: "500: [11,5,1] to [11,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 501
+{ 
+  line: "501: [11,5,2] to [11,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 502
+{ 
+  line: "502: [15,5,0] to [15,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 503
+{ 
+  line: "503: [15,5,1] to [15,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 504
+{ 
+  line: "504: [15,5,1] to [15,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 505
+{ 
+  line: "505: [15,5,2] to [15,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 506
+{ 
+  line: "506: [21,5,0] to [21,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 979, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 507
+{ 
+  line: "507: [21,5,1] to [21,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 979, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 508
+{ 
+  line: "508: [21,5,1] to [21,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 979, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 509
+{ 
+  line: "509: [21,5,2] to [21,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 979, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 510
+{ 
+  line: "510: [25,5,0] to [25,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 511
+{ 
+  line: "511: [25,5,1] to [25,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 512
+{ 
+  line: "512: [25,5,1] to [25,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 513
+{ 
+  line: "513: [25,5,2] to [25,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 514
+{ 
+  line: "514: [31,5,0] to [31,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 515
+{ 
+  line: "515: [31,5,1] to [31,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 516
+{ 
+  line: "516: [31,5,1] to [31,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 517
+{ 
+  line: "517: [31,5,2] to [31,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 518
+{ 
+  line: "518: [41,5,0] to [41,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 519
+{ 
+  line: "519: [41,5,1] to [41,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 520
+{ 
+  line: "520: [41,5,1] to [41,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 521
+{ 
+  line: "521: [41,5,2] to [41,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 522
+{ 
+  line: "522: [47,5,0] to [47,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 523
+{ 
+  line: "523: [47,5,1] to [47,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 524
+{ 
+  line: "524: [47,5,1] to [47,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 525
+{ 
+  line: "525: [47,5,2] to [47,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 526
+{ 
+  line: "526: [57,5,0] to [57,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 527
+{ 
+  line: "527: [57,5,1] to [57,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 528
+{ 
+  line: "528: [57,5,1] to [57,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 529
+{ 
+  line: "529: [57,5,2] to [57,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 530
+{ 
+  line: "530: [63,5,0] to [63,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2869, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 531
+{ 
+  line: "531: [63,5,1] to [63,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2869, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 532
+{ 
+  line: "532: [63,5,1] to [63,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2869, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 533
+{ 
+  line: "533: [63,5,2] to [63,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2869, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 534
+{ 
+  line: "534: [73,5,0] to [73,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3319, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 535
+{ 
+  line: "535: [73,5,1] to [73,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3319, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 536
+{ 
+  line: "536: [73,5,1] to [73,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3319, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 537
+{ 
+  line: "537: [73,5,2] to [73,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3319, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 538
+{ 
+  line: "538: [79,5,0] to [79,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 539
+{ 
+  line: "539: [79,5,1] to [79,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 540
+{ 
+  line: "540: [79,5,1] to [79,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 541
+{ 
+  line: "541: [79,5,2] to [79,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 542
+{ 
+  line: "542: [83,5,0] to [83,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3769, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 543
+{ 
+  line: "543: [83,5,1] to [83,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3769, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 544
+{ 
+  line: "544: [83,5,1] to [83,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3769, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 545
+{ 
+  line: "545: [83,5,2] to [83,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3769, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 546
+{ 
+  line: "546: [89,5,0] to [89,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 547
+{ 
+  line: "547: [89,5,1] to [89,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 548
+{ 
+  line: "548: [89,5,1] to [89,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 549
+{ 
+  line: "549: [89,5,2] to [89,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 144, z: 180, w: 32, h: 32, d: -32, color: "chocolate" },
+},
+
+# 550
+{
+  line: "550: [35,5,0] to [37,5,0]",
+  kind:  hide,
+  index: 196,
+},
+
+# 551
+{ 
+  line: "551: [35,5,0] to [35,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1609, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 552
+{ 
+  line: "552: [35,5,1] to [35,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1609, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 553
+{ 
+  line: "553: [35,5,1] to [37,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1609, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 554
+{ 
+  line: "554: [37,5,1] to [37,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1699, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 555
+{
+  line: "555: [67,5,0] to [69,5,0]",
+  kind:  unhide,
+  index: 196,
+},
+
+# 556
+{
+  line: "556: [67,5,0] to [69,5,0]",
+  kind:  hide,
+  index: 350,
+},
+
+# 557
+{ 
+  line: "557: [67,5,0] to [67,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3049, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 558
+{ 
+  line: "558: [67,5,1] to [67,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3049, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 559
+{ 
+  line: "559: [67,5,1] to [69,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3049, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 560
+{ 
+  line: "560: [69,5,1] to [69,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3139, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 561
+{
+  line: "561: [93,5,0] to [95,5,0]",
+  kind:  unhide,
+  index: 350,
+},
+
+# 562
+{
+  line: "562: [93,5,0] to [95,5,0]",
+  kind:  hide,
+  index: 485,
+},
+
+# 563
+{ 
+  line: "563: [93,5,0] to [93,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4219, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 564
+{ 
+  line: "564: [93,5,1] to [93,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4219, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 565
+{ 
+  line: "565: [93,5,1] to [95,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4219, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 566
+{ 
+  line: "566: [95,5,1] to [95,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4309, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 567
+{
+  line: "567: [6,11,0] to [10,11,0]",
+  kind:  unhide,
+  index: 485,
+},
+
+# 568
+{
+  line: "568: [6,11,0] to [10,11,0]",
+  kind:  hide,
+  index: 40,
+},
+
+# 569
+{ 
+  line: "569: [6,11,0] to [6,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 570
+{ 
+  line: "570: [6,11,1] to [6,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 571
+{ 
+  line: "571: [6,11,1] to [10,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 80, z: 36, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 572
+{ 
+  line: "572: [10,11,1] to [10,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 484, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 573
+{
+  line: "573: [42,11,0] to [46,11,0]",
+  kind:  unhide,
+  index: 40,
+},
+
+# 574
+{
+  line: "574: [42,11,0] to [46,11,0]",
+  kind:  hide,
+  index: 233,
+},
+
+# 575
+{ 
+  line: "575: [42,11,0] to [42,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1924, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 576
+{ 
+  line: "576: [42,11,1] to [42,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1924, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 577
+{ 
+  line: "577: [42,11,1] to [46,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1924, y: 80, z: 36, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 578
+{ 
+  line: "578: [46,11,1] to [46,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2104, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 579
+{
+  line: "579: [1,5,0] to [7,5,0]",
+  kind:  unhide,
+  index: 233,
+},
+
+# 580
+{
+  line: "580: [1,5,0] to [7,5,0]",
+  kind:  hide,
+  index: 22,
+},
+
+# 581
+{ 
+  line: "581: [1,5,0] to [1,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 582
+{ 
+  line: "582: [1,5,1] to [1,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 583
+{ 
+  line: "583: [1,5,1] to [2,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 80, z: 180, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 584
+{ 
+  line: "584: [2,5,1] to [2,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 585
+{
+  line: "585: [2,5,1] to [2,5,2]",
+  kind:  hide,
+  index: 584,
+},
+
+# 586
+{
+  line: "586: [1,5,1] to [2,5,1]",
+  kind:  hide,
+  index: 583,
+},
+
+# 587
+{
+  line: "587: [1,5,1] to [1,5,1]",
+  kind:  hide,
+  index: 582,
+},
+
+# 588
+{
+  line: "588: [1,5,0] to [1,5,1]",
+  kind:  hide,
+  index: 581,
+},
+
+# 589
+{ 
+  line: "589: [1,4,0] to [1,4,1]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 48, z: 204, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 590
+{ 
+  line: "590: [1,4,1] to [1,4,1]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 80, z: 204, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 591
+{ 
+  line: "591: [1,4,1] to [7,4,1]",
+  kind:  geom,
+  shape: { kind: box, x: 79, y: 80, z: 204, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 592
+{ 
+  line: "592: [7,4,1] to [7,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 349, y: 80, z: 204, w: 32, h: 32, d: -48, color: "olive drab" },
+},
+
+# 593
+{ 
+  line: "593: [7,5,1] to [7,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 349, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 594
+{
+  line: "594: [24,0,0] to [30,0,0]",
+  kind:  unhide,
+  index: 22,
+},
+
+# 595
+{
+  line: "595: [24,0,0] to [30,0,0]",
+  kind:  hide,
+  index: 156,
+},
+
+# 596
+{ 
+  line: "596: [24,0,0] to [24,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 597
+{ 
+  line: "597: [24,0,1] to [24,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 598
+{ 
+  line: "598: [24,0,1] to [30,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 80, z: 300, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 599
+{ 
+  line: "599: [30,0,1] to [30,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1384, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 600
+{
+  line: "600: [26,0,0] to [32,0,0]",
+  kind:  unhide,
+  index: 156,
+},
+
+# 601
+{
+  line: "601: [26,0,0] to [32,0,0]",
+  kind:  hide,
+  index: 174,
+},
+
+# 602
+{
+  line: "602: [32,0,0] to [26,0,0]",
+  kind:  unhide,
+  index: 174,
+},
+
+# 603
+{
+  line: "603: [32,0,0] to [26,0,0]",
+  kind:  hide,
+  index: 144,
+},
+
+# 604
+{ 
+  line: "604: [32,0,0] to [32,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 605
+{ 
+  line: "605: [32,0,1] to [32,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 606
+{ 
+  line: "606: [32,0,1] to [31,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 80, z: 300, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 607
+{ 
+  line: "607: [31,0,1] to [31,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1429, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 608
+{ 
+  line: "608: [31,0,2] to [26,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1204, y: 144, z: 300, w: 254, h: 32, d: -32, color: "chocolate" },
+},
+
+# 609
+{
+  line: "609: [31,0,2] to [26,0,2]",
+  kind:  hide,
+  index: 608,
+},
+
+# 610
+{
+  line: "610: [31,0,1] to [31,0,2]",
+  kind:  hide,
+  index: 607,
+},
+
+# 611
+{
+  line: "611: [32,0,1] to [31,0,1]",
+  kind:  hide,
+  index: 606,
+},
+
+# 612
+{
+  line: "612: [32,0,1] to [32,0,1]",
+  kind:  hide,
+  index: 605,
+},
+
+# 613
+{
+  line: "613: [32,0,0] to [32,0,1]",
+  kind:  hide,
+  index: 604,
+},
+
+# 614
+{
+  line: "614: [82,0,0] to [88,0,0]",
+  kind:  unhide,
+  index: 144,
+},
+
+# 615
+{
+  line: "615: [82,0,0] to [88,0,0]",
+  kind:  hide,
+  index: 445,
+},
+
+# 616
+{ 
+  line: "616: [82,0,0] to [82,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 617
+{ 
+  line: "617: [82,0,1] to [82,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 618
+{ 
+  line: "618: [82,0,1] to [88,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 80, z: 300, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 619
+{ 
+  line: "619: [88,0,1] to [88,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 620
+{
+  line: "620: [84,0,0] to [90,0,0]",
+  kind:  unhide,
+  index: 445,
+},
+
+# 621
+{
+  line: "621: [84,0,0] to [90,0,0]",
+  kind:  hide,
+  index: 463,
+},
+
+# 622
+{
+  line: "622: [90,0,0] to [84,0,0]",
+  kind:  unhide,
+  index: 463,
+},
+
+# 623
+{
+  line: "623: [90,0,0] to [84,0,0]",
+  kind:  hide,
+  index: 433,
+},
+
+# 624
+{ 
+  line: "624: [90,0,0] to [90,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4084, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 625
+{ 
+  line: "625: [90,0,1] to [90,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4084, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 626
+{ 
+  line: "626: [90,0,1] to [89,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 80, z: 300, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 627
+{ 
+  line: "627: [89,0,1] to [89,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 628
+{ 
+  line: "628: [89,0,2] to [84,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3814, y: 144, z: 300, w: 254, h: 32, d: -32, color: "chocolate" },
+},
+
+# 629
+{
+  line: "629: [89,0,2] to [84,0,2]",
+  kind:  hide,
+  index: 628,
+},
+
+# 630
+{
+  line: "630: [89,0,1] to [89,0,2]",
+  kind:  hide,
+  index: 627,
+},
+
+# 631
+{
+  line: "631: [90,0,1] to [89,0,1]",
+  kind:  hide,
+  index: 626,
+},
+
+# 632
+{
+  line: "632: [90,0,1] to [90,0,1]",
+  kind:  hide,
+  index: 625,
+},
+
+# 633
+{
+  line: "633: [90,0,0] to [90,0,1]",
+  kind:  hide,
+  index: 624,
+},
+
+# 634
+{
+  line: "634: [40,11,0] to [48,11,0]",
+  kind:  unhide,
+  index: 433,
+},
+
+# 635
+{
+  line: "635: [40,11,0] to [48,11,0]",
+  kind:  hide,
+  index: 251,
+},
+
+# 636
+{ 
+  line: "636: [40,11,0] to [40,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 637
+{ 
+  line: "637: [40,11,1] to [40,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 638
+{ 
+  line: "638: [40,11,1] to [41,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 80, z: 36, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 639
+{ 
+  line: "639: [41,11,1] to [41,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 640
+{ 
+  line: "640: [41,11,2] to [48,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1879, y: 144, z: 36, w: 344, h: 32, d: -32, color: "chocolate" },
+},
+
+# 641
+{ 
+  line: "641: [48,11,2] to [48,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 642
+{ 
+  line: "642: [48,11,1] to [48,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 643
+{ 
+  line: "643: [48,11,1] to [48,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 644
+{
+  line: "644: [72,11,0] to [80,11,0]",
+  kind:  unhide,
+  index: 251,
+},
+
+# 645
+{
+  line: "645: [72,11,0] to [80,11,0]",
+  kind:  hide,
+  index: 405,
+},
+
+# 646
+{ 
+  line: "646: [72,11,0] to [72,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 647
+{ 
+  line: "647: [72,11,1] to [72,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 648
+{ 
+  line: "648: [72,11,1] to [80,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 80, z: 36, w: 389, h: 32, d: -32, color: "olive drab" },
+},
+
+# 649
+{ 
+  line: "649: [80,11,1] to [80,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3634, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 650
+{
+  line: "650: [85,5,0] to [84,11,0]",
+  kind:  unhide,
+  index: 405,
+},
+
+# 651
+{
+  line: "651: [85,5,0] to [84,11,0]",
+  kind:  hide,
+  index: 433,
+},
+
+# 652
+{ 
+  line: "652: [85,5,0] to [85,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3859, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 653
+{ 
+  line: "653: [85,5,1] to [85,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3859, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 654
+{ 
+  line: "654: [85,5,1] to [84,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3814, y: 80, z: 180, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 655
+{ 
+  line: "655: [84,5,1] to [84,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3814, y: 80, z: 180, w: 32, h: 32, d: -168, color: "olive drab" },
+},
+
+# 656
+{ 
+  line: "656: [84,11,1] to [84,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3814, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 657
+{
+  line: "657: [87,5,0] to [88,11,0]",
+  kind:  unhide,
+  index: 433,
+},
+
+# 658
+{
+  line: "658: [87,5,0] to [88,11,0]",
+  kind:  hide,
+  index: 445,
+},
+
+# 659
+{ 
+  line: "659: [87,5,0] to [87,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3949, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 660
+{ 
+  line: "660: [87,5,1] to [87,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3949, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 661
+{ 
+  line: "661: [87,5,1] to [88,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3949, y: 80, z: 180, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 662
+{ 
+  line: "662: [88,5,1] to [88,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 80, z: 180, w: 32, h: 32, d: -168, color: "olive drab" },
+},
+
+# 663
+{ 
+  line: "663: [88,11,1] to [88,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 664
+{
+  line: "664: [12,0,0] to [14,0,0]",
+  kind:  unhide,
+  index: 445,
+},
+
+# 665
+{
+  line: "665: [12,0,0] to [14,0,0]",
+  kind:  hide,
+  index: 74,
+},
+
+# 666
+{ 
+  line: "666: [12,0,0] to [12,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 667
+{ 
+  line: "667: [12,0,1] to [12,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 668
+{ 
+  line: "668: [12,0,1] to [14,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 80, z: 300, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 669
+{ 
+  line: "669: [14,0,1] to [14,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 664, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 670
+{
+  line: "670: [17,5,0] to [19,5,0]",
+  kind:  unhide,
+  index: 74,
+},
+
+# 671
+{
+  line: "671: [17,5,0] to [19,5,0]",
+  kind:  hide,
+  index: 98,
+},
+
+# 672
+{ 
+  line: "672: [17,5,0] to [17,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 799, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 673
+{ 
+  line: "673: [17,5,1] to [17,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 799, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 674
+{ 
+  line: "674: [17,5,1] to [19,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 799, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 675
+{ 
+  line: "675: [19,5,1] to [19,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 889, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 676
+{
+  line: "676: [27,5,0] to [29,5,0]",
+  kind:  unhide,
+  index: 98,
+},
+
+# 677
+{
+  line: "677: [27,5,0] to [29,5,0]",
+  kind:  hide,
+  index: 156,
+},
+
+# 678
+{ 
+  line: "678: [27,5,0] to [27,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1249, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 679
+{ 
+  line: "679: [27,5,1] to [27,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1249, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 680
+{ 
+  line: "680: [27,5,1] to [29,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1249, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 681
+{ 
+  line: "681: [29,5,1] to [29,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1339, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 682
+{
+  line: "682: [43,5,0] to [45,5,0]",
+  kind:  unhide,
+  index: 156,
+},
+
+# 683
+{
+  line: "683: [43,5,0] to [45,5,0]",
+  kind:  hide,
+  index: 233,
+},
+
+# 684
+{ 
+  line: "684: [43,5,0] to [43,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1969, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 685
+{ 
+  line: "685: [43,5,1] to [43,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1969, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 686
+{ 
+  line: "686: [43,5,1] to [45,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1969, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 687
+{ 
+  line: "687: [45,5,1] to [45,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2059, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 688
+{
+  line: "688: [51,5,0] to [53,5,0]",
+  kind:  unhide,
+  index: 233,
+},
+
+# 689
+{
+  line: "689: [51,5,0] to [53,5,0]",
+  kind:  hide,
+  index: 273,
+},
+
+# 690
+{ 
+  line: "690: [51,5,0] to [51,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2329, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 691
+{ 
+  line: "691: [51,5,1] to [51,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2329, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 692
+{ 
+  line: "692: [51,5,1] to [53,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2329, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 693
+{ 
+  line: "693: [53,5,1] to [53,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2419, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 694
+{
+  line: "694: [54,0,0] to [56,0,0]",
+  kind:  unhide,
+  index: 273,
+},
+
+# 695
+{
+  line: "695: [54,0,0] to [56,0,0]",
+  kind:  hide,
+  index: 286,
+},
+
+# 696
+{ 
+  line: "696: [54,0,0] to [54,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2464, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 697
+{ 
+  line: "697: [54,0,1] to [54,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2464, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 698
+{ 
+  line: "698: [54,0,1] to [56,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2464, y: 80, z: 300, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 699
+{ 
+  line: "699: [56,0,1] to [56,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 700
+{
+  line: "700: [59,5,0] to [61,5,0]",
+  kind:  unhide,
+  index: 286,
+},
+
+# 701
+{
+  line: "701: [59,5,0] to [61,5,0]",
+  kind:  hide,
+  index: 310,
+},
+
+# 702
+{ 
+  line: "702: [59,5,0] to [59,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2689, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 703
+{ 
+  line: "703: [59,5,1] to [59,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2689, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 704
+{ 
+  line: "704: [59,5,1] to [61,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2689, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 705
+{ 
+  line: "705: [61,5,1] to [61,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2779, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 706
+{
+  line: "706: [75,5,0] to [77,5,0]",
+  kind:  unhide,
+  index: 310,
+},
+
+# 707
+{
+  line: "707: [75,5,0] to [77,5,0]",
+  kind:  hide,
+  index: 387,
+},
+
+# 708
+{ 
+  line: "708: [75,5,0] to [75,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3409, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 709
+{ 
+  line: "709: [75,5,1] to [75,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3409, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 710
+{ 
+  line: "710: [75,5,1] to [77,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3409, y: 80, z: 180, w: 119, h: 32, d: -32, color: "olive drab" },
+},
+
+# 711
+{ 
+  line: "711: [77,5,1] to [77,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3499, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 712
+{
+  line: "712: [5,5,0] to [9,5,0]",
+  kind:  unhide,
+  index: 387,
+},
+
+# 713
+{
+  line: "713: [5,5,0] to [9,5,0]",
+  kind:  hide,
+  index: 40,
+},
+
+# 714
+{ 
+  line: "714: [5,5,0] to [5,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 715
+{ 
+  line: "715: [5,5,1] to [5,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 716
+{ 
+  line: "716: [5,5,1] to [6,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 80, z: 180, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 717
+{ 
+  line: "717: [6,5,1] to [6,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 718
+{ 
+  line: "718: [6,5,2] to [9,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 144, z: 180, w: 164, h: 32, d: -32, color: "chocolate" },
+},
+
+# 719
+{ 
+  line: "719: [9,5,2] to [9,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 439, y: 112, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 720
+{ 
+  line: "720: [9,5,1] to [9,5,0]",
+  kind:  geom,
+  shape: { kind: box, x: 439, y: 48, z: 180, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 721
+{ 
+  line: "721: [9,5,1] to [9,5,1]",
+  kind:  geom,
+  shape: { kind: box, x: 439, y: 80, z: 180, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 722
+{
+  line: "722: [16,11,0] to [20,11,0]",
+  kind:  unhide,
+  index: 40,
+},
+
+# 723
+{
+  line: "723: [16,11,0] to [20,11,0]",
+  kind:  hide,
+  index: 98,
+},
+
+# 724
+{ 
+  line: "724: [16,11,0] to [16,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 725
+{ 
+  line: "725: [16,11,1] to [16,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 726
+{ 
+  line: "726: [16,11,1] to [20,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 80, z: 36, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 727
+{ 
+  line: "727: [20,11,1] to [20,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 934, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 728
+{
+  line: "728: [26,11,0] to [30,11,0]",
+  kind:  unhide,
+  index: 98,
+},
+
+# 729
+{
+  line: "729: [26,11,0] to [30,11,0]",
+  kind:  hide,
+  index: 156,
+},
+
+# 730
+{ 
+  line: "730: [26,11,0] to [26,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1204, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 731
+{ 
+  line: "731: [26,11,1] to [26,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1204, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 732
+{ 
+  line: "732: [26,11,1] to [30,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1204, y: 80, z: 36, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 733
+{ 
+  line: "733: [30,11,1] to [30,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1384, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 734
+{
+  line: "734: [34,0,0] to [38,0,0]",
+  kind:  unhide,
+  index: 156,
+},
+
+# 735
+{
+  line: "735: [34,0,0] to [38,0,0]",
+  kind:  hide,
+  index: 196,
+},
+
+# 736
+{ 
+  line: "736: [34,0,0] to [34,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1564, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 737
+{ 
+  line: "737: [34,0,1] to [34,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1564, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 738
+{ 
+  line: "738: [34,0,1] to [38,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1564, y: 80, z: 300, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 739
+{ 
+  line: "739: [38,0,1] to [38,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1744, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 740
+{
+  line: "740: [50,0,0] to [54,0,1]",
+  kind:  unhide,
+  index: 196,
+},
+
+# 741
+{
+  line: "741: [50,0,0] to [54,0,1]",
+  kind:  hide,
+  index: 273,
+},
+
+# 742
+{ 
+  line: "742: [50,0,0] to [50,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2284, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 743
+{ 
+  line: "743: [50,0,1] to [50,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2284, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 744
+{ 
+  line: "744: [50,0,1] to [53,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2284, y: 80, z: 300, w: 164, h: 32, d: -32, color: "olive drab" },
+},
+
+# 745
+{ 
+  line: "745: [53,0,1] to [53,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2419, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 746
+{ 
+  line: "746: [53,0,2] to [54,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2419, y: 144, z: 300, w: 74, h: 32, d: -32, color: "chocolate" },
+},
+
+# 747
+{
+  line: "747: [53,0,2] to [54,0,2]",
+  kind:  hide,
+  index: 746,
+},
+
+# 748
+{
+  line: "748: [53,0,1] to [53,0,2]",
+  kind:  hide,
+  index: 745,
+},
+
+# 749
+{
+  line: "749: [50,0,1] to [53,0,1]",
+  kind:  hide,
+  index: 744,
+},
+
+# 750
+{
+  line: "750: [50,0,1] to [50,0,1]",
+  kind:  hide,
+  index: 743,
+},
+
+# 751
+{
+  line: "751: [50,0,0] to [50,0,1]",
+  kind:  hide,
+  index: 742,
+},
+
+# 752
+{
+  line: "752: [58,11,0] to [62,11,0]",
+  kind:  unhide,
+  index: 273,
+},
+
+# 753
+{
+  line: "753: [58,11,0] to [62,11,0]",
+  kind:  hide,
+  index: 310,
+},
+
+# 754
+{ 
+  line: "754: [58,11,0] to [58,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 755
+{ 
+  line: "755: [58,11,1] to [58,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 756
+{ 
+  line: "756: [58,11,1] to [62,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 80, z: 36, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 757
+{ 
+  line: "757: [62,11,1] to [62,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2824, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 758
+{
+  line: "758: [66,0,0] to [70,0,0]",
+  kind:  unhide,
+  index: 310,
+},
+
+# 759
+{
+  line: "759: [66,0,0] to [70,0,0]",
+  kind:  hide,
+  index: 350,
+},
+
+# 760
+{ 
+  line: "760: [66,0,0] to [66,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3004, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 761
+{ 
+  line: "761: [66,0,1] to [66,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3004, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 762
+{ 
+  line: "762: [66,0,1] to [70,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3004, y: 80, z: 300, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 763
+{ 
+  line: "763: [70,0,1] to [70,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3184, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 764
+{
+  line: "764: [74,11,0] to [78,11,0]",
+  kind:  unhide,
+  index: 350,
+},
+
+# 765
+{
+  line: "765: [74,11,0] to [78,11,0]",
+  kind:  hide,
+  index: 387,
+},
+
+# 766
+{
+  line: "766: [78,11,0] to [74,11,0]",
+  kind:  unhide,
+  index: 387,
+},
+
+# 767
+{
+  line: "767: [78,11,0] to [74,11,0]",
+  kind:  hide,
+  index: 375,
+},
+
+# 768
+{
+  line: "768: [92,0,0] to [88,11,0]",
+  kind:  unhide,
+  index: 375,
+},
+
+# 769
+{
+  line: "769: [92,0,0] to [88,11,0]",
+  kind:  hide,
+  index: 445,
+},
+
+# 770
+{ 
+  line: "770: [92,0,0] to [92,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4174, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 771
+{ 
+  line: "771: [92,0,1] to [92,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4174, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 772
+{ 
+  line: "772: [92,0,1] to [89,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 80, z: 300, w: 164, h: 32, d: -32, color: "olive drab" },
+},
+
+# 773
+{ 
+  line: "773: [89,0,1] to [89,4,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 80, z: 300, w: 32, h: 32, d: -120, color: "olive drab" },
+},
+
+# 774
+{ 
+  line: "774: [89,4,1] to [89,4,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 112, z: 204, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 775
+{ 
+  line: "775: [89,4,2] to [88,4,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 144, z: 204, w: 74, h: 32, d: -32, color: "chocolate" },
+},
+
+# 776
+{ 
+  line: "776: [88,4,2] to [88,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3994, y: 144, z: 204, w: 32, h: 32, d: -192, color: "chocolate" },
+},
+
+# 777
+{
+  line: "777: [88,4,2] to [88,11,2]",
+  kind:  hide,
+  index: 776,
+},
+
+# 778
+{
+  line: "778: [89,4,2] to [88,4,2]",
+  kind:  hide,
+  index: 775,
+},
+
+# 779
+{
+  line: "779: [89,4,1] to [89,4,2]",
+  kind:  hide,
+  index: 774,
+},
+
+# 780
+{
+  line: "780: [89,0,1] to [89,4,1]",
+  kind:  hide,
+  index: 773,
+},
+
+# 781
+{
+  line: "781: [92,0,1] to [89,0,1]",
+  kind:  hide,
+  index: 772,
+},
+
+# 782
+{
+  line: "782: [92,0,1] to [92,0,1]",
+  kind:  hide,
+  index: 771,
+},
+
+# 783
+{
+  line: "783: [92,0,0] to [92,0,1]",
+  kind:  hide,
+  index: 770,
+},
+
+# 784
+{
+  line: "784: [96,0,0] to [92,0,0]",
+  kind:  unhide,
+  index: 445,
+},
+
+# 785
+{
+  line: "785: [96,0,0] to [92,0,0]",
+  kind:  hide,
+  index: 479,
+},
+
+# 786
+{ 
+  line: "786: [96,0,0] to [96,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4354, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 787
+{ 
+  line: "787: [96,0,1] to [96,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4354, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 788
+{ 
+  line: "788: [96,0,1] to [92,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4174, y: 80, z: 300, w: 209, h: 32, d: -32, color: "olive drab" },
+},
+
+# 789
+{ 
+  line: "789: [92,0,1] to [92,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 4174, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 790
+{
+  line: "790: [58,0,0] to [53,5,0]",
+  kind:  unhide,
+  index: 479,
+},
+
+# 791
+{
+  line: "791: [58,0,0] to [53,5,0]",
+  kind:  hide,
+  index: 273,
+},
+
+# 792
+{ 
+  line: "792: [58,0,0] to [58,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 793
+{ 
+  line: "793: [58,0,1] to [58,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 794
+{ 
+  line: "794: [58,0,1] to [57,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 80, z: 300, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 795
+{ 
+  line: "795: [57,0,1] to [57,4,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 80, z: 300, w: 32, h: 32, d: -120, color: "olive drab" },
+},
+
+# 796
+{ 
+  line: "796: [57,4,1] to [57,4,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 112, z: 204, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 797
+{ 
+  line: "797: [57,4,2] to [53,4,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2419, y: 144, z: 204, w: 209, h: 32, d: -32, color: "chocolate" },
+},
+
+# 798
+{ 
+  line: "798: [53,4,2] to [53,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2419, y: 144, z: 204, w: 32, h: 32, d: -48, color: "chocolate" },
+},
+
+# 799
+{
+  line: "799: [53,4,2] to [53,5,2]",
+  kind:  hide,
+  index: 798,
+},
+
+# 800
+{
+  line: "800: [57,4,2] to [53,4,2]",
+  kind:  hide,
+  index: 797,
+},
+
+# 801
+{
+  line: "801: [57,4,1] to [57,4,2]",
+  kind:  hide,
+  index: 796,
+},
+
+# 802
+{
+  line: "802: [57,0,1] to [57,4,1]",
+  kind:  hide,
+  index: 795,
+},
+
+# 803
+{
+  line: "803: [58,0,1] to [57,0,1]",
+  kind:  hide,
+  index: 794,
+},
+
+# 804
+{
+  line: "804: [58,0,1] to [58,0,1]",
+  kind:  hide,
+  index: 793,
+},
+
+# 805
+{
+  line: "805: [58,0,0] to [58,0,1]",
+  kind:  hide,
+  index: 792,
+},
+
+# 806
+{
+  line: "806: [82,11,0] to [77,5,0]",
+  kind:  unhide,
+  index: 273,
+},
+
+# 807
+{
+  line: "807: [82,11,0] to [77,5,0]",
+  kind:  hide,
+  index: 387,
+},
+
+# 808
+{ 
+  line: "808: [82,11,0] to [82,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 809
+{ 
+  line: "809: [82,11,1] to [82,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 810
+{ 
+  line: "810: [82,11,1] to [81,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 80, z: 36, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 811
+{ 
+  line: "811: [81,11,1] to [81,6,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 80, z: 156, w: 32, h: 32, d: -144, color: "olive drab" },
+},
+
+# 812
+{ 
+  line: "812: [81,6,1] to [81,6,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3679, y: 112, z: 156, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 813
+{ 
+  line: "813: [81,6,2] to [77,6,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3499, y: 144, z: 156, w: 209, h: 32, d: -32, color: "chocolate" },
+},
+
+# 814
+{ 
+  line: "814: [77,6,2] to [77,5,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3499, y: 144, z: 180, w: 32, h: 32, d: -48, color: "chocolate" },
+},
+
+# 815
+{
+  line: "815: [77,6,2] to [77,5,2]",
+  kind:  hide,
+  index: 814,
+},
+
+# 816
+{
+  line: "816: [81,6,2] to [77,6,2]",
+  kind:  hide,
+  index: 813,
+},
+
+# 817
+{
+  line: "817: [81,6,1] to [81,6,2]",
+  kind:  hide,
+  index: 812,
+},
+
+# 818
+{
+  line: "818: [81,11,1] to [81,6,1]",
+  kind:  hide,
+  index: 811,
+},
+
+# 819
+{
+  line: "819: [82,11,1] to [81,11,1]",
+  kind:  hide,
+  index: 810,
+},
+
+# 820
+{
+  line: "820: [82,11,1] to [82,11,1]",
+  kind:  hide,
+  index: 809,
+},
+
+# 821
+{
+  line: "821: [82,11,0] to [82,11,1]",
+  kind:  hide,
+  index: 808,
+},
+
+# 822
+{
+  line: "822: [6,0,0] to [12,0,1]",
+  kind:  unhide,
+  index: 387,
+},
+
+# 823
+{
+  line: "823: [6,0,0] to [12,0,1]",
+  kind:  hide,
+  index: 58,
+},
+
+# 824
+{ 
+  line: "824: [6,0,0] to [6,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 825
+{ 
+  line: "825: [6,0,1] to [6,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 826
+{ 
+  line: "826: [6,0,1] to [11,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 304, y: 80, z: 300, w: 254, h: 32, d: -32, color: "olive drab" },
+},
+
+# 827
+{ 
+  line: "827: [11,0,1] to [11,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 828
+{ 
+  line: "828: [11,0,2] to [12,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 529, y: 144, z: 300, w: 74, h: 32, d: -32, color: "chocolate" },
+},
+
+# 829
+{
+  line: "829: [11,0,2] to [12,0,2]",
+  kind:  hide,
+  index: 828,
+},
+
+# 830
+{
+  line: "830: [11,0,1] to [11,0,2]",
+  kind:  hide,
+  index: 827,
+},
+
+# 831
+{
+  line: "831: [6,0,1] to [11,0,1]",
+  kind:  hide,
+  index: 826,
+},
+
+# 832
+{
+  line: "832: [6,0,1] to [6,0,1]",
+  kind:  hide,
+  index: 825,
+},
+
+# 833
+{
+  line: "833: [6,0,0] to [6,0,1]",
+  kind:  hide,
+  index: 824,
+},
+
+# 834
+{
+  line: "834: [10,0,0] to [16,0,0]",
+  kind:  unhide,
+  index: 58,
+},
+
+# 835
+{
+  line: "835: [10,0,0] to [16,0,0]",
+  kind:  hide,
+  index: 86,
+},
+
+# 836
+{
+  line: "836: [16,0,0] to [10,0,0]",
+  kind:  unhide,
+  index: 86,
+},
+
+# 837
+{
+  line: "837: [16,0,0] to [10,0,0]",
+  kind:  hide,
+  index: 40,
+},
+
+# 838
+{ 
+  line: "838: [16,0,0] to [16,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 839
+{ 
+  line: "839: [16,0,1] to [16,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 840
+{ 
+  line: "840: [16,0,1] to [15,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 80, z: 300, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 841
+{ 
+  line: "841: [15,0,1] to [15,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 842
+{ 
+  line: "842: [15,0,2] to [10,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 484, y: 144, z: 300, w: 254, h: 32, d: -32, color: "chocolate" },
+},
+
+# 843
+{
+  line: "843: [15,0,2] to [10,0,2]",
+  kind:  hide,
+  index: 842,
+},
+
+# 844
+{
+  line: "844: [15,0,1] to [15,0,2]",
+  kind:  hide,
+  index: 841,
+},
+
+# 845
+{
+  line: "845: [16,0,1] to [15,0,1]",
+  kind:  hide,
+  index: 840,
+},
+
+# 846
+{
+  line: "846: [16,0,1] to [16,0,1]",
+  kind:  hide,
+  index: 839,
+},
+
+# 847
+{
+  line: "847: [16,0,0] to [16,0,1]",
+  kind:  hide,
+  index: 838,
+},
+
+# 848
+{
+  line: "848: [20,0,0] to [14,0,1]",
+  kind:  unhide,
+  index: 40,
+},
+
+# 849
+{
+  line: "849: [20,0,0] to [14,0,1]",
+  kind:  hide,
+  index: 74,
+},
+
+# 850
+{ 
+  line: "850: [20,0,0] to [20,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 934, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 851
+{ 
+  line: "851: [20,0,1] to [20,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 934, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 852
+{ 
+  line: "852: [20,0,1] to [15,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 80, z: 300, w: 254, h: 32, d: -32, color: "olive drab" },
+},
+
+# 853
+{
+  line: "853: [20,0,1] to [15,0,1]",
+  kind:  hide,
+  index: 852,
+},
+
+# 854
+{
+  line: "854: [20,0,1] to [20,0,1]",
+  kind:  hide,
+  index: 851,
+},
+
+# 855
+{
+  line: "855: [20,0,0] to [20,0,1]",
+  kind:  hide,
+  index: 850,
+},
+
+# 856
+{
+  line: "856: [22,0,0] to [16,0,0]",
+  kind:  unhide,
+  index: 74,
+},
+
+# 857
+{
+  line: "857: [22,0,0] to [16,0,0]",
+  kind:  hide,
+  index: 86,
+},
+
+# 858
+{ 
+  line: "858: [22,0,0] to [22,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 859
+{ 
+  line: "859: [22,0,1] to [22,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 860
+{ 
+  line: "860: [22,0,1] to [16,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 80, z: 300, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 861
+{ 
+  line: "861: [16,0,1] to [16,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 754, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 862
+{
+  line: "862: [40,0,0] to [46,0,0]",
+  kind:  unhide,
+  index: 86,
+},
+
+# 863
+{
+  line: "863: [40,0,0] to [46,0,0]",
+  kind:  hide,
+  index: 233,
+},
+
+# 864
+{ 
+  line: "864: [40,0,0] to [40,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 865
+{ 
+  line: "865: [40,0,1] to [40,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 866
+{ 
+  line: "866: [40,0,1] to [46,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1834, y: 80, z: 300, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 867
+{ 
+  line: "867: [46,0,1] to [46,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2104, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 868
+{
+  line: "868: [42,0,0] to [48,0,0]",
+  kind:  unhide,
+  index: 233,
+},
+
+# 869
+{
+  line: "869: [42,0,0] to [48,0,0]",
+  kind:  hide,
+  index: 251,
+},
+
+# 870
+{
+  line: "870: [48,0,0] to [42,0,0]",
+  kind:  unhide,
+  index: 251,
+},
+
+# 871
+{
+  line: "871: [48,0,0] to [42,0,0]",
+  kind:  hide,
+  index: 221,
+},
+
+# 872
+{ 
+  line: "872: [48,0,0] to [48,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 873
+{ 
+  line: "873: [48,0,1] to [48,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2194, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 874
+{ 
+  line: "874: [48,0,1] to [47,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 80, z: 300, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 875
+{ 
+  line: "875: [47,0,1] to [47,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2149, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 876
+{ 
+  line: "876: [47,0,2] to [42,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1924, y: 144, z: 300, w: 254, h: 32, d: -32, color: "chocolate" },
+},
+
+# 877
+{
+  line: "877: [47,0,2] to [42,0,2]",
+  kind:  hide,
+  index: 876,
+},
+
+# 878
+{
+  line: "878: [47,0,1] to [47,0,2]",
+  kind:  hide,
+  index: 875,
+},
+
+# 879
+{
+  line: "879: [48,0,1] to [47,0,1]",
+  kind:  hide,
+  index: 874,
+},
+
+# 880
+{
+  line: "880: [48,0,1] to [48,0,1]",
+  kind:  hide,
+  index: 873,
+},
+
+# 881
+{
+  line: "881: [48,0,0] to [48,0,1]",
+  kind:  hide,
+  index: 872,
+},
+
+# 882
+{
+  line: "882: [62,0,0] to [56,0,1]",
+  kind:  unhide,
+  index: 221,
+},
+
+# 883
+{
+  line: "883: [62,0,0] to [56,0,1]",
+  kind:  hide,
+  index: 286,
+},
+
+# 884
+{ 
+  line: "884: [62,0,0] to [62,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2824, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 885
+{ 
+  line: "885: [62,0,1] to [62,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2824, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 886
+{ 
+  line: "886: [62,0,1] to [57,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 80, z: 300, w: 254, h: 32, d: -32, color: "olive drab" },
+},
+
+# 887
+{ 
+  line: "887: [57,0,1] to [57,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 888
+{ 
+  line: "888: [57,0,2] to [56,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 144, z: 300, w: 74, h: 32, d: -32, color: "chocolate" },
+},
+
+# 889
+{
+  line: "889: [57,0,2] to [56,0,2]",
+  kind:  hide,
+  index: 888,
+},
+
+# 890
+{
+  line: "890: [57,0,1] to [57,0,2]",
+  kind:  hide,
+  index: 887,
+},
+
+# 891
+{
+  line: "891: [62,0,1] to [57,0,1]",
+  kind:  hide,
+  index: 886,
+},
+
+# 892
+{
+  line: "892: [62,0,1] to [62,0,1]",
+  kind:  hide,
+  index: 885,
+},
+
+# 893
+{
+  line: "893: [62,0,0] to [62,0,1]",
+  kind:  hide,
+  index: 884,
+},
+
+# 894
+{
+  line: "894: [64,0,0] to [58,0,0]",
+  kind:  unhide,
+  index: 286,
+},
+
+# 895
+{
+  line: "895: [64,0,0] to [58,0,0]",
+  kind:  hide,
+  index: 298,
+},
+
+# 896
+{ 
+  line: "896: [64,0,0] to [64,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 897
+{ 
+  line: "897: [64,0,1] to [64,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 898
+{ 
+  line: "898: [64,0,1] to [58,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 80, z: 300, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 899
+{ 
+  line: "899: [58,0,1] to [58,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2644, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 900
+{
+  line: "900: [72,0,0] to [78,0,0]",
+  kind:  unhide,
+  index: 298,
+},
+
+# 901
+{
+  line: "901: [72,0,0] to [78,0,0]",
+  kind:  hide,
+  index: 387,
+},
+
+# 902
+{ 
+  line: "902: [72,0,0] to [72,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 903
+{ 
+  line: "903: [72,0,1] to [72,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 904
+{ 
+  line: "904: [72,0,1] to [78,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3274, y: 80, z: 300, w: 299, h: 32, d: -32, color: "olive drab" },
+},
+
+# 905
+{ 
+  line: "905: [78,0,1] to [78,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 3544, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 906
+{
+  line: "906: [74,0,0] to [80,0,0]",
+  kind:  unhide,
+  index: 387,
+},
+
+# 907
+{
+  line: "907: [74,0,0] to [80,0,0]",
+  kind:  hide,
+  index: 405,
+},
+
+# 908
+{
+  line: "908: [80,0,0] to [74,0,0]",
+  kind:  unhide,
+  index: 405,
+},
+
+# 909
+{
+  line: "909: [80,0,0] to [74,0,0]",
+  kind:  hide,
+  index: 375,
+},
+
+# 910
+{ 
+  line: "910: [80,0,0] to [80,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3634, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 911
+{ 
+  line: "911: [80,0,1] to [80,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3634, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 912
+{ 
+  line: "912: [80,0,1] to [79,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 80, z: 300, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 913
+{ 
+  line: "913: [79,0,1] to [79,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3589, y: 112, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 914
+{ 
+  line: "914: [79,0,2] to [74,0,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3364, y: 144, z: 300, w: 254, h: 32, d: -32, color: "chocolate" },
+},
+
+# 915
+{
+  line: "915: [79,0,2] to [74,0,2]",
+  kind:  hide,
+  index: 914,
+},
+
+# 916
+{
+  line: "916: [79,0,1] to [79,0,2]",
+  kind:  hide,
+  index: 913,
+},
+
+# 917
+{
+  line: "917: [80,0,1] to [79,0,1]",
+  kind:  hide,
+  index: 912,
+},
+
+# 918
+{
+  line: "918: [80,0,1] to [80,0,1]",
+  kind:  hide,
+  index: 911,
+},
+
+# 919
+{
+  line: "919: [80,0,0] to [80,0,1]",
+  kind:  hide,
+  index: 910,
+},
+
+# 920
+{
+  line: "920: [2,0,0] to [10,0,0]",
+  kind:  unhide,
+  index: 375,
+},
+
+# 921
+{
+  line: "921: [2,0,0] to [10,0,0]",
+  kind:  hide,
+  index: 40,
+},
+
+# 922
+{ 
+  line: "922: [2,0,0] to [2,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 923
+{ 
+  line: "923: [2,0,1] to [2,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 80, z: 300, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 924
+{ 
+  line: "924: [2,0,1] to [10,0,1]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 80, z: 300, w: 389, h: 32, d: -32, color: "olive drab" },
+},
+
+# 925
+{ 
+  line: "925: [10,0,1] to [10,0,0]",
+  kind:  geom,
+  shape: { kind: box, x: 484, y: 48, z: 300, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 926
+{
+  line: "926: [14,11,0] to [22,11,0]",
+  kind:  unhide,
+  index: 40,
+},
+
+# 927
+{
+  line: "927: [14,11,0] to [22,11,0]",
+  kind:  hide,
+  index: 116,
+},
+
+# 928
+{ 
+  line: "928: [14,11,0] to [14,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 664, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 929
+{ 
+  line: "929: [14,11,1] to [14,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 664, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 930
+{ 
+  line: "930: [14,11,1] to [15,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 664, y: 80, z: 36, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 931
+{ 
+  line: "931: [15,11,1] to [15,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 932
+{ 
+  line: "932: [15,11,2] to [22,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 709, y: 144, z: 36, w: 344, h: 32, d: -32, color: "chocolate" },
+},
+
+# 933
+{ 
+  line: "933: [22,11,2] to [22,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 934
+{ 
+  line: "934: [22,11,1] to [22,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 935
+{ 
+  line: "935: [22,11,1] to [22,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1024, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 936
+{
+  line: "936: [24,11,0] to [32,11,0]",
+  kind:  unhide,
+  index: 116,
+},
+
+# 937
+{
+  line: "937: [24,11,0] to [32,11,0]",
+  kind:  hide,
+  index: 174,
+},
+
+# 938
+{ 
+  line: "938: [24,11,0] to [24,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 939
+{ 
+  line: "939: [24,11,1] to [24,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 940
+{ 
+  line: "940: [24,11,1] to [25,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1114, y: 80, z: 36, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 941
+{ 
+  line: "941: [25,11,1] to [25,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 942
+{ 
+  line: "942: [25,11,2] to [32,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 1159, y: 144, z: 36, w: 344, h: 32, d: -32, color: "chocolate" },
+},
+
+# 943
+{ 
+  line: "943: [32,11,2] to [32,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 944
+{ 
+  line: "944: [32,11,1] to [32,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 945
+{ 
+  line: "945: [32,11,1] to [32,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 1474, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 946
+{
+  line: "946: [56,11,0] to [64,11,0]",
+  kind:  unhide,
+  index: 174,
+},
+
+# 947
+{
+  line: "947: [56,11,0] to [64,11,0]",
+  kind:  hide,
+  index: 328,
+},
+
+# 948
+{ 
+  line: "948: [56,11,0] to [56,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 949
+{ 
+  line: "949: [56,11,1] to [56,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 950
+{ 
+  line: "950: [56,11,1] to [57,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2554, y: 80, z: 36, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 951
+{ 
+  line: "951: [57,11,1] to [57,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 952
+{ 
+  line: "952: [57,11,2] to [64,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 2599, y: 144, z: 36, w: 344, h: 32, d: -32, color: "chocolate" },
+},
+
+# 953
+{ 
+  line: "953: [64,11,2] to [64,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 954
+{ 
+  line: "954: [64,11,1] to [64,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 955
+{ 
+  line: "955: [64,11,1] to [64,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 2914, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 956
+{
+  line: "956: [90,11,0] to [82,11,0]",
+  kind:  unhide,
+  index: 328,
+},
+
+# 957
+{
+  line: "957: [90,11,0] to [82,11,0]",
+  kind:  hide,
+  index: 421,
+},
+
+# 958
+{ 
+  line: "958: [90,11,0] to [90,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4084, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 959
+{ 
+  line: "959: [90,11,1] to [90,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4084, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 960
+{ 
+  line: "960: [90,11,1] to [89,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 80, z: 36, w: 74, h: 32, d: -32, color: "olive drab" },
+},
+
+# 961
+{ 
+  line: "961: [89,11,1] to [89,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 4039, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 962
+{ 
+  line: "962: [89,11,2] to [82,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 3724, y: 144, z: 36, w: 344, h: 32, d: -32, color: "chocolate" },
+},
+
+# 963
+{
+  line: "963: [89,11,2] to [82,11,2]",
+  kind:  hide,
+  index: 962,
+},
+
+# 964
+{
+  line: "964: [89,11,1] to [89,11,2]",
+  kind:  hide,
+  index: 961,
+},
+
+# 965
+{
+  line: "965: [90,11,1] to [89,11,1]",
+  kind:  hide,
+  index: 960,
+},
+
+# 966
+{
+  line: "966: [90,11,1] to [90,11,1]",
+  kind:  hide,
+  index: 959,
+},
+
+# 967
+{
+  line: "967: [90,11,0] to [90,11,1]",
+  kind:  hide,
+  index: 958,
+},
+
+# 968
+{
+  line: "968: [2,11,0] to [12,11,0]",
+  kind:  unhide,
+  index: 421,
+},
+
+# 969
+{
+  line: "969: [2,11,0] to [12,11,0]",
+  kind:  hide,
+  index: 58,
+},
+
+# 970
+{ 
+  line: "970: [2,11,0] to [2,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 971
+{ 
+  line: "971: [2,11,1] to [2,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+
+# 972
+{ 
+  line: "972: [2,11,1] to [5,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 124, y: 80, z: 36, w: 164, h: 32, d: -32, color: "olive drab" },
+},
+
+# 973
+{ 
+  line: "973: [5,11,1] to [5,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 974
+{ 
+  line: "974: [5,11,2] to [12,11,2]",
+  kind:  geom,
+  shape: { kind: box, x: 259, y: 144, z: 36, w: 344, h: 32, d: -32, color: "chocolate" },
+},
+
+# 975
+{ 
+  line: "975: [12,11,2] to [12,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 112, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 976
+{ 
+  line: "976: [12,11,1] to [12,11,0]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 48, z: 36, w: 32, h: 32, d: -32, color: "golden rod" },
+},
+
+# 977
+{ 
+  line: "977: [12,11,1] to [12,11,1]",
+  kind:  geom,
+  shape: { kind: box, x: 574, y: 80, z: 36, w: 32, h: 32, d: -32, color: "olive drab" },
+},
+]
