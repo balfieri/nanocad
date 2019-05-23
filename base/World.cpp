@@ -494,29 +494,29 @@ void World::motion_event( double x, double y )
     impl->motion_y = y;
 
     if ( impl->button_pressed[SYS_BUTTON_LEFT] ) {
-        if ( change_x < -0.001 || change_x > 0.001 ) {
+        if ( change_x != 0 ) {
             //--------------------------------------------------------------
             // Turn left or right.
             //--------------------------------------------------------------
-            impl->view_turn_left_right( -change_x / 1000.0 );
+            impl->view_turn_left_right( -change_x/1000.0 );
         }
 
-        if ( change_y < -0.001 || change_y > 0.001 ) {
+        if ( change_y != 0 ) {
             //--------------------------------------------------------------
             // Tilt up or down.
             //--------------------------------------------------------------
-            impl->view_tilt_up_down( -change_y / 1000.0 );
+            impl->view_tilt_up_down( -change_y/1000.0 );
         }
 
     } else if ( impl->button_pressed[SYS_BUTTON_RIGHT] ) {
-        if ( change_x < -0.001 || change_x > 0.001 ) {
+        if ( change_x != 0 ) {
             //--------------------------------------------------------------
             // Move left or right.
             //--------------------------------------------------------------
             impl->view_translate( -change_x/10.0, 0.0, 0.0 );
         }
 
-        if ( change_y < -0.001 || change_y > 0.001 ) {
+        if ( change_y != 0 ) {
             //--------------------------------------------------------------
             // Move in or out.
             //--------------------------------------------------------------
@@ -607,19 +607,19 @@ void World::key_event( int key, int action, int modifiers )
             break;
 
         case 'k':
-            impl->view_tilt_up_down( -1.0 / 10.0 );
+            impl->view_tilt_up_down( 1.0 / 10.0 );
             break;
 
         case 'K':
-            impl->view_tilt_up_down( -10.0 / 10.0 );
+            impl->view_tilt_up_down( 10.0 / 10.0 );
             break;
 
         case 'j':
-            impl->view_tilt_up_down( +1.0 / 10.0 );
+            impl->view_tilt_up_down( -1.0 / 10.0 );
             break;
 
         case 'J':
-            impl->view_tilt_up_down( +10.0 / 10.0 );
+            impl->view_tilt_up_down( -10.0 / 10.0 );
             break;
 
         case '+':
@@ -693,7 +693,6 @@ void World::Impl::view_turn_left_right( float a )
     // Rotate around Y axis.
     //------------------------------------------------------------
     float D_new[3];
-
     float sin_a = sin( a );
     float cos_a = cos( a );
     dprintf( "a=%f sin_a=%f cos_a=%f\n", a, sin_a, cos_a );
@@ -711,10 +710,19 @@ void World::Impl::view_turn_left_right( float a )
 void World::Impl::view_tilt_up_down( float a )
 {
     //------------------------------------------------------------
-    // Tilt up/down by simply changing the view Y value.
+    // Rotate around X axis.
     //------------------------------------------------------------
     lookat[1] += a;
-    view_print( "view_tilt_up_down" );
+    //float D_new[3];
+    //float sin_a = sin( a );
+    //float cos_a = cos( a );
+    //D_new[0] = 0.0f;
+    //D_new[1] = D[2] * -sin_a + D[1] * cos_a;
+    //D_new[2] = D[2] *  cos_a + D[1] * sin_a;
+    //vec_normalize( D, D_new );
+    //lookat[1] = lookfrom[1] + D[1];
+    //lookat[2] = lookfrom[2] + D[2];
+    //view_print( "view_tilt_up_down" );
 
     sys->force_redraw();
 }
