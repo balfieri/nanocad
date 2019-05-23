@@ -286,7 +286,7 @@ void Viz::key_event( int key, int action, int modifiers )
                         bool is_hide = strcmp( obj->s( impl->id_kind ), "hide" ) == 0;
                         entity->visible_set( !is_hide );
                     }
-                    printf( "%s\n", obj->s( impl->id_line ) );
+                    //printf( "%s\n", obj->s( impl->id_line ) );
                 }
                 break;
             }
@@ -312,7 +312,7 @@ void Viz::key_event( int key, int action, int modifiers )
                         entity->visible_set( is_hide );
                     }
                     impl->viz_last -= 1;
-                    printf( "%s\n", obj->s( impl->id_line ) );
+                    //printf( "%s\n", obj->s( impl->id_line ) );
                 }
                 break;
             }
