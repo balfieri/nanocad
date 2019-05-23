@@ -30,7 +30,7 @@ ConfigViz::ConfigViz( int argc, const char * argv[] )
     // default values
     //
     this->viz_path = 0;
-    this->viz_last = 0;
+    this->viz_last = 0x7fffffff;
     this->texid_background = Color::rgb( "black" );
 
     //----------------------------------------------------------------

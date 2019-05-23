@@ -144,7 +144,7 @@ protected:
     virtual void resize_event( double w, double h );
 
     // This is called whenever the mouse moves.
-    // Default behavior: do nothing
+    // Default behavior: rotate about viewfrom if left button pressed.
     //
     virtual void motion_event( double x, double y );
 

@@ -572,9 +572,13 @@ void World::key_event( int key, int action, int modifiers )
             impl->view_translate( 0.0, 0.0, 1000.0*MOVEMENT );
             break;
 
-        case ' ':
         case 'q':
-            impl->view_translate( 0.0, 1000.0*MOVEMENT, 0.0 );
+        case ' ':
+            if ( key != 'q' && (modifiers & SYS_MOD_SHIFT) != 0 ) {
+                impl->view_translate( 0.0, 10000.0*MOVEMENT, 0.0 );
+            } else {
+                impl->view_translate( 0.0, 1000.0*MOVEMENT, 0.0 );
+            }
             break;
 
         case '\t':
@@ -582,46 +586,50 @@ void World::key_event( int key, int action, int modifiers )
             impl->view_translate( 0.0, -1000.0*MOVEMENT, 0.0 );
             break;
 
+        case 'Z':
+            impl->view_translate( 0.0, -10000.0*MOVEMENT, 0.0 );
+            break;
+
         case 'h':
-            motion_event( impl->motion_x-100.0, impl->motion_y );
+            impl->view_turn_left_right( 1.0/10.0 );
             break;
 
         case 'H':
-            motion_event( impl->motion_x-1000.0, impl->motion_y );
+            impl->view_turn_left_right( 10.0/10.0 );
             break;
 
         case 'l':
-            motion_event( impl->motion_x+100.0, impl->motion_y );
+            impl->view_turn_left_right( -1.0/10.0 );
             break;
 
         case 'L':
-            motion_event( impl->motion_x+1000.0, impl->motion_y );
+            impl->view_turn_left_right( -10.0/10.0 );
             break;
 
         case 'k':
-            motion_event( impl->motion_x, impl->motion_y-100.0 );
+            impl->view_tilt_up_down( -1.0 / 10.0 );
             break;
 
         case 'K':
-            motion_event( impl->motion_x, impl->motion_y-1000.0 );
+            impl->view_tilt_up_down( -10.0 / 10.0 );
             break;
 
         case 'j':
-            motion_event( impl->motion_x, impl->motion_y+100.0 );
+            impl->view_tilt_up_down( +1.0 / 10.0 );
             break;
 
         case 'J':
-            motion_event( impl->motion_x, impl->motion_y+1000.0 );
+            impl->view_tilt_up_down( +10.0 / 10.0 );
             break;
 
         case '+':
-            impl->vfov /= 1.10;  // zoom in
+            impl->vfov /= 1.20;  // zoom in
             impl->view_print( "zoom in" );
             impl->sys->force_redraw();
             break;
 
         case '-':
-            impl->vfov *= 1.10;  // zoom out
+            impl->vfov *= 1.20;  // zoom out
             impl->view_print( "zoom out" );
             impl->sys->force_redraw();
             break;
